@@ -1,4 +1,4 @@
-.mybody {
+body {
   margin: 0;
   font-family: raleway;
 }
@@ -30,7 +30,7 @@ header {
   padding-left: 200px;
   padding-right: 200px;
 }
-section {
+.section {
   padding-left: 200px;
   padding-right: 200px;
 }
@@ -73,8 +73,39 @@ h1 {
   background-position: center;
   border-radius: 5px;
 }
+label{
+  font-size: 32px;
+}
+.input{
+  width: 120px;
+  height: 32px;
+}
+.portion{
+    width: 120px;
+    height: 42px;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0; 
+}
 .grey{
   background-color: #efefef;
+  width:auto;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+.space{
+  width:auto;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
 }
 h2 {
   display: flex;
@@ -98,13 +129,19 @@ h3 {
   unicode-bidi: isolate;
   justify-content: baseline;
 }
+.MAX{
+  background-color:white;
+}
 .photo {
   width: 120px;
   height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50px;
+  grid-area: 200px;
 }
-footer{
+.footer{
   background-color: #403b3b;
-  display: flex;
-  width: auto;
-  height: auto;
+  height: 400px;
 }
+
