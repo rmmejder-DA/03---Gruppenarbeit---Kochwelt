@@ -92,7 +92,7 @@ h1 {
     width: 120px;
     height: 42px;
 }
-li{
+.maxlist{
     list-style-type: none;
 }
 ul{
@@ -153,3 +153,6 @@ h3 {
   height: 400px;
 }
 
+.rouladenpng {
+  width: 100vh;
+}
