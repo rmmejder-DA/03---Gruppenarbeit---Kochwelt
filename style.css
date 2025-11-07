@@ -4,12 +4,19 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   margin: 0;
   font-family: "raleway", sans-serif;
 }
-
+.logo {     
+      padding-top: 18px;
+      padding-bottom: 18px;
+}
 a {
   color: #403b3b;
   text-decoration: none;
@@ -19,7 +26,7 @@ a:hover {
   text-decoration: underline 4px;
   text-underline-offset: 12px;
 }
-menu {
+nav {
   display: flex;
   align-items: end;
   padding-bottom: 10px;
@@ -73,6 +80,9 @@ h1 {
   font-weight: bold;
   unicode-bidi: isolate;
   justify-content: baseline;
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 .salad {
   background-image: url(./img/salad.jpg);
@@ -155,4 +165,13 @@ h3 {
 
 .rouladenpng {
   width: 100vh;
+}
+
+.turkish-pasta-img {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px; 
 }
