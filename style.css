@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -13,10 +14,12 @@ body {
   margin: 0;
   font-family: "raleway", sans-serif;
 }
-.logo {     
-      padding-top: 18px;
-      padding-bottom: 18px;
+
+.logo {
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
+
 a {
   color: #403b3b;
   text-decoration: none;
@@ -27,21 +30,22 @@ a:hover {
   text-decoration: underline 4px;
   text-underline-offset: 12px;
 }
+
 nav {
   display: flex;
   align-items: end;
   padding-bottom: 10px;
-  gap: 60px;
+  gap: 38px;
   font-family: raleway;
-  font-weight: 800;
+  font-weight: 700;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 header {
-  box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   padding-left: 200px;
@@ -56,19 +60,64 @@ header {
 form {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 24px;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-bottom: 120px;
 }
 
 form p {
-  background-color: #efefef;
-  width: 150px;
+  background-color: #cbc8c8;
+  width: auto;
   height: 32px;
   text-align: center;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 10px;
+  gap: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input {
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-right: 0px;
+  height: 40px;
+  width: 160px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px grey solid;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border: 2px rgb(46, 46, 46) solid;
+}
+
+.input_portion {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+button {
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color: #008000;
+  color: white;
+  width: 160px;
+  height: 44px;
+}
+
+button:hover {
+  background-color: #005800;
 }
 
 p img {
@@ -91,54 +140,6 @@ h1 {
   padding-bottom: 50px;
 }
 
-.salad {
-  background-image: url(./img/salad.jpg);
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-}
-
-.grey {
-  font-size: 32px;
-}
-
-.input {
-  width: 120px;
-  height: 32px;
-}
-
-.portion {
-  width: 120px;
-  height: 42px;
-}
-
-.maxlist {
-  list-style-type: none;
-}
-
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-
-.grey {
-  background-color: #efefef;
-  width: auto;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  font-size: 32px;
-}
-
-.space {
-  width: auto;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  font-size: 32px;
-}
 
 h2 {
   display: flex;
@@ -150,6 +151,8 @@ h2 {
   font-weight: bold;
   unicode-bidi: isolate;
   justify-content: baseline;
+  padding-left: 200px;
+  padding-top: 100px;
 }
 
 h3 {
@@ -163,6 +166,70 @@ h3 {
   unicode-bidi: isolate;
   justify-content: baseline;
 }
+
+.salad {
+  background-image: url(./img/salad.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.maxlist {
+  list-style-type: none;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.liste-div {
+  margin-top: 18px;
+  margin-left: 200px;
+  margin-right: 180px;
+}
+
+li {
+  padding: 16px;
+  padding-left: 32px;
+}
+
+.white {
+  background-color: #ffffff;
+  width: auto;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.grey {
+  background-color: #e4e4e4;
+  width: auto;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.li-muted {
+margin-left: 6px;
+color: #4e4e4e;
+}
+
+.space {
+  width: auto;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+
 
 .MAX {
   background-color: white;
@@ -197,12 +264,15 @@ h3 {
   display: flex;
   justify-content: center;
 }
+
 .turkish-pasta-img {
+  background-image: url('./assets/img/turkish-pasta.jpg');
   display: flex;
   justify-content: center;
   height: 300px;
   background-size: cover;
   background-position: center;
-  border-radius: 5px;
+  border-radius: 12px;
   margin-left: 200px;
+  width: 1500px;
 }
