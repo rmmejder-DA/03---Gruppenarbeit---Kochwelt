@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Russische Schaschlikspieße</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
     <header>
-      <img src="./assets/img/logo.png" alt="Kochwelt Logo" />
+      <a href="http://127.0.0.1:5500/index.html">
+      <img class="KochLogo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
+      </a>
       <menu>
-        <a href="index.html">Start</a>
-        <a href="rezepte.html">Rezepte</a>
-        <a href="einkaufsliste.html">Einkaufsliste</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="">Start</a>
+        <a href="">Rezept des Tages</a>
+        <a href="http://127.0.0.1:5500/Kontakt.html">Kontakt</a>
+        <a href="">Impressum</a>
       </menu>
     </header>
-    <section class="section">
-    <section>
+    <section class="main">
+    <div>
       <h1>Russische Schaschlikspieße</h1>
-      <div class="salad"></div>
-      <form>
-        <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" /> 15 Min.</p>
+      <div class="schaschlik"></div>
+      <form class="form1">
+        <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" /> 2 Std. Arbeitszeit</p>
         <p><img src="./assets/img/icons/brain-solid.svg" alt="brain" /> simpel</p>
         <p>
           <img src="./assets/img/icons/calendar-alt-regular.svg" alt="calender">
           05.11.2025
         </p>
       </form>
-      <div class="input_portion">
+      <div class="ingredients">
       <label for="Portion">Zutaten für:</label>
-      <input class="input" type="number" min="0" value="4" id="Num1" />
+      <input class="input" type="number" min="0" value="3" id="Num1" />
       <input class="portion" type="submit" value="Portionen" />
       </div>
-    </section>
+    </div>
 
-    <section>
+    <div>
       <div class="liste-div">
-        <ul id="zutaten" class="liste-ul">
+        <ul id="zutaten">
 
         <li class="maxlist" data-basis="0.5" data-einheit="g Mehl" class="grey">0.5 Bund Petersilie</li>
         <li class="maxlist" data-basis="0.5" data-einheit="g Zucker" class="space">0.5 Bund Basilikum</li>
@@ -57,21 +58,34 @@
 
       </ul>
       </div>
-    </section>
+    </div>
       
-    <section>
+    <div>
         <h2>Zubereitung</h2>
-        <form>
-        <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" />ca. 15 Min.</p>
-        <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" />Gesamtzeit 15 Min.</p>
+        <form class="form2">
+        <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" />ca. 20 Min.</p>
+        <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" />Gesamtzeit 50 min.</p>
         </form>
-        <p>TEXT Zubereitung</p>
+        <div class="cooking">
+            <ul>
+              <li>1 Basilikum und Petersilie fein schneiden. Den Kefir in einen Behälter geben und mit den fein geschnittenen Kräutern, Pfeffer, Salz, Chilipulver, Knoblauch, Zwiebel, Lorbeerblättern und Wacholderbeeren vermengen.</li>
+              <br>
+              <li>2 Das Fleisch in ca. 4 x 4 cm große Würfel schneiden. Anschließend in der Marinade wälzen, die Thymianzweige untermischen und abgedeckt für mindestens zwölf Stunden, besser 24 Stunden, in den Kühlschrank stellen.</li>
+              <br>
+              <li>3 Den Grill auf 200 Grad vorheizen.</li>
+              <br>
+              <li>4 Die Fleischstücke aus der Marinade entnehmen und auf 3 - 4 Grillspieße stecken. Fleischspieße grillen und alle vier Minuten etwas drehen. Nach ca. 25 - 30 Minuten müssten sie eine leichte Bräune erhalten haben und können vom Grill genommen werden – fertig.Viel Spaß beim Nachgrillen.</li>
+            </ul>
+          </div>
         <h3>Rezept erstellt von</h3>
-        <form>
+        <form class="photo_plus_name">
+          <a href="https://www.linkedin.com/in/max-mejder-91591b1a1/">
           <img class="photo" src="./assets/img/photoMax.JPG" alt="photo">
+          </a>
           <p class="MAX">MAX</p>
         </form>
-      </section>
+      </div>
+    </div>
       </section>
           <footer class="footer"></footer>
   </body>
