@@ -385,5 +385,35 @@ form {
 }
 
 .marcellist {
-  
+  list-style: decimal;
+  list-style-position: outside;
+  padding-left: 40px;
+  margin-bottom: 16px;
+}
+
+.marcellist > li {
+  display: list-item;
+  margin-bottom: 12px;
+}
+
+.marcellist > li > .li-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  line-height: 1.5;
+}
+
+.hero-crop{
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.hero-crop img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
