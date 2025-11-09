@@ -25,6 +25,7 @@ a {
   color: #403b3b;
   text-decoration: none;
 }
+
 a:hover {
   color: #008000;
   text-decoration: underline 4px;
@@ -52,13 +53,11 @@ nav {
   padding-inline-start: 0;
   font-size: 20px;
 }
+
 header {
-  max-width: vw;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
-  padding-left: 200px;
-  padding-right: 200px;
 }
 
 .main {
@@ -73,6 +72,7 @@ header {
   padding-top: 32px;
   padding-bottom: 72px;
 }
+
 form p {
   background-color: #e4e4e4;
   width: auto;
@@ -127,6 +127,7 @@ button {
   width: 160px;
   height: 40px;
 }
+
 p img {
   width: 15px;
   height: 15px;
@@ -159,6 +160,7 @@ h1 {
   font-size: 20px;
   align-items: center;
 }
+
 label {
   padding-right: 24px;
   display: flex;
@@ -192,10 +194,12 @@ label {
   width: 120px;
   height: 32px;
 }
+
 .portion {
   width: 120px;
   height: 42px;
 }
+
 .maxlist {
   list-style-type: none;
   font-size: 20px;
@@ -207,18 +211,15 @@ label {
   width: 100px;
   height: 32px;
 }
+
 .portion {
   width: 160px;
   height: 42px;
 }
+
 .maxlist {
   list-style-type: none;
 }
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
 
 ul {
   margin-block-start: 0;
@@ -226,14 +227,10 @@ ul {
   padding-inline-start: 0;
 }
 
-.white {
-  background-color: #ffffff;
-  width: auto;
-  height: 26px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  font-size: 18px;
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .grey_li_bckgr {
@@ -273,6 +270,7 @@ h2 {
   padding-bottom: 10px;
   gap: 60px;
 }
+
 h3 {
   display: flex;
   font-size: 18px;
@@ -358,23 +356,6 @@ footer {
   margin: 200px;
 }
 
-.turkish-pasta-img {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  margin-left: 200px;
-  align-items: center;
-  height: 200px;
-  background-size: cover;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  margin-bottom: 50px;
-}
-
 form {
   display: flex;
   justify-content: start;
@@ -382,6 +363,68 @@ form {
   margin-bottom: 120px;
   margin-top: 20px;
 }
+
+/*===================================
+CSS Design rezeptEnsar.html (Ensar) 
+====================================*/
+.turkish-pasta-img {
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.input-zutaten {
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  padding-block: 0;
+  padding-inline: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-zutaten {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  background-color: #008000;
+  color: white;
+  width: 160px;
+  height: 34px;
+}
+
+.li-grey {
+  background-color: #e4e4e4;
+  width: auto;
+  height: 48px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.li-white {
+  background-color: #ffffff;
+  width: auto;
+  height: 48px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
 .bold_headline_preparation {
   font-weight: bold;
 }
@@ -391,8 +434,25 @@ form {
   font-size: 24px;
 }
 
+.impressum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .no_margin {
   margin: 0;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.padding-le-ri {
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 /*===================================
@@ -411,12 +471,12 @@ CSS Design rinderroulade.html (Marcel)
   margin-bottom: 16px;
 }
 
-.marcellist > li {
+.marcellist>li {
   display: list-item;
   margin-bottom: 12px;
 }
 
-.marcellist > li > .li-row {
+.marcellist>li>.li-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -475,6 +535,7 @@ Marcel: Zutaten-Rechner
   background: #fff;
   outline: none;
 }
+
 .mb-portioner #portionInput:focus {
   border-color: #188a00;
   box-shadow: 0 0 0 3px rgba(24, 138, 0, 0.15);
@@ -490,9 +551,11 @@ Marcel: Zutaten-Rechner
   cursor: pointer;
   transition: transform 0.02s ease, filter 0.15s ease;
 }
+
 .mb-portioner .mb-btn-green:hover {
   filter: brightness(1.05);
 }
+
 .mb-portioner .mb-btn-green:active {
   transform: translateY(1px);
 }
@@ -503,7 +566,7 @@ Marcel: Zutaten-Rechner
   padding: 0;
 }
 
-.mb-portioner .mb-ingredients-list > li {
+.mb-portioner .mb-ingredients-list>li {
   position: relative;
   padding: 14px 16px;
   display: grid;
@@ -513,7 +576,7 @@ Marcel: Zutaten-Rechner
   color: #222;
 }
 
-.mb-portioner .mb-ingredients-list > li::before {
+.mb-portioner .mb-ingredients-list>li::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -523,15 +586,17 @@ Marcel: Zutaten-Rechner
   height: 100%;
   background: #fff;
 }
-.mb-portioner .mb-ingredients-list > li:nth-child(odd)::before {
+
+.mb-portioner .mb-ingredients-list>li:nth-child(odd)::before {
   background: #efefef;
 }
 
-.mb-portioner .mb-ingredients-list > li.mb-no-amount {
+.mb-portioner .mb-ingredients-list>li.mb-no-amount {
   grid-template-columns: 1fr;
 }
-.mb-portioner .mb-ingredients-list > li.mb-no-amount .amount,
-.mb-portioner .mb-ingredients-list > li.mb-no-amount .unit {
+
+.mb-portioner .mb-ingredients-list>li.mb-no-amount .amount,
+.mb-portioner .mb-ingredients-list>li.mb-no-amount .unit {
   display: none;
 }
 
@@ -539,13 +604,16 @@ Marcel: Zutaten-Rechner
   .mb-portioner {
     padding-left: 20px;
   }
+
   .mb-portioner .mb-portion-label {
     font-size: 16px;
   }
+
   .mb-portioner #portionInput {
     width: 72px;
   }
-  .mb-portioner .mb-ingredients-list > li {
+
+  .mb-portioner .mb-ingredients-list>li {
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
@@ -675,7 +743,7 @@ Design der index.html
   padding: 80px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   text-align: center;
 }
 
@@ -721,6 +789,7 @@ Design der index.html
   font-weight: 600;
   transition: background 0.2s ease, transform 0.2s ease;
 }
+
 .compare-btn:hover {
   background: #1fa600;
   transform: translateY(-2px);
@@ -731,6 +800,7 @@ Design der index.html
   display: flex;
   justify-content: flex-end;
 }
+
 .compare-image img {
   width: 100%;
   height: auto;
@@ -740,6 +810,7 @@ Design der index.html
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
+
 .compare-image img:hover {
   transform: scale(1.03);
 }
