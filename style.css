@@ -185,8 +185,6 @@ label{
   padding-inline: 0;
   margin: 0;
 }
-.portion{
-
 
 .portion {
   font-size: 20px;
@@ -233,10 +231,7 @@ ul{
     margin-block-end: 0;
     padding-inline-start: 0; 
 }
-.grey{
-  background-color: #efefef;
-  width:auto;
-  height: 48px;
+
 
 .white {
   background-color: #ffffff;
@@ -384,14 +379,16 @@ h3 {
   border-radius: 5px;
   margin-left: 200px;
 }
-  align-items: center;
+  
+
+/* align-items: center;
   height: 200px;
   background-size: cover;
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
       MARGIN-BOTTOM: 50PX;
-}
+} */
 
 form {
   display: flex;
