@@ -12,7 +12,6 @@
 
 body {
   margin: 0;
-
   font-family: "raleway", sans-serif;
 }
 
@@ -25,20 +24,22 @@ a {
   color: #403b3b;
   text-decoration: none;
 }
-
 a:hover {
   color: #008000;
   text-decoration: underline 4px;
   text-underline-offset: 12px;
 }
-.KochLogo{
+
+.KochLogo {
   width: auto;
   height: 84px;
 }
-.KochLogo:hover{
+
+.KochLogo:hover {
   cursor: pointer;
 }
-menu {
+
+nav {
   display: flex;
   align-items: end;
   padding-bottom: 10px;
@@ -50,7 +51,6 @@ menu {
   padding-inline-start: 0;
   font-size: 20px;
 }
-
 header {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -58,6 +58,7 @@ header {
   padding-left: 200px;
   padding-right: 200px;
 }
+
 .main {
   padding-left: 200px;
   padding-right: 200px;
@@ -70,24 +71,23 @@ header {
   padding-top: 32px;
   padding-bottom: 72px;
 }
-
 form p {
-  background-color: #efefef;
-  width: 180px;
-  height: 36px;
+  background-color: #e4e4e4;
+  width: auto;
+  height: 32px;
   text-align: center;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 input {
   padding-left: 10px;
-  margin-left: 20px;
+
   margin-right: 0px;
   height: 40px;
   width: 160px;
@@ -102,29 +102,37 @@ input:focus {
   border: 2px rgb(46, 46, 46) solid;
 }
 
+.input {
+  border: 1px solid rgb(201, 201, 201);
+  border-right: 0;
+  height: 38px;
+  border-radius: 10px 0 0 10px;
+  text-align: start;
+  padding-block: 0;
+  padding-inline: 0;
+  padding-left: 20px;
+}
+
 .input_portion {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-top: 50px;
-  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+label {
+  padding-right: 24px;
 }
 
 button {
-  cursor: pointer;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: none;
   background-color: #008000;
   color: white;
   width: 160px;
-  height: 44px;
+  height: 40px;
 }
-
-button:hover {
-  background-color: #005800;
-}
-
 p img {
   width: 15px;
   height: 15px;
@@ -143,14 +151,20 @@ h1 {
   padding-top: 72px;
   padding-bottom: 32px;
 }
+
 .schaschlik {
   background-image: url(./assets/img/shish-kebab-417994_1920.jpg);
+}
+
+.salad {
+  background-image: url(./img/salad.jpg);
   height: 200px;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
 }
-.ingredients{
+
+.ingredients {
   display: flex;
   padding-bottom: 32px;
   font-size: 20px;
@@ -172,6 +186,9 @@ label{
   margin: 0;
 }
 .portion{
+
+
+.portion {
   font-size: 20px;
   border-left: 1px;
   margin-left: 0;
@@ -184,30 +201,71 @@ label{
   color: white;
 }
 
-li{
+li {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 16px;
+  padding-left: 32px;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+
+}
+.grey {
+  font-size: 32px;
+}
+.input{
+  width: 120px;
+  height: 32px;
+}
+.portion{
+    width: 120px;
+    height: 42px;
+}
+.maxlist{
     list-style-type: none;
-    font-size: 20px;
 }
 ul{
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0; 
-    
 }
 .grey{
   background-color: #efefef;
   width:auto;
   height: 48px;
+
+.white {
+  background-color: #ffffff;
+  width: auto;
+  height: 26px;
   display: flex;
+  text-align: center;
   align-items: center;
-  
+  font-size: 18px;
 }
-.space{
-  width:auto;
+
+.grey {
+  background-color: #e4e4e4;
+  width: auto;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.space {
+  width: auto;
   height: 48px;
   display: flex;
   align-items: center;
 }
+
 h2 {
   display: flex;
   font-size: 32px;
@@ -221,47 +279,39 @@ h2 {
   padding-top: 32px;
   padding-bottom: 16px;
 }
-.form2{
+
+.form2 {
   display: flex;
   padding-bottom: 10px;
   gap: 60px;
 }
-
 h3 {
   display: flex;
-  font-size: 32px;
+  font-size: 18px;
   padding-top: 32px;
   padding-bottom: 20px;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-weight: bold;
+  font-weight: 400;
   unicode-bidi: isolate;
   justify-content: baseline;
 }
-.photo_plus_name{
+
+.photo_plus_name {
   display: flex;
   padding-bottom: 72px;
 }
-.MAX{
+
+.MAX {
   display: flex;
   justify-content: center;
-  background-color:white;
+  background-color: white;
   font-size: 32px;
   font-weight: 700;
 }
 
-.grey {
-  background-color: #e4e4e4;
-  width: auto;
-  height: 26px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  font-size: 18px;
-  border-radius: 10px;
-}
 
 .li-muted {
   margin-left: 6px;
@@ -276,9 +326,8 @@ h3 {
   font-size: 32px;
 }
 
-
-.MAX {
-  background-color: white;
+.MAX{
+  background-color:white;
 }
 
 .photo {
@@ -289,29 +338,77 @@ h3 {
   border-radius: 50px;
   grid-area: 200px;
 }
-.photo:hover{
+
+
+.photo:hover {
   cursor: pointer;
 }
-.footer{
+
+.footer {
   background-color: #403b3b;
   height: 400px;
 }
-.footer_contact{
+
+.footer_contact {
   background-color: #403b3b;
   height: 200px;
 }
-.form_contact{
+
+.form_contact {
   width: auto;
   height: 100vh;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.form3{
+
+.form3 {
   display: grid;
-  border:1px;
+  border: 1px;
   background-color: #dcdcdc;
   border-radius: 25px;
   padding: 100px;
   margin: 200px;
+} 
+
+.rouladenpng {
+  width: 100vh;
 }
+
+.turkish-pasta-img {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-left: 200px;
+}
+  align-items: center;
+  height: 200px;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+      MARGIN-BOTTOM: 50PX;
+}
+
+form {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  margin-bottom: 120px;
+  margin-top: 20px;
+}
+  .bold_headline_preparation{
+    font-weight: bold;
+  }
+
+  .big_bold_headline_preparation{
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .no_margin{
+    margin:0;
+  }
