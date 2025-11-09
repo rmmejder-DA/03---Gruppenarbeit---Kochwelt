@@ -1,79 +1,53 @@
-const minusBtn = document.getElementById('minus');
-const plusBtn  = document.getElementById('plus');
-const portionOut = document.getElementById('portionCount');
-const wrap = document.getElementById('ingredientsWrap');
-const items = document.querySelectorAll('#ingredients li');
 
-const STEP = 1;
-let portions = 1;
+// JS von der rinderroulad.html (Marcel)
+const root = document.querySelector('.mb-portioner');
+if (root) {
+  const input    = root.querySelector('#portionInput');
+  const applyBtn = root.querySelector('#applyPortions');
+  const items    = root.querySelectorAll('#ingredients li');
 
-const pluralRules = {
-  'Stk': ['Stk', 'Stk'],
-  'Scheibe': ['Scheibe', 'Scheiben'],
-  'EL': ['EL', 'EL'],
-  'TL': ['TL', 'TL'],
-  'ml': ['ml', 'ml'],
-  'g': ['g', 'g'],
-  'Stange': ['Stange', 'Stangen']
-};
+items.forEach(li => {
+  const amountEl = li.querySelector('.amount');
+  const unitEl   = li.querySelector('.unit');
 
-function pluralize(unit, value) {
-  const forms = pluralRules[unit];
-  if (!forms) return unit || '';
-  return (Math.abs(value - 1) < 1e-9) ? forms[0] : forms[1];
-}
+  const amountEmpty = !amountEl || !amountEl.textContent.trim();
+  const unitEmpty   = !unitEl   || !unitEl.textContent.trim();
 
-function formatAmount(amount, unit) {
-  let value = amount;
-  let outUnit = unit || '';
+  if (amountEmpty && unitEmpty) {
+    li.classList.add('mb-no-amount');
+  }
+});
 
-  if ((unit === 'ml' || unit === 'g') && amount >= 1000) {
-    value = amount / 1000;
-    outUnit = (unit === 'ml') ? 'l' : 'kg';
+  function getPortions() {
+    let n = Math.round(Number(input.value) || 0);
+    if (n < 0) n = 0;
+    return n;
+  }
+  function setPortions(n) {
+    const val = Math.max(0, Math.round(n));
+    input.value = String(val);
+    update(val);
+  }
+  function update(portions) {
+    items.forEach(li => {
+      const base = Number(li.dataset.base) || 0;
+      const amountEl = li.querySelector('.amount');
+      if (!amountEl) return;                   
+      const value = base * portions;             
+      amountEl.textContent = value.toLocaleString('de-DE');
+    });
   }
 
-  const abs = Math.abs(value);
-  const decimals = abs < 1 ? 2 : (abs < 10 ? 1 : 0);
-  const rounded = Number(value.toFixed(decimals));
-  return { value: rounded, unit: outUnit };
-}
-
-console.log(formatAmount); true
-
-
-function updateUI() {
-  portionOut.textContent = String(portions);
-  wrap.hidden = portions === 0;
-
-  items.forEach(li => {
-    const base = parseFloat(li.dataset.base || '0');
-    const unit = li.dataset.unit || '';
-
-    const amountEl = li.querySelector('.amount, [data-role="amount"]');
-    const unitEl   = li.querySelector('.unit, [data-role="unit"]');
-    if (!amountEl || !unitEl || !isFinite(base)) return;
-
-    const amount = base * portions;
-    const { value, unit: outUnit } = formatAmount(amount, unit);
-
-    // Ausgabe mit deutscher Formatierung (Komma)
-    amountEl.textContent = value.toLocaleString('de-DE');
-
-    const label = pluralize(outUnit, value);
-    unitEl.textContent = label;
+  applyBtn?.addEventListener('click', () => setPortions(getPortions()));
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); setPortions(getPortions()); }
   });
+  input?.addEventListener('input', () => {      
+    const v = getPortions();
+    if (input.value !== String(v)) input.value = String(v);
+  });
+
+
+  setPortions(getPortions() || 0);
 }
-
-minusBtn.addEventListener('click', () => {
-  portions = Math.max(0, portions - STEP);
-  updateUI();
-});
-
-plusBtn.addEventListener('click', () => {
-  portions += STEP;
-  updateUI();
-});
-
-updateUI();
-
 

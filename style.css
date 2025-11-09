@@ -11,7 +11,8 @@
 }
 
 body {
-  margin: 0;
+  max-width: 1920px;
+  margin: 0 auto;
   font-family: "raleway", sans-serif;
 }
 
@@ -52,6 +53,7 @@ nav {
   font-size: 20px;
 }
 header {
+  max-width: vw;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -160,7 +162,6 @@ h1 {
 label {
   padding-right: 24px;
   display: flex;
-
 }
 
 .input_portion {
@@ -176,7 +177,6 @@ label {
   align-items: center;
 }
 
-
 .portion {
   font-size: 20px;
   border-left: 1px;
@@ -188,7 +188,7 @@ label {
   color: white;
 }
 
-.input{
+.input {
   width: 120px;
   height: 32px;
 }
@@ -203,21 +203,21 @@ label {
   padding-left: 32px;
 }
 
-.input{
+.input {
   width: 100px;
   height: 32px;
 }
-.portion{
-    width: 160px;
-    height: 42px;
+.portion {
+  width: 160px;
+  height: 42px;
 }
-.maxlist{
-    list-style-type: none;
+.maxlist {
+  list-style-type: none;
 }
-ul{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0; 
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 ul {
@@ -358,9 +358,7 @@ footer {
   margin: 200px;
 }
 
-.rouladenpng {
-  width: 100vh;
-}
+
 
 .turkish-pasta-img {
   display: flex;
@@ -399,6 +397,11 @@ form {
   margin: 0;
 }
 
+/* CSS Design rinderroulade.html (Marcel) */
+.rouladenpng {
+  width: 100vh;
+}
+
 .marcellist {
   list-style: decimal;
   list-style-position: outside;
@@ -418,7 +421,7 @@ form {
   line-height: 1.5;
 }
 
-.hero-crop{
+.hero-crop {
   width: 100%;
   max-width: 100%;
   aspect-ratio: 16 / 7;
@@ -426,9 +429,124 @@ form {
   border-radius: 8px;
 }
 
-.hero-crop img{
+.hero-crop img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
+
+
+/* ===== Marcel: Zutaten-Rechner ===== */
+
+.mb-portioner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding-left: 8px;
+  padding-right: 20px;
+}
+
+.mb-portioner .mb-portion-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.mb-portioner .mb-portion-label {
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+
+.mb-portioner #portionInput {
+  width: 90px;
+  padding: 8px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background: #fff;
+  outline: none;
+}
+.mb-portioner #portionInput:focus {
+  border-color: #188a00;
+  box-shadow: 0 0 0 3px rgba(24, 138, 0, 0.15);
+}
+
+.mb-portioner .mb-btn-green {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: #188a00;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.02s ease, filter 0.15s ease;
+}
+.mb-portioner .mb-btn-green:hover {
+  filter: brightness(1.05);
+}
+.mb-portioner .mb-btn-green:active {
+  transform: translateY(1px);
+}
+
+.mb-portioner .mb-ingredients-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mb-portioner .mb-ingredients-list > li {
+  position: relative;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 90px 70px 1fr;
+  align-items: center;
+  font-size: 18px;
+  color: #222;
+}
+
+.mb-portioner .mb-ingredients-list > li::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: #fff;
+}
+.mb-portioner .mb-ingredients-list > li:nth-child(odd)::before {
+  background: #efefef;
+}
+
+.mb-portioner .mb-ingredients-list > li.mb-no-amount {
+  grid-template-columns: 1fr;
+}
+.mb-portioner .mb-ingredients-list > li.mb-no-amount .amount,
+.mb-portioner .mb-ingredients-list > li.mb-no-amount .unit {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mb-portioner {
+    padding-left: 20px;
+  }
+  .mb-portioner .mb-portion-label {
+    font-size: 16px;
+  }
+  .mb-portioner #portionInput {
+    width: 72px;
+  }
+  .mb-portioner .mb-ingredients-list > li {
+    grid-template-columns: 80px 60px 1fr;
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+}
+
