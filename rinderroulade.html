@@ -1,106 +1,170 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rinderrouladen</title>
-    <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
 
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rinderrouladen</title>
+  <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <style>
+    .portion-controls {
+      display: inline-flex;
+      align-items: center;
+      gap: 62px;
+    }
+    .portion-controls button {
+      min-width: 2.2rem;
+      min-height: 2.2rem;
+      border-radius: .5rem;
+      border: 1px solid #ddd;
+      background: #f7f7f7;
+      cursor: pointer;
+      color: blue;
+    }
+    #ingredientsWrap[hidden] {display: none;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="./assets/img/logo.png" alt="Kochwelt Logo">
+    <nav class="navbar">
+      <ul>
+        <a href="./index.html">Start</a>
+        <a href="#Rezept">Rezept des Tages</a> <!--Hier soll eine JS-Logik rein-->
+        <a href="./kontakt.html">Kontakt</a>
+        <a href="./Impressum.html">Impressum</a>
+      </ul>
+    </nav>
+  </header>
+  <section class="top-content">
+    <h1>Klassische Rinderrouladen</h1>
+    <div class="hero-crop">
+      <img class="rouladenpng" src="./assets/img/rinderroulade.png" alt="aufgeschnittene Rinderroulade" />
+    </div>
+  </section>
+  <section>
+    <div class="portion-controls">
+      <button id="minus" aria-label="Portion verringern">-</button>
+      <output id="portionCount" aria-live="polite">1</output>
+      <button id="plus" aria-label="Portion erhöhen">+</button>
+    </div>
+
+    <div id="ingredientsWrap">
+      <ul id="ingredients">
+        <li data-base="1" data-unit="Stk">
+          <span class="amount">1</span> <span class="unit">Stk</span> Rinderroulade(n)
+        </li>
+        <li data-base="0.63" data-unit="Stk">
+          <span class="amount">0,63</span> <span class="unit">Stk</span> Zwiebel(n)
+        </li>
+        <li data-base="0.5" data-unit="Stk">
+          <span class="amount">0,5</span> <span class="unit">Stk</span> Gewürzgurke(n)
+        </li>
+        <li data-base="0.5" data-unit="EL">
+          <span class="amount">0,5</span> <span class="unit">EL</span> Senf, mittelscharf
+        </li>
+        <li data-base="1.5" data-unit="Scheibe">
+          <span class="amount">1,5</span> <span class="unit">Scheiben</span> Frühstücksspeck
+        </li>
+        <li data-base="0.25" data-unit="EL">
+          <span class="amount">0,25</span> <span class="unit">EL</span> Butterschmalz
+        </li>
+        <li data-base="1" data-unit="Stk">
+          <span class="amount">0,13</span> <span class="unit">Stk</span> Knollensellerie
+        </li>
+        <li data-base="0.13" data-unit="Stk">
+          <span class="amount">0,13</span> <span class="unit">Stk</span> Möhre(n)
+        </li>
+        <li data-base="0.06" data-unit="Stange">
+          <span class="amount">0,06</span> <span class="unit">Stange</span> Lauch
+        </li>
+        <li data-base="46.8" data-unit="ml">
+          <span class="amount">46,8</span> <span class="unit">ml</span> Rotwein
+        </li>
+        <li data-base="1" data-unit="Stk">
+          <span class="amount"></span> <span class="unit"></span> Salz und Pfeffer
+        </li>
+        <li data-base="60" data-unit="ml">
+          <span class="amount">60</span> <span class="unit">ml</span> Rinderfond
+        </li>
+        <li data-base="0.25" data-unit="TL">
+          <span class="amount">0,25</span> <span class="unit">TL</span> Speisestärke
+        </li>
+        <li data-base="5" data-unit="ml">
+          <span class="amount">5</span> <span class="unit">ml</span> Gurkenflüssigkeit
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section>
     <header>
-      <h1>Klassische Rinderrouladen</h1>
-      <img
-        class="rouladenpng"
-        src="./assets/img/rinderroulade.png"
-        alt="aufgeschnittene Rinderroulade"
-      />
-      <nav class="navbar">
-        <ul>
-          <a href="./index.html">Start</a>
-          <a href="#Rezept">Rezept des Tages</a> <!--Hier soll eine JS-Logik rein-->
-          <a href="./kontakt.html">Kontakt</a>
-          <a href="./Impressum.html">Impressum</a>
-        </ul>
-      </nav>
+      <h2>Zubereitung</h2>
     </header>
-    <section class="top-content">
-      <h1>Klassische Rinderrouladen</h1>
-      <div class="hero-crop">
-        <img
-          class="rouladenpng"
-          src="./assets/img/rinderroulade.png"
-          alt="aufgeschnittene Rinderroulade"
-        />
-      </div>
-    </section>
-    <section>
-      <!-- Hier folgt der ZutatenRechner -->
-    </section>
-    <section>
-      <header>
-        <h2>Zubereitung</h2>
-      </header>
 
-      <!-- Hier die 2 Uhren mit Zeitangaben -->
-      <span>
-        <ol>
-          <li class="marcellist">
-            Die Rinderrouladen mit Küchenkrepp trockentupfen. Zwiebeln in
-            Halbmonde, Gurken in Längsstreifen schneiden. Schere und Küchengarn
-            bereitstellen.
-          </li>
-          <li class="marcellist">
-            Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und
-            pfeffern. Auf jede Roulade mittig in der Länge ca. 1/2 Zwiebel und 1
-            1/2 Scheiben Frühstücksspeck sowie 1/2 (evtl. mehr) Gurke verteilen.
-            Nun von beiden Längsseiten etwas einschlagen, dann einrollen und mit
-            dem Küchengarn wie ein Postpaket verschnüren.
-          </li>
-          <li class="marcellist">
-            In einer Pfanne das Butterschmalz heiß werden lassen und die
-            Rouladen rundherum darin anbraten. Herausnehmen und in einen
-            Schmortopf umfüllen.
-          </li>
-          <li class="marcellist">
-            Den Sellerie, die restliche Zwiebel, Lauch und Möhren kleinschneiden
-            und in der Pfanne anbraten. Sobald sie halbwegs "blond" sind, kurz
-            rühren. Eine sehr dünne Schicht vom Rotwein angießen, nicht mehr
-            rühren und die Flüssigkeit verdampfen lassen. Sobald das Gemüse dann
-            wieder trockenbrät, wieder eine Schicht Wein angießen, kurz rühren
-            und weiter verdampfen lassen. Dies wiederholen, bis die 1/2 Flasche
-            Wein aufgebraucht ist. Auf diese Art wird das Röstgemüse sehr braun
-            (gut für den Geschmack und die Farbe der Soße), aber nicht trocken.
-            Am Schluss mit dem Rinderfond, etwas Salz und Pfeffer und einem
-            guten Schuss Gurkensud auffüllen und dann in den Schmortopf zu den
-            Rouladen geben. Den Deckel auflegen.
-          </li>
-          <li class="marcellist">
-            Den Topf entweder auf kleine Flamme stellen oder bei ca. 160 °C
-            Ober-/Unterhitze in den Backofen für 1 1/2 Stunden geben. Ab und zu
-            evtl. etwas Flüssigkeit zugießen.
-          </li>
-          <li class="marcellist">
-            Nach 1 1/2 Stunden testen, ob die Rouladen weich sind (einfach mal
-            mit den Kochlöffel ein bisschen draufdrücken, sie sollten sich
-            willig eindrücken lassen - wenn nicht, noch eine halbe Stunde
-            weiterschmoren). Dann vorsichtig aus dem Topf heben und warm
-            stellen.
-          </li>
-          <li class="marcellist">
-            Die Soße durch ein Sieb geben und wieder aufkochen lassen. Ca. 1 EL
-            Senf mit etwas Wasser und der Speisestärke gut verrühren, in die
-            kochende Soße nach und nach unter Rühren gießen, bis die gewünschte
-            Konsistenz erreicht ist. Die Soße nochmal mit Salz, Pfeffer, Rotwein
-            und Gurkensud abschmecken.
-          </li>
-        </ol>
-      </span>
-    </section>
-    <section>
-      <h3>Rezept erstellt von</h3>
-      <!-- Bild und Name -->
-    </section>
-  </body>
+    <!-- Hier die 2 Uhren mit Zeitangaben -->
+    <span>
+      <ol>
+        <li class="marcellist">
+          Die Rinderrouladen mit Küchenkrepp trockentupfen. Zwiebeln in
+          Halbmonde, Gurken in Längsstreifen schneiden. Schere und Küchengarn
+          bereitstellen.
+        </li>
+        <li class="marcellist">
+          Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und
+          pfeffern. Auf jede Roulade mittig in der Länge ca. 1/2 Zwiebel und 1
+          1/2 Scheiben Frühstücksspeck sowie 1/2 (evtl. mehr) Gurke verteilen.
+          Nun von beiden Längsseiten etwas einschlagen, dann einrollen und mit
+          dem Küchengarn wie ein Postpaket verschnüren.
+        </li>
+        <li class="marcellist">
+          In einer Pfanne das Butterschmalz heiß werden lassen und die
+          Rouladen rundherum darin anbraten. Herausnehmen und in einen
+          Schmortopf umfüllen.
+        </li>
+        <li class="marcellist">
+          Den Sellerie, die restliche Zwiebel, Lauch und Möhren kleinschneiden
+          und in der Pfanne anbraten. Sobald sie halbwegs "blond" sind, kurz
+          rühren. Eine sehr dünne Schicht vom Rotwein angießen, nicht mehr
+          rühren und die Flüssigkeit verdampfen lassen. Sobald das Gemüse dann
+          wieder trockenbrät, wieder eine Schicht Wein angießen, kurz rühren
+          und weiter verdampfen lassen. Dies wiederholen, bis die 1/2 Flasche
+          Wein aufgebraucht ist. Auf diese Art wird das Röstgemüse sehr braun
+          (gut für den Geschmack und die Farbe der Soße), aber nicht trocken.
+          Am Schluss mit dem Rinderfond, etwas Salz und Pfeffer und einem
+          guten Schuss Gurkensud auffüllen und dann in den Schmortopf zu den
+          Rouladen geben. Den Deckel auflegen.
+        </li>
+        <li class="marcellist">
+          Den Topf entweder auf kleine Flamme stellen oder bei ca. 160 °C
+          Ober-/Unterhitze in den Backofen für 1 1/2 Stunden geben. Ab und zu
+          evtl. etwas Flüssigkeit zugießen.
+        </li>
+        <li class="marcellist">
+          Nach 1 1/2 Stunden testen, ob die Rouladen weich sind (einfach mal
+          mit den Kochlöffel ein bisschen draufdrücken, sie sollten sich
+          willig eindrücken lassen - wenn nicht, noch eine halbe Stunde
+          weiterschmoren). Dann vorsichtig aus dem Topf heben und warm
+          stellen.
+        </li>
+        <li class="marcellist">
+          Die Soße durch ein Sieb geben und wieder aufkochen lassen. Ca. 1 EL
+          Senf mit etwas Wasser und der Speisestärke gut verrühren, in die
+          kochende Soße nach und nach unter Rühren gießen, bis die gewünschte
+          Konsistenz erreicht ist. Die Soße nochmal mit Salz, Pfeffer, Rotwein
+          und Gurkensud abschmecken.
+        </li>
+      </ol>
+    </span>
+  </section>
+  <section>
+    <h3>Rezept erstellt von</h3>
+    <!-- Bild und Name -->
+  </section>
+  <script src="./javascript.js"></script>
+</body>
+
 </html>

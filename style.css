@@ -157,19 +157,19 @@ h1 {
   font-size: 20px;
   align-items: center;
 }
-label{
+label {
   padding-right: 24px;
   display: flex;
 
 }
 
-.input_portion{
+.input_portion {
   border: 1px solid rgb(201, 201, 201);
   border-right: 0;
   height: 40px;
   border-radius: 10px 0 0 10px;
-  text-align: center; 
-  padding-block:0;
+  text-align: center;
+  padding-block: 0;
   padding-inline: 0;
   margin: 0;
   display: flex;
@@ -188,7 +188,15 @@ label{
   color: white;
 }
 
-li {
+.input{
+  width: 120px;
+  height: 32px;
+}
+.portion {
+  width: 120px;
+  height: 42px;
+}
+.maxlist {
   list-style-type: none;
   font-size: 20px;
   padding: 16px;
@@ -212,6 +220,11 @@ ul{
     padding-inline-start: 0; 
 }
 
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
 
 .white {
   background-color: #ffffff;
@@ -288,7 +301,6 @@ h3 {
   font-weight: 700;
 }
 
-
 .li-muted {
   margin-left: 6px;
   color: #4e4e4e;
@@ -302,8 +314,8 @@ h3 {
   font-size: 32px;
 }
 
-.MAX{
-  background-color:white;
+.MAX {
+  background-color: white;
 }
 
 .photo {
@@ -314,7 +326,6 @@ h3 {
   border-radius: 50px;
   grid-area: 200px;
 }
-
 
 .photo:hover {
   cursor: pointer;
@@ -345,7 +356,7 @@ footer {
   border-radius: 25px;
   padding: 100px;
   margin: 200px;
-} 
+}
 
 .rouladenpng {
   width: 100vh;
@@ -365,7 +376,7 @@ footer {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  MARGIN-BOTTOM: 50PX;
+  margin-bottom: 50px;
 }
 
 form {
@@ -375,15 +386,19 @@ form {
   margin-bottom: 120px;
   margin-top: 20px;
 }
-  .bold_headline_preparation{
-    font-weight: bold;
-  }
+.bold_headline_preparation {
+  font-weight: bold;
+}
 
-  .big_bold_headline_preparation{
-    font-weight: bold;
-    font-size: 24px;
-  }
+.big_bold_headline_preparation {
+  font-weight: bold;
+  font-size: 24px;
+}
 
-  .no_margin{
-    margin:0;
-  }
+.no_margin {
+  margin: 0;
+}
+
+.marcellist {
+  
+}
