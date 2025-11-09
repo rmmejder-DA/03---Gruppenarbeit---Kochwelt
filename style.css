@@ -153,15 +153,7 @@ h1 {
 }
 
 .schaschlik {
-  background-image: url(./assets/img/shish-kebab-417994_1920.jpg);
-}
-
-.salad {
-  background-image: url(./img/salad.jpg);
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
+  ;
 }
 
 .ingredients {
@@ -199,15 +191,7 @@ label {
   color: white;
 }
 
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-.grey {
-  font-size: 32px;
-}
-.input {
+.input{
   width: 120px;
   height: 32px;
 }
@@ -237,7 +221,7 @@ ul {
   font-size: 18px;
 }
 
-.grey {
+.grey_li_bckgr {
   background-color: #e4e4e4;
   width: auto;
   height: 26px;
@@ -290,6 +274,7 @@ h3 {
 
 .photo_plus_name {
   display: flex;
+  align-items: center;
   padding-bottom: 72px;
 }
 
@@ -331,7 +316,7 @@ h3 {
   cursor: pointer;
 }
 
-.footer {
+footer {
   background-color: #403b3b;
   height: 400px;
 }

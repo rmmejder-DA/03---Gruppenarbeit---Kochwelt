@@ -13,17 +13,19 @@
       <a href="http://127.0.0.1:5500/index.html">
       <img class="KochLogo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
       </a>
-      <menu>
+      <nav>
         <a href="">Start</a>
         <a href="">Rezept des Tages</a>
         <a href="http://127.0.0.1:5500/Kontakt.html">Kontakt</a>
         <a href="">Impressum</a>
-      </menu>
+      </nav>
     </header>
     <section class="main">
     <div>
       <h1>Russische Schaschlikspieße</h1>
-      <div class="schaschlik"></div>
+      <img src="./assets/img/shish-kebab-417994_1920.jpg" alt="schaschlik" class="schaschlik">
+        
+ 
       <form class="form1">
         <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" /> 2 Std. Arbeitszeit</p>
         <p><img src="./assets/img/icons/brain-solid.svg" alt="brain" /> simpel</p>
@@ -33,9 +35,9 @@
         </p>
       </form>
       <div class="ingredients">
-      <label for="Portion">Zutaten für:</label>
-      <input class="input_portion" type="number" min="0" value="3" id="Num1" />
-      <input class="portion" type="submit" value="Portionen" />
+        <label for="Portion">Zutaten für:</label>
+        <input class="input_portion" type="number" min="0" value="3" id="Num1" />
+        <input class="portion" type="submit" value="Portionen" />
       </div>
     </div>
 
@@ -43,18 +45,18 @@
       <div class="liste-div">
         <ul id="zutaten">
 
-        <li class="maxlist" data-basis="0.5" data-einheit="g Mehl" class="grey">0.5 Bund Petersilie</li>
-        <li class="maxlist" data-basis="0.5" data-einheit="g Zucker" class="space">0.5 Bund Basilikum</li>
-        <li class="maxlist" data-basis="500" data-einheit="ml Kefir" class="grey">500 ml Kefir</li>
+        <li class="maxlist grey_li_bckgr" data-basis="0.5" data-einheit="g Mehl">0.5 Bund Petersilie</li>
+        <li class="maxlist " data-basis="0.5" data-einheit="g Zucker">0.5 Bund Basilikum</li>
+        <li class="maxlist grey_li_bckgr" data-basis="500" data-einheit="ml Kefir">500 ml Kefir</li>
         <li class="maxlist" data-basis="2" data-einheit="mittlere Zwiebel" class="space">2 m.-große Zwiebel(n)</li>
-        <li class="maxlist" data-basis="3" data-einheit="Lorbeerblätter" class="grey">3 Lorbeerblätter</li>
+        <li class="maxlist grey_li_bckgr" data-basis="3" data-einheit="Lorbeerblätter" class="grey">3 Lorbeerblätter</li>
         <li class="maxlist" data-basis="3" data-einheit="Wacholderbeere" class="space">3 Wacholderbeere(n)</li>
-        <li class="maxlist" data-basis="2" data-einheit="TL Meeressalz" class="grey">2 TL Meersalz</li>
+        <li class="maxlist grey_li_bckgr" data-basis="2" data-einheit="TL Meeressalz" class="grey">2 TL Meersalz</li>
         <li class="maxlist" data-basis="1" data-einheit="TL Pfeffer" class="space">1 TL Pfeffer frisch gemahlen</li>
-        <li class="maxlist" data-basis="1" data-einheit="TL Chilipulver" class="grey">1 TL Chilipulver z. B. Cayennepfeffer</li>
+        <li class="maxlist grey_li_bckgr" data-basis="1" data-einheit="TL Chilipulver" class="grey">1 TL Chilipulver z. B. Cayennepfeffer</li>
         <li class="maxlist" data-basis="2" data-einheit="Knoblauchzehe" class="space">2 Knoblauchzehe(n) klein geschnitten</li>
-        <li class="maxlist" data-basis="750" data-einheit="g Schweinenacken" class="grey">750 g Schweinenacken nicht zu mager</li>
-        <li class="maxlist" data-basis="0.5" data-einheit="" class="space">0.5 Bund Thymian</li>   
+        <li class="maxlist grey_li_bckgr" data-basis="750" data-einheit="g Schweinenacken" >750 g Schweinenacken nicht zu mager</li>
+        <li class="maxlist" data-basis="0.5" data-einheit="Bund Thymian">0.5 Bund Thymian</li>   
 
       </ul>
       </div>
@@ -62,7 +64,7 @@
       
     <div>
         <h2>Zubereitung</h2>
-        <form class="form2">
+        <form class="padding-gap">
         <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" />ca. 20 Min.</p>
         <p><img src="./assets/img/icons/clock-regular.svg" alt="clock" />Gesamtzeit 50 min.</p>
         </form>
@@ -87,7 +89,7 @@
       </div>
     </div>
       </section>
-          <footer class="footer"></footer>
+          <footer></footer>
   </body>
   <script src="./javascript.js"></script>
 </html>
