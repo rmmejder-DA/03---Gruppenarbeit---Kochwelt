@@ -24,7 +24,6 @@ a {
   color: #403b3b;
   text-decoration: none;
 }
-
 a:hover {
   color: #008000;
   text-decoration: underline 4px;
@@ -52,7 +51,6 @@ nav {
   padding-inline-start: 0;
   font-size: 20px;
 }
-
 header {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -61,6 +59,8 @@ header {
   padding-right: 200px;
 }
 
+
+.section {
 .main {
   padding-left: 200px;
   padding-right: 200px;
@@ -73,7 +73,6 @@ header {
   padding-top: 32px;
   padding-bottom: 72px;
 }
-
 form p {
   background-color: #e4e4e4;
   width: auto;
@@ -136,7 +135,6 @@ button {
   width: 160px;
   height: 40px;
 }
-
 p img {
   width: 15px;
   height: 15px;
@@ -158,6 +156,10 @@ h1 {
 
 .schaschlik {
   background-image: url(./assets/img/shish-kebab-417994_1920.jpg);
+}
+
+.salad {
+  background-image: url(./img/salad.jpg);
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -195,6 +197,29 @@ ul {
   padding-inline-start: 0;
 
 }
+.grey {
+  font-size: 32px;
+}
+.input{
+  width: 120px;
+  height: 32px;
+}
+.portion{
+    width: 120px;
+    height: 42px;
+}
+.maxlist{
+    list-style-type: none;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0; 
+}
+.grey{
+  background-color: #efefef;
+  width:auto;
+  height: 48px;
 
 .white {
   background-color: #ffffff;
@@ -243,7 +268,6 @@ h2 {
   padding-bottom: 10px;
   gap: 60px;
 }
-
 h3 {
   display: flex;
   font-size: 18px;
@@ -285,9 +309,8 @@ h3 {
   font-size: 32px;
 }
 
-
-.MAX {
-  background-color: white;
+.MAX{
+  background-color:white;
 }
 
 .photo {
@@ -298,6 +321,7 @@ h3 {
   border-radius: 50px;
   grid-area: 200px;
 }
+
 
 .photo:hover {
   cursor: pointer;
@@ -328,11 +352,21 @@ h3 {
   border-radius: 25px;
   padding: 100px;
   margin: 200px;
+} 
+
+.rouladenpng {
+  width: 100vh;
 }
 
 .turkish-pasta-img {
   display: flex;
   justify-content: center;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-left: 200px;
+}
   align-items: center;
   height: 200px;
   background-size: cover;
