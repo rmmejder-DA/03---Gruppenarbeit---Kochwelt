@@ -87,7 +87,6 @@ form p {
 
 input {
   padding-left: 10px;
-
   margin-right: 0px;
   height: 40px;
   width: 160px;
@@ -111,13 +110,6 @@ input:focus {
   padding-block: 0;
   padding-inline: 0;
   padding-left: 20px;
-}
-
-.input_portion {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 label {
@@ -153,40 +145,45 @@ h1 {
 }
 
 .schaschlik {
-  ;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .ingredients {
   display: flex;
   padding-bottom: 32px;
   font-size: 20px;
+  align-items: center;
 }
 label{
   padding-right: 24px;
   display: flex;
-  align-items: center;
+
 }
 
 .input_portion{
   border: 1px solid rgb(201, 201, 201);
   border-right: 0;
-  height: 38px;
+  height: 40px;
   border-radius: 10px 0 0 10px;
   text-align: center; 
   padding-block:0;
   padding-inline: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
+
 
 .portion {
   font-size: 20px;
   border-left: 1px;
   margin-left: 0;
   border-radius: 0;
-  align-items: center;
   height: 40px;
   border-width: 0;
-  width: 160px;
   background-color: #008000;
   color: white;
 }
@@ -199,11 +196,11 @@ li {
 }
 
 .input{
-  width: 120px;
+  width: 100px;
   height: 32px;
 }
 .portion{
-    width: 120px;
+    width: 160px;
     height: 42px;
 }
 .maxlist{
