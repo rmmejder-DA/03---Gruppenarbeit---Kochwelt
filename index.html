@@ -1,24 +1,94 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
     <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-        <header>
-      <a href="http://127.0.0.1:5500/index.html">
-      <img class="KochLogo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
-      </a>
-      <menu>
-        <a href="">Start</a>
-        <a href="">Rezept des Tages</a>
-        <a href="http://127.0.0.1:5500/Kontakt.html">Kontakt</a>
-        <a href="">Impressum</a>
-      </menu>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="assets/img/logo.png" alt="Kochwelt Logo" />
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="#.html">Rezept des Tages</a>
+        <a href="Kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
     </header>
+    <main class="page-content">
+      <article class="recipe-teaser">
+        <img src="./assets/img/turkish-pasta.jpg" alt="Türkische Pasta" />
+
+        <div class="recipe-content">
+          <h2>Türkische Hackfleisch Pasta</h2>
+          <p>
+            Türkische Hackfleisch-Pasta ist ein würziges Wohlfühlgericht, das
+            orientalische Aromen mit mediterraner Pasta vereint. Saftiges
+            Rinderhack wird mit Tomaten, Knoblauch und feinen Gewürzen geschmort
+            und anschließend mit cremigem Joghurt und frischer Petersilie
+            serviert. Schnell gemacht, aromatisch und perfekt für alle, die
+            Herzhaftes mit einem Hauch Orient lieben.
+          </p>
+          <button class="open-recept">Rezept öffnen</button>
+        </div>
+      </article>
+      <section class="recipe-section">
+        <h2>Lust auf was Neues?</h2>
+
+        <div class="recipe-grid">
+          <a href="./rezeptEnsar.html" class="mainrecept">
+            <img src="./assets/img/turkish-pasta.jpg" alt="Hackfleisch-Pasta" />
+            <h3>Türkische Hackfleisch Pasta</h3>
+            <p>
+              Würzig, cremig und schnell gemacht – orientalische Aromen treffen
+              auf mediterrane Pasta.
+            </p>
+          </a>
+
+          <a href="./rezeptMax.html" class="mainrecept">
+            <img
+              src="./assets/img/shish-kebab-417994_1920.jpg"
+              alt="Schaschlikspieße"
+            />
+            <h3>Russische Schaschlikspieße</h3>
+            <p>
+              Zartes Fleisch, kräftig mariniert und perfekt gegrillt – ein
+              echter Klassiker vom Spieß.
+            </p>
+          </a>
+
+          <a href="./rinderroulade.html" class="mainrecept">
+            <img src="./assets/img/rinderroulade.png" alt="Rinderroulade" />
+            <h3>Klassische Rinderrouladen</h3>
+            <p>
+              Traditionell geschmort, herzhaft gefüllt und immer ein Genuss –
+              wie bei Oma.
+            </p>
+          </a>
+        </div>
+      </section>
+      <section class="compare-section">
+        <div class="compare-inner"></div>
+        <h2>Pfanne vs Wok – Was ist besser?</h2>
+
+        <div class="compare-content">
+          <div class="compare-text">
+            <p>
+              Braten, schwenken, wokken – aber womit eigentlich?<br />
+              Pfanne oder Wok, das ist hier die Frage! Wir zeigen dir, welches
+              Kochgeschirr in deiner Küche die Nase vorn hat – je nach Gericht,
+              Geschmack und Stil.
+            </p>
+          </div>
+          <div class="compare-image">
+            <img src="./assets/img/wok.jpg" alt="Pfanne vs Wok Vergleich" />
+          </div>
+        </div>
+      </section>
+      </section>
+    </main>
     <footer class="footer"></footer>
-</body>
+  </body>
 </html>

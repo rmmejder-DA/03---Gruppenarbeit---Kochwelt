@@ -358,8 +358,6 @@ footer {
   margin: 200px;
 }
 
-
-
 .turkish-pasta-img {
   display: flex;
   justify-content: center;
@@ -397,7 +395,11 @@ form {
   margin: 0;
 }
 
-/* CSS Design rinderroulade.html (Marcel) */
+/*===================================
+CSS Design rinderroulade.html (Marcel) 
+====================================*/
+
+
 .rouladenpng {
   width: 100vh;
 }
@@ -436,9 +438,9 @@ form {
   display: block;
 }
 
-
-
-/* ===== Marcel: Zutaten-Rechner ===== */
+/* ===================
+Marcel: Zutaten-Rechner 
+==================== */
 
 .mb-portioner {
   display: flex;
@@ -550,3 +552,194 @@ form {
   }
 }
 
+/* ====================
+Design der index.html 
+=====================*/
+
+.recipe-teaser {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 8px;
+}
+
+.recipe-teaser img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recipe-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.recipe-content h2 {
+  padding-top: 0;
+  padding-bottom: 16px;
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.recipe-content p {
+  flex-grow: 1;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.open-recept {
+  align-self: flex-start;
+  background: #188a00;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+
+.open-recept:hover {
+  background: #1fa600;
+}
+
+.recipe-section {
+  text-align: center;
+  padding: 60px 40px;
+  background: #f5f4f4;
+}
+
+.recipe-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.recipe-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mainrecept {
+  flex: 1 1 30%;
+  max-width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainrecept:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.mainrecept img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.mainrecept h3 {
+  margin: 16px 0 8px;
+  font-size: 22px;
+  color: #141414;
+  font-weight: 600;
+}
+
+.mainrecept p {
+  font-size: 16px;
+  color: #555;
+  padding: 0 16px;
+  line-height: 1.4;
+}
+
+/* =============================
+   Pfanne vs Wok – Teaser Sektion
+============================= */
+
+.compare-section {
+  background: #ffffff;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.compare-inner {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.compare-section h2 {
+  display: block;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.compare-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.compare-text {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 45%;
+}
+
+.compare-btn {
+  display: inline-block;
+  margin-top: 24px;
+  background: #188a00;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.compare-btn:hover {
+  background: #1fa600;
+  transform: translateY(-2px);
+}
+
+.compare-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.compare-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.compare-image img:hover {
+  transform: scale(1.03);
+}

@@ -1,5 +1,6 @@
 
 // JS von der rinderroulad.html (Marcel)
+
 const root = document.querySelector('.mb-portioner');
 if (root) {
   const input    = root.querySelector('#portionInput');
