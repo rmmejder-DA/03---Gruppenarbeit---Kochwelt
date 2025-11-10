@@ -461,7 +461,16 @@ CSS Design rinderroulade.html (Marcel)
 
 
 .rouladenpng {
-  width: 100vh;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 50px;
 }
 
 .marcellist {
