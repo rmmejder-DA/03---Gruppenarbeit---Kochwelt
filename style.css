@@ -53,16 +53,10 @@ nav {
 }
 
 header {
-  /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.main {
-  padding-left: 200px;
-  padding-right: 200px;
+  
 }
 
 .underimg_shish_kebab {
@@ -103,16 +97,6 @@ input:focus {
   border: 2px rgb(46, 46, 46) solid;
 }
 
-.input {
-  border: 1px solid rgb(201, 201, 201);
-  border-right: 0;
-  height: 38px;
-  border-radius: 10px 0 0 10px;
-  text-align: start;
-  padding-block: 0;
-  padding-inline: 0;
-  padding-left: 20px;
-}
 
 label {
   padding-right: 24px;
