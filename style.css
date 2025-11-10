@@ -16,10 +16,6 @@ body {
   font-family: "raleway", sans-serif;
 }
 
-.logo {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
 
 a {
   color: #403b3b;
@@ -35,6 +31,8 @@ a:hover {
 .KochLogo {
   width: auto;
   height: 84px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .KochLogo:hover {
