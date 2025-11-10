@@ -153,6 +153,18 @@ h3 {
   justify-content: baseline;
 }
 
+h4 {
+  font-size: 22px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 400;
+  unicode-bidi: isolate;
+}
+
 footer {
   background-color: #403b3b;
   height: 400px;
@@ -323,6 +335,12 @@ CSS von Max end
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
+.h4-p {
+  p {
+    font-size: 18px;
+  }
+}
+
 .turkish-pasta-img {
   display: flex;
   justify-content: center;
@@ -354,7 +372,7 @@ CSS Design rezeptEnsar.html (Ensar)
   background-color: #008000;
   color: white;
   width: 160px;
-  height: 34px;
+  height: 42px;
 }
 
 .li-grey {
@@ -426,7 +444,7 @@ CSS Design rezeptEnsar.html (Ensar)
   display: flex;
   justify-content: start;
   gap: 24px;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
   margin-top: 20px;
 }
 
