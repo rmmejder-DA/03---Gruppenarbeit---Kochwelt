@@ -673,17 +673,18 @@ Design der index.html
 }
 
 .open-recept {
-  align-self: flex-start;
-  background: #188a00;
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #008000;
   color: #fff;
-  border: none;
-  border-radius: 0;
-  padding: 10px 32px;
-  cursor: pointer;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }
-
 .open-recept:hover {
-  background: #1fa600;
+  background-color: #088a08;
+  color: white;
+  text-decoration: none;
 }
 
 .recipe-section {
