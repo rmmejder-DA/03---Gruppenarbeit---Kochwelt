@@ -203,6 +203,7 @@ CSS von Max
   display: grid;
 
 }
+
 .portion {
   font-size: 20px;
   border-left: 1px;
@@ -218,6 +219,7 @@ CSS von Max
   height: 42px;
   cursor: pointer;
 }
+
 .maxlist {
   font-size: 20px;
   padding: 16px;
@@ -245,16 +247,19 @@ ul {
   padding-inline-start: 0;
   list-style-type: none;
 }
+
 .padding_gap {
   display: flex;
   padding-bottom: 32px;
   gap: 60px;
 }
+
 .photo_plus_name {
   display: flex;
   align-items: center;
   padding-bottom: 120px;
 }
+
 .MAX {
   display: flex;
   justify-content: center;
@@ -262,6 +267,7 @@ ul {
   font-size: 32px;
   font-weight: 500;
 }
+
 .photo_max {
   width: 120px;
   height: 120px;
@@ -270,9 +276,11 @@ ul {
   border-radius: 50px;
   grid-area: 200px;
 }
+
 .photo:hover {
-  cursor: pointer;  
+  cursor: pointer;
 }
+
 /*==========================
 CSS von Max end
 ==========================*/
@@ -378,6 +386,15 @@ CSS Design rezeptEnsar.html (Ensar)
   background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
   margin: 25px 0;
 }
+
+.form-ey {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  margin-bottom: 120px;
+  margin-top: 20px;
+}
+
 /*===================================
 CSS Design rinderroulade.html (Marcel) 
 ====================================*/
