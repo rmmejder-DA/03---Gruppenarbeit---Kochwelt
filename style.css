@@ -174,12 +174,47 @@ footer {
   background-color: #403b3b;
   height: 200px;
 }
-
+.h3_contact{
+  padding: 31px
+}
+.contact_email{
+  background-color:#dcdcdc;
+  border-radius: 25px;
+  display: flex;
+    flex-direction: column;
+}
+label{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 31px;
+}
+.input_contact{
+  width: 500px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.under{
+  width: 200px;
+  background-color: #088a08;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+textarea{
+  margin: 25px;
+  border-radius: 5px;
+  border: none;
+}
 .form_contact {
-  width: auto;
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 

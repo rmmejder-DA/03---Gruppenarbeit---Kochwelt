@@ -35,14 +35,14 @@
       <div class="Math_multiply">
         <label>Zutaten für:</label>
         <input id="input_portion" type="number" min="0" value="3" id="Num1">
-        <input class="portion" type="submit" value="Portionen">
+        <button class="portion" onclick="clickBtn()">Portionen</button>
       </div>
     </div>
 
     <div class="ingredients">
-      <table>
+      <table id="Portionen">
         <tbody>
-            <tr class="maxlist grey_li_bckgr" data-basis="0.5" data-einheit="g Mehl">
+            <tr class="maxlist grey_li_bckgr" Num2="0.5" data-einheit="g Mehl">
                 <td>0.5 Bund Petersilie</td>
             </tr>
             <tr class="maxlist" data-basis="0.5" data-einheit="g Zucker">
