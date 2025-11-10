@@ -177,6 +177,16 @@ CSS contact.html
 .footer_contact {
   background-color: #403b3b;
   height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_contact_logo img{
+  width: auto;
+  height: 36px;
+}
+.footer_contact_logo{
+  gap: 200px;
 }
 .h3_contact{
   padding: 31px
@@ -232,6 +242,7 @@ textarea{
     width: auto;
     height: 84px;
 }
+
 /*==========================
 CSS end
 ==========================*/
