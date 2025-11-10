@@ -228,7 +228,10 @@ textarea{
   align-items: center;
   gap: 20px;
 }
-
+.Kochlogo_contact_footer{
+    width: auto;
+    height: 84px;
+}
 /*==========================
 CSS end
 ==========================*/
