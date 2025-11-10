@@ -56,6 +56,8 @@ header {
   /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); */
   display: flex;
   justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .main {
@@ -247,14 +249,14 @@ h2 {
 
 h3 {
   display: flex;
-  font-size: 18px;
+  font-size: 32px;
   padding-top: 32px;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-weight: 400;
+  font-weight: bold;
   unicode-bidi: isolate;
   justify-content: baseline;
 }
@@ -309,13 +311,6 @@ footer {
   gap: 20px;
 }
 
-form {
-  display: flex;
-  justify-content: start;
-  gap: 24px;
-  margin-bottom: 120px;
-  margin-top: 20px;
-}
 
 .seperator {
   height: 2px;
