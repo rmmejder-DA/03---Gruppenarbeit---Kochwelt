@@ -11,15 +11,11 @@
 }
 
 body {
-  max-width: 1920px;
+
   margin: 0 auto;
   font-family: "raleway", sans-serif;
 }
 
-.logo {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
 
 a {
   color: #403b3b;
@@ -35,6 +31,8 @@ a:hover {
 .KochLogo {
   width: auto;
   height: 84px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .KochLogo:hover {
@@ -60,18 +58,6 @@ header {
   justify-content: space-between;
 }
 
-.main {
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.form1 {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  padding-top: 32px;
-  padding-bottom: 72px;
-}
 
 form p {
   background-color: #e4e4e4;
@@ -94,28 +80,13 @@ input {
   width: 160px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 2px grey solid;
+  border: 1px grey solid;
   transition: 0.5s;
   outline: none;
 }
 
 input:focus {
   border: 2px rgb(46, 46, 46) solid;
-}
-
-.input {
-  border: 1px solid rgb(201, 201, 201);
-  border-right: 0;
-  height: 38px;
-  border-radius: 10px 0 0 10px;
-  text-align: start;
-  padding-block: 0;
-  padding-inline: 0;
-  padding-left: 20px;
-}
-
-label {
-  padding-right: 24px;
 }
 
 button {
@@ -147,109 +118,12 @@ h1 {
   padding-bottom: 32px;
 }
 
-.schaschlik {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.ingredients {
-  display: flex;
-  padding-bottom: 32px;
-  font-size: 20px;
-  align-items: center;
-}
 
 label {
   padding-right: 24px;
   display: flex;
 }
 
-.input_portion {
-  border: 1px solid rgb(201, 201, 201);
-  border-right: 0;
-  height: 40px;
-  border-radius: 10px 0 0 10px;
-  text-align: center;
-  padding-block: 0;
-  padding-inline: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.portion {
-  font-size: 20px;
-  border-left: 1px;
-  margin-left: 0;
-  border-radius: 0;
-  height: 40px;
-  border-width: 0;
-  background-color: #008000;
-  color: white;
-}
-
-.input {
-  width: 120px;
-  height: 32px;
-}
-
-.portion {
-  width: 120px;
-  height: 42px;
-}
-
-.maxlist {
-  list-style-type: none;
-  font-size: 20px;
-  padding: 16px;
-  padding-left: 32px;
-}
-
-.input {
-  width: 100px;
-  height: 32px;
-}
-
-.portion {
-  width: 160px;
-  height: 42px;
-}
-
-.maxlist {
-  list-style-type: none;
-}
-
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-
-.grey_li_bckgr {
-  background-color: #e4e4e4;
-  width: auto;
-  height: 26px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  font-size: 18px;
-  border-radius: 10px;
-}
-
-.space {
-  width: auto;
-  height: 48px;
-  display: flex;
-  align-items: center;
-}
 
 h2 {
   display: flex;
@@ -265,15 +139,22 @@ h2 {
   padding-bottom: 16px;
 }
 
-.form2 {
-  display: flex;
-  padding-bottom: 10px;
-  gap: 60px;
-}
-
 h3 {
   display: flex;
-  font-size: 18px;
+  font-size: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  justify-content: baseline;
+}
+
+h4 {
+  font-size: 22px;
   padding-top: 32px;
   padding-bottom: 20px;
   margin-block-start: 0;
@@ -282,13 +163,178 @@ h3 {
   margin-inline-end: 0px;
   font-weight: 400;
   unicode-bidi: isolate;
-  justify-content: baseline;
+}
+
+footer {
+  background-color: #403b3b;
+  height: 400px;
+}
+
+/*==========================
+CSS contact.html
+==========================*/
+
+.footer_contact {
+  background-color: #403b3b;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_contact_logo img{
+  width: auto;
+  height: 36px;
+  border-radius: 5px;
+}
+.footer_contact_logo{
+  display: flex;
+  gap: 32px;
+}
+.h3_contact{
+  padding: 31px
+}
+
+.flex_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_email{
+  background-color:#dcdcdc;
+  border-radius: 25px;
+  display: flex;
+    flex-direction: column;
+}
+label{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 31px;
+}
+.input_contact{
+  width: 500px;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.under{
+  width: 200px;
+  background-color: #088a08;
+  border-radius: 0;
+  color: white;
+}
+textarea{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+}
+.form_contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Kochlogo_contact_footer img{
+  display: flex;
+  align-items: center;
+    width: auto;
+    height: 84px;
+}
+
+
+/*==========================
+CSS end
+==========================*/
+/*==========================
+CSS von Max
+==========================*/
+.underimg_shish_kebab {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-top: 32px;
+  padding-bottom: 72px;
+}
+
+.schaschlik {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Math_multiply {
+  display: flex;
+  padding-bottom: 32px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.ingredients {
+  display: grid;
+
+}
+
+.portion {
+  font-size: 20px;
+  border-left: 1px;
+  margin-left: 0;
+  border-radius: 0;
+  height: 40px;
+  border-width: 0;
+  background-color: #008000;
+  color: white;
+  width: 100px;
+  height: 32px;
+  width: 160px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.maxlist {
+  font-size: 20px;
+  padding: 16px;
+  padding-left: 32px;
+}
+
+tbody {
+  display: grid;
+}
+
+.grey_li_bckgr {
+  background-color: #e4e4e4;
+  width: auto;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.padding_gap {
+  display: flex;
+  padding-bottom: 32px;
+  gap: 60px;
 }
 
 .photo_plus_name {
   display: flex;
   align-items: center;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
 }
 
 .MAX {
@@ -296,27 +342,10 @@ h3 {
   justify-content: center;
   background-color: white;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
-.li-muted {
-  margin-left: 6px;
-  color: #4e4e4e;
-}
-
-.space {
-  width: auto;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  font-size: 32px;
-}
-
-.MAX {
-  background-color: white;
-}
-
-.photo {
+.photo_max {
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -329,44 +358,19 @@ h3 {
   cursor: pointer;
 }
 
-footer {
-  background-color: #403b3b;
-  height: 400px;
-}
-
-.footer_contact {
-  background-color: #403b3b;
-  height: 200px;
-}
-
-.form_contact {
-  width: auto;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.form3 {
-  display: grid;
-  border: 1px;
-  background-color: #dcdcdc;
-  border-radius: 25px;
-  padding: 100px;
-  margin: 200px;
-}
-
-form {
-  display: flex;
-  justify-content: start;
-  gap: 24px;
-  margin-bottom: 120px;
-  margin-top: 20px;
-}
+/*==========================
+CSS von Max end
+==========================*/
 
 /*===================================
-CSS Design rezeptEnsar.html (Ensar) 
+CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
+.h4-p {
+  p {
+    font-size: 18px;
+  }
+}
+
 .turkish-pasta-img {
   display: flex;
   justify-content: center;
@@ -398,7 +402,7 @@ CSS Design rezeptEnsar.html (Ensar)
   background-color: #008000;
   color: white;
   width: 160px;
-  height: 34px;
+  height: 42px;
 }
 
 .li-grey {
@@ -453,6 +457,25 @@ CSS Design rezeptEnsar.html (Ensar)
 .padding-le-ri {
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.li-muted {
+  margin-left: 6px;
+  color: #4e4e4e;
+}
+
+.seperator {
+  height: 2px;
+  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
+  margin: 25px 0;
+}
+
+.form-ey {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  margin-bottom: 70px;
+  margin-top: 20px;
 }
 
 /*===================================
@@ -685,6 +708,7 @@ Design der index.html
   text-decoration: none;
   font-weight: bold;
 }
+
 .open-recept:hover {
   background-color: #088a08;
   color: white;

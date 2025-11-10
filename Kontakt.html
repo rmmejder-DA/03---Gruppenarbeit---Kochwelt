@@ -11,42 +11,48 @@
 </head>
 <body>
     <header class="padding-le-ri">
-      <img class="logo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
+      <img class="KochLogo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
       <nav>
         <a href="index.html">Start</a>
-        <a href="rezeptEnsar.html">Rezept des Tages</a>
+        <a href="tuerkische-pasta.html">Rezept des Tages</a>
         <a href="Kontakt.html">Kontakt</a>
         <a href="impressum.html">Impressum</a>
       </nav>
     </header>
     <div class="form_contact">
-        <form class="form3">
+        
+        <form action="https://formspree.io/f/movyqvay" class="contact_email" method="post">
+            <h3 class="h3_contact">Kontaktiere uns</h3>
             <label for="fname">Vorname</label>
-            <input class="width200" type="text" id="fname" name="firstname" placeholder="Ihr Vorname..">
-<br>
+            <input class="input_contact" type="text" id="fname" name="firstname" placeholder="Ihr Vorname..">
+
             <label for="lname">Nachname</label>
-            <input type="text" id="lname" name="lastname" placeholder="Ihr Nachname..">
-<br>
+            <input class="input_contact" type="text" id="lname" name="lastname" placeholder="Ihr Nachname..">
 
             <label for="subject">Nachricht</label>
             <textarea id="subject" name="subject" placeholder="Schreiben Sie etwas.." style="height:200px"></textarea>
-<br>
-            <input type="submit" value="Absenden">
+            <div class="flex_box">
+            <input class="input_contact under" type="submit" value="Absenden">
+            </div>
         </form>
     </div>
-    <footer class="footer_contact">
+    <footer class="footer_contact padding-le-ri">
+        <div class="Kochlogo_contact_footer">
         <a href="http://127.0.0.1:5500/index.html">
             <img src="./assets/img/logo.png" alt="Kochwelt">
         </a>
-        <a href="">
-            <img src="" alt="">
+        </div>
+        <div class="footer_contact_logo">
+        <a href="https://de-de.facebook.com/">
+            <img src="./assets/img/icons/logo_facebook.png" alt="logo_facebook">
         </a>
-        <a href="">
-            <img src="" alt="">
+        <a href="https://www.instagram.com/">
+            <img src="./assets/img/icons/logo_instagram.png" alt="logo_instagram">
         </a>
-        <a href="">
-            <img src="" alt="">
+        <a href="http://twitter.com">
+            <img src="./assets/img/icons/logo_twitter.png" alt="logo_twitter">
         </a>
+        </div>
     </footer>
 </body>
 </html>
