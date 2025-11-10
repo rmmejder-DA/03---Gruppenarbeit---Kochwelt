@@ -459,7 +459,6 @@ CSS Design rezeptEnsar.html (Ensar)
 CSS Design rinderroulade.html (Marcel) 
 ====================================*/
 
-
 .rouladenpng {
   display: flex;
   justify-content: center;
@@ -480,12 +479,12 @@ CSS Design rinderroulade.html (Marcel)
   margin-bottom: 16px;
 }
 
-.marcellist>li {
+.marcellist > li {
   display: list-item;
   margin-bottom: 12px;
 }
 
-.marcellist>li>.li-row {
+.marcellist > li > .li-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -505,6 +504,11 @@ CSS Design rinderroulade.html (Marcel)
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.recipe-creator {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ===================
@@ -575,7 +579,7 @@ Marcel: Zutaten-Rechner
   padding: 0;
 }
 
-.mb-portioner .mb-ingredients-list>li {
+.mb-portioner .mb-ingredients-list > li {
   position: relative;
   padding: 14px 16px;
   display: grid;
@@ -585,7 +589,7 @@ Marcel: Zutaten-Rechner
   color: #222;
 }
 
-.mb-portioner .mb-ingredients-list>li::before {
+.mb-portioner .mb-ingredients-list > li::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -596,16 +600,16 @@ Marcel: Zutaten-Rechner
   background: #fff;
 }
 
-.mb-portioner .mb-ingredients-list>li:nth-child(odd)::before {
+.mb-portioner .mb-ingredients-list > li:nth-child(odd)::before {
   background: #efefef;
 }
 
-.mb-portioner .mb-ingredients-list>li.mb-no-amount {
+.mb-portioner .mb-ingredients-list > li.mb-no-amount {
   grid-template-columns: 1fr;
 }
 
-.mb-portioner .mb-ingredients-list>li.mb-no-amount .amount,
-.mb-portioner .mb-ingredients-list>li.mb-no-amount .unit {
+.mb-portioner .mb-ingredients-list > li.mb-no-amount .amount,
+.mb-portioner .mb-ingredients-list > li.mb-no-amount .unit {
   display: none;
 }
 
@@ -622,7 +626,7 @@ Marcel: Zutaten-Rechner
     width: 72px;
   }
 
-  .mb-portioner .mb-ingredients-list>li {
+  .mb-portioner .mb-ingredients-list > li {
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
