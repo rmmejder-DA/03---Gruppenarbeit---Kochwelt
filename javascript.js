@@ -56,7 +56,7 @@ items.forEach(li => {
 
 //End
 
-//Kontaktseite
+//Kontaktseite//
 function sendMail(event){
     event.preventDefault();
     const data = new FormData(event.target);
@@ -73,3 +73,4 @@ function sendMail(event){
         console.log(error);
     });
 }
+//Kontaktseite//
