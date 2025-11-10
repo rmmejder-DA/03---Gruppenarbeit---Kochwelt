@@ -152,6 +152,25 @@ h3 {
   unicode-bidi: isolate;
   justify-content: baseline;
 }
+
+footer {
+  background-color: #403b3b;
+  height: 400px;
+}
+
+.footer_contact {
+  background-color: #403b3b;
+  height: 200px;
+}
+
+.form_contact {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 /*==========================
 CSS end
 ==========================*/
@@ -257,35 +276,6 @@ ul {
 /*==========================
 CSS von Max end
 ==========================*/
-footer {
-  background-color: #403b3b;
-  height: 400px;
-}
-
-.footer_contact {
-  background-color: #403b3b;
-  height: 200px;
-}
-
-.form_contact {
-  width: auto;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-
-.li-muted {
-  margin-left: 6px;
-  color: #4e4e4e;
-}
-
-.seperator {
-  height: 2px;
-  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
-  margin: 25px 0;
-}
 
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
@@ -378,6 +368,16 @@ CSS Design rezeptEnsar.html (Ensar)
   padding-right: 200px;
 }
 
+.li-muted {
+  margin-left: 6px;
+  color: #4e4e4e;
+}
+
+.seperator {
+  height: 2px;
+  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
+  margin: 25px 0;
+}
 /*===================================
 CSS Design rinderroulade.html (Marcel) 
 ====================================*/
