@@ -1,9 +1,15 @@
 @font-face {
   font-family: "Raleway";
-  src: url("./assets/fonts/raleway.ttf") format("truetype");
-  font-weight: normal;
+  src: url("./assets/fonts/raleway.woff2") format("woff2"),
+       url("./assets/fonts/raleway.woff") format("woff"),
+       url("./assets/fonts/raleway.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
+
+
+
 
 * {
   padding: 0;
@@ -11,9 +17,9 @@
 }
 
 body {
-
+  max-width: 1440px; /*Dies behält unseren Content auf maximal 1440px*/
   margin: 0 auto;
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 
@@ -53,7 +59,6 @@ nav {
 }
 
 header {
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
 }
@@ -168,7 +173,25 @@ h4 {
 footer {
   background-color: #403b3b;
   height: 400px;
+  position: relative;
+
+  left: 50%;
+  right: 50%;
+  width: 100vw;                  
+  transform: translateX(-50%);   
 }
+
+
+
+.sep-full{
+  border: 0;
+  height: 1px;               
+  background: #ccc;         
+  width: 100vw;
+  margin-inline: calc(50% - 50vw); 
+  margin-block: 16px;       
+}
+
 
 /*==========================
 CSS contact.html
@@ -249,9 +272,6 @@ textarea{
 
 
 /*==========================
-CSS end
-==========================*/
-/*==========================
 CSS von Max
 ==========================*/
 .underimg_shish_kebab {
@@ -291,9 +311,6 @@ CSS von Max
   background-color: #008000;
   color: white;
   width: 100px;
-  height: 32px;
-  width: 160px;
-  height: 42px;
   cursor: pointer;
 }
 
@@ -358,17 +375,13 @@ ul {
   cursor: pointer;
 }
 
-/*==========================
-CSS von Max end
-==========================*/
-
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
-.h4-p {
-  p {
+.h4-p p {
+  
     font-size: 18px;
-  }
+
 }
 
 .turkish-pasta-img {
@@ -458,6 +471,8 @@ CSS Design rezeptEnsar.html (Ensar)
   padding-left: 200px;
   padding-right: 200px;
 }
+
+
 
 .li-muted {
   margin-left: 6px;
@@ -604,25 +619,16 @@ Marcel: Zutaten-Rechner
 
 .mb-portioner .mb-ingredients-list > li {
   position: relative;
-  padding: 14px 16px;
-  display: grid;
-  grid-template-columns: 90px 70px 1fr;
-  align-items: center;
-  font-size: 18px;
-  color: #222;
 }
-
 .mb-portioner .mb-ingredients-list > li::before {
   content: "";
   position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
+  inset: 0;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
   background: #fff;
+  z-index: -1;
 }
-
 .mb-portioner .mb-ingredients-list > li:nth-child(odd)::before {
   background: #efefef;
 }
@@ -851,4 +857,24 @@ Design der index.html
 
 .compare-image img:hover {
   transform: scale(1.03);
+}
+
+
+header.padding-le-ri {
+  position: relative;    
+  overflow: visible;     
+  margin-bottom: 12px;  
+}
+
+header.padding-le-ri::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;            
+  width: 100vw;         
+  height: 1px;          
+  background: #cfcfcf;     
+  pointer-events: none;  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
