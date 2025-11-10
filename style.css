@@ -178,15 +178,17 @@ CSS contact.html
   background-color: #403b3b;
   height: 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .footer_contact_logo img{
   width: auto;
   height: 36px;
+  border-radius: 5px;
 }
 .footer_contact_logo{
-  gap: 200px;
+  display: flex;
+  gap: 32px;
 }
 .h3_contact{
   padding: 31px
@@ -222,12 +224,12 @@ label{
   width: 200px;
   background-color: #088a08;
   border-radius: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
 }
 textarea{
-  margin: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
   border-radius: 5px;
   border: none;
 }
@@ -238,10 +240,13 @@ textarea{
   align-items: center;
   gap: 20px;
 }
-.Kochlogo_contact_footer{
+.Kochlogo_contact_footer img{
+  display: flex;
+  align-items: center;
     width: auto;
     height: 84px;
 }
+
 
 /*==========================
 CSS end
