@@ -203,7 +203,8 @@ footer {
   left: 50%;
   right: 50%;
   width: 100vw;                  
-  transform: translateX(-50%);   
+  transform: translateX(-50%);
+  justify-content: space-between;   
 }
 
 
@@ -226,7 +227,7 @@ CSS contact.html
   background-color: #403b3b;
   height: 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .footer_contact_logo img{
@@ -236,7 +237,8 @@ CSS contact.html
 }
 .footer_contact_logo{
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  padding-left: 24px;
 }
 .h3_contact{
   padding: 31px

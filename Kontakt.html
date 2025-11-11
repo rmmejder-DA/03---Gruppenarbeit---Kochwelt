@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header class="padding-le-ri">
       <img class="KochLogo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
       <nav>
         <a href="index.html">Start</a>
@@ -24,14 +24,14 @@
         <form action="https://formspree.io/f/movyqvay" class="contact_email" method="post">
             <h3 class="h3_contact">Kontaktiere uns</h3>
 
-            <label for="fname">Vorname</label>
-            <input class="input_contact" type="text" id="fname" name="firstname" placeholder="Ihr Vorname.."required>
+            <label for="fname">Dein Name</label>
+            <input class="input_contact" type="text" id="fname" name="firstname" required>
 
-            <label for="lname">Nachname</label>
-            <input class="input_contact" type="text" id="lname" name="lastname" placeholder="Ihr Nachname.."required>
+            <label for="lname">Deine E-Mail</label>
+            <input class="input_contact" type="text" id="lname" name="lastname" required>
 
-            <label for="subject">Nachricht</label>
-            <textarea id="subject" name="subject" placeholder="Schreiben Sie etwas.." style="height:200px" required></textarea>
+            <label for="subject">Deine Nachricht</label>
+            <textarea id="subject" name="subject" style="height:200px" required></textarea>
             <div class="flex_box">
             <input class="input_contact under" type="submit" value="Absenden">
             </div>
