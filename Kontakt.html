@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="padding-le-ri">
+    <header>
       <img class="KochLogo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
       <nav>
         <a href="index.html">Start</a>
@@ -23,20 +23,21 @@
         
         <form action="https://formspree.io/f/movyqvay" class="contact_email" method="post">
             <h3 class="h3_contact">Kontaktiere uns</h3>
+
             <label for="fname">Vorname</label>
-            <input class="input_contact" type="text" id="fname" name="firstname" placeholder="Ihr Vorname..">
+            <input class="input_contact" type="text" id="fname" name="firstname" placeholder="Ihr Vorname.."required>
 
             <label for="lname">Nachname</label>
-            <input class="input_contact" type="text" id="lname" name="lastname" placeholder="Ihr Nachname..">
+            <input class="input_contact" type="text" id="lname" name="lastname" placeholder="Ihr Nachname.."required>
 
             <label for="subject">Nachricht</label>
-            <textarea id="subject" name="subject" placeholder="Schreiben Sie etwas.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Schreiben Sie etwas.." style="height:200px" required></textarea>
             <div class="flex_box">
             <input class="input_contact under" type="submit" value="Absenden">
             </div>
         </form>
     </div>
-    <footer class="footer_contact padding-le-ri">
+    <footer class="footer_contact">
         <div class="Kochlogo_contact_footer">
         <a href="http://127.0.0.1:5500/index.html">
             <img src="./assets/img/logo.png" alt="Kochwelt">
