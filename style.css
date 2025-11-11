@@ -83,7 +83,7 @@ header.padding-le-ri::after {
   bottom: 0;            
   width: 100vw;         
   height: 1px;          
-  background: #cfcfcf;     
+  background: #cfcfcf;
   pointer-events: none;  
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -420,10 +420,31 @@ ul {
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
-.h4-p p {
-  
-    font-size: 18px;
+.profil_ensar {
+  font-size: 28px;
+}
+.font_profil{
+  margin-top: 24px;
+  font-size: 22px;
+}
+.flex_box_profil {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 
+.photo_ensar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100px;
+  grid-area: 200px;
+  margin-right: 70px;
+}
+
+.h4-p p {
+    font-size: 18px;
 }
 
 .turkish-pasta-img {
@@ -458,6 +479,12 @@ CSS Design rezeptEnsar.html (Ensar)
   color: white;
   width: 160px;
   height: 42px;
+}
+
+.button-zutaten:hover{
+  cursor: pointer;
+  background-color: #006800;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .li-grey {
@@ -508,13 +535,6 @@ CSS Design rezeptEnsar.html (Ensar)
 .mt-100 {
   margin-top: 100px;
 }
-
-/* .padding-le-ri {
-  padding-left: 200px;
-  padding-right: 200px;
-} */
-
-
 
 .li-muted {
   margin-left: 6px;
