@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="padding-le-ri">
+    <header>
       <a href="http://127.0.0.1:5500/index.html">
       <img class="KochLogo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
       </a>
@@ -19,7 +19,7 @@
         <a href="">Impressum</a>
       </nav>
     </header>
-    <section class="padding-le-ri">
+    <section>
     <div>
       <h1>Russische Schaschlikspieße</h1>
       <img src="./assets/img/shish-kebab-417994_1920.jpg" alt="schaschlik" class="schaschlik">
@@ -35,47 +35,47 @@
       <div class="Math_multiply">
         <label>Zutaten für:</label>
         <input id="input_portion" type="number" min="0" value="3" id="Num1">
-        <button class="portion" onclick="clickBtn()">Portionen</button>
+        <button class="portion" onclick="calculatePortion(a,b,container)">Portionen</button>
       </div>
     </div>
 
     <div class="ingredients">
-      <table id="Portionen">
+      <table>
         <tbody>
-            <tr class="maxlist grey_li_bckgr" Num2="0.5" data-einheit="g Mehl">
+            <tr class="maxlist grey_li_bckgr" num1="0.5" data-einheit="g Mehl">
                 <td>0.5 Bund Petersilie</td>
             </tr>
-            <tr class="maxlist" data-basis="0.5" data-einheit="g Zucker">
+            <tr class="maxlist" num1="0.5" data-einheit="g Zucker">
                 <td>0.5 Bund Basilikum</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" data-basis="500" data-einheit="ml Kefir">
+            <tr class="maxlist grey_li_bckgr" num1="500" data-einheit="ml Kefir">
                 <td>500 ml Kefir</td>
             </tr>
-            <tr class="maxlist" data-basis="2" data-einheit="mittlere Zwiebel">
+            <tr class="maxlist" num1="2" data-einheit="mittlere Zwiebel">
               <td>2 m.-große Zwiebel(n)</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" data-basis="3" data-einheit="Lorbeerblätter">
+            <tr class="maxlist grey_li_bckgr" num1="3" data-einheit="Lorbeerblätter">
               <td>3 Lorbeerblätter</td>
             </tr>
-            <tr class="maxlist" data-basis="3" data-einheit="Wacholderbeere">
+            <tr class="maxlist" num1="3" data-einheit="Wacholderbeere">
               <td>3 Wacholderbeere(n)</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" data-basis="2" data-einheit="TL Meeressalz">
+            <tr class="maxlist grey_li_bckgr" num1="2" data-einheit="TL Meeressalz">
               <td>2 TL Meersalz</td>
             </tr>
-            <tr class="maxlist" data-basis="1" data-einheit="TL Pfeffer">
+            <tr class="maxlist" num1="1" data-einheit="TL Pfeffer">
               <td>1 TL Pfeffer frisch gemahlen</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" data-basis="1" data-einheit="TL Chilipulver">
+            <tr class="maxlist grey_li_bckgr" num1="1" data-einheit="TL Chilipulver">
               <td>1 TL Chilipulver z. B. Cayennepfeffer</td>
             </tr>
-            <tr class="maxlist" data-basis="2" data-einheit="Knoblauchzehe">
+            <tr class="maxlist" num1="2" data-einheit="Knoblauchzehe">
               <td>2 Knoblauchzehe(n) klein geschnitten</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" data-basis="750" data-einheit="g Schweinenacken">
+            <tr class="maxlist grey_li_bckgr" num1="750" data-einheit="g Schweinenacken">
               <td>750 g Schweinenacken nicht zu mager</td>
             </tr>
-            <tr class="maxlist" data-basis="0.5" data-einheit="Bund Thymian">
+            <tr class="maxlist" num1="0.5" data-einheit="Bund Thymian">
               <td>0.5 Bund Thymian</td>
             </tr>
           

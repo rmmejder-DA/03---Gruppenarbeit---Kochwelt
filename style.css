@@ -1,9 +1,15 @@
 @font-face {
   font-family: "Raleway";
-  src: url("./assets/fonts/raleway.ttf") format("truetype");
-  font-weight: normal;
+  src: url("./assets/fonts/raleway.woff2") format("woff2"),
+       url("./assets/fonts/raleway.woff") format("woff"),
+       url("./assets/fonts/raleway.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
+
+
+
 
 * {
   padding: 0;
@@ -11,9 +17,9 @@
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1440px; /*Dies behält unseren Content auf maximal 1440px*/
   margin: 0 auto;
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 
@@ -53,10 +59,35 @@ nav {
 }
 
 header {
-  /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); */
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;                  
+  transform: translateX(-50%);   
 }
+
+header.padding-le-ri {
+  position: relative;    
+  overflow: visible;     
+  margin-bottom: 12px;  
+}
+
+header.padding-le-ri::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;            
+  width: 100vw;         
+  height: 1px;          
+  background: #cfcfcf;     
+  pointer-events: none;  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
 
 
 form p {
@@ -180,13 +211,23 @@ h4 {
 footer {
   background-color: #403b3b;
   height: 400px;
-  width: 100vw;
   position: relative;
-  overflow-x: hidden;
-  transform: translateX(-50%);
   left: 50%;
+  right: 50%;
+  width: 100vw;                  
+  transform: translateX(-50%);   
 }
 
+
+
+.sep-full{
+  border: 0;
+  height: 1px;               
+  background: #ccc;         
+  width: 100vw;
+  margin-inline: calc(50% - 50vw); 
+  margin-block: 16px;       
+}
 
 
 /*==========================
@@ -196,6 +237,18 @@ CSS contact.html
 .footer_contact {
   background-color: #403b3b;
   height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_contact_logo img{
+  width: auto;
+  height: 36px;
+  border-radius: 5px;
+}
+.footer_contact_logo{
+  display: flex;
+  gap: 32px;
 }
 
 .h3_contact {
@@ -235,13 +288,12 @@ label {
   width: 200px;
   background-color: #088a08;
   border-radius: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
 }
-
-textarea {
-  margin: 25px;
+textarea{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
   border-radius: 5px;
   border: none;
 }
@@ -253,10 +305,14 @@ textarea {
   align-items: center;
   gap: 20px;
 }
+.Kochlogo_contact_footer img{
+  display: flex;
+  align-items: center;
+    width: auto;
+    height: 84px;
+}
 
-/*==========================
-CSS end
-==========================*/
+
 /*==========================
 CSS von Max
 ==========================*/
@@ -292,14 +348,11 @@ CSS von Max
   border-left: 1px;
   margin-left: 0;
   border-radius: 0;
-  height: 40px;
+  height: 42px;
   border-width: 0;
   background-color: #008000;
   color: white;
-  width: 100px;
-  height: 32px;
   width: 160px;
-  height: 42px;
   cursor: pointer;
 }
 
@@ -364,25 +417,13 @@ ul {
   cursor: pointer;
 }
 
-/*==========================
-CSS von Max end
-==========================*/
-
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
-.tuerkische-pasta h4{
-  font-size: 22px;
-  padding-top: 32px;
-  padding-bottom: 20px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-.tuerkische-pasta p {
+.h4-p p {
+  
     font-size: 18px;
+
 }
 
 .turkish-pasta-img {
@@ -468,10 +509,12 @@ CSS Design rezeptEnsar.html (Ensar)
   margin-top: 100px;
 }
 
-.padding-le-ri {
+/* .padding-le-ri {
   padding-left: 200px;
   padding-right: 200px;
-}
+} */
+
+
 
 .li-muted {
   margin-left: 6px;
@@ -490,18 +533,23 @@ CSS Design rezeptEnsar.html (Ensar)
 CSS Design rinderroulade.html (Marcel) 
 ====================================*/
 
-
 .rouladenpng {
+  width: 100%;
+  aspect-ratio: 16 / 7;
   display: flex;
   justify-content: center;
   background-size: cover;
   background-position: center;
   align-items: center;
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
+  height: 450px;
   border-radius: 20px;
   margin-bottom: 50px;
+}
+
+.hero-crop img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .marcellist {
@@ -511,31 +559,46 @@ CSS Design rinderroulade.html (Marcel)
   margin-bottom: 16px;
 }
 
-.marcellist>li {
+.li-row {
+  font-size: 16px;
+}
+
+.marcellist > li {
   display: list-item;
   margin-bottom: 12px;
 }
 
-.marcellist>li>.li-row {
+.marcellist > li > .li-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
   line-height: 1.5;
 }
 
-.hero-crop {
-  width: 100%;
-  max-width: 100%;
-  aspect-ratio: 16 / 7;
-  overflow: hidden;
-  border-radius: 8px;
+.recipe-creator {
+  display: flex;
+  flex-direction: row;
 }
 
-.hero-crop img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.recipe-creator p {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+
+  font-size: 24px;
+}
+
+.mb-form {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.mb-profile {
+  width: 100px;
+  border-radius: 180px;
 }
 
 /* ===================
@@ -546,7 +609,7 @@ Marcel: Zutaten-Rechner
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   padding-left: 8px;
   padding-right: 20px;
@@ -568,29 +631,29 @@ Marcel: Zutaten-Rechner
 }
 
 .mb-portioner #portionInput {
-  width: 90px;
-  padding: 8px 10px;
+  width: 190px;
   border: 1px solid #d9d9d9;
   border-radius: 6px;
   background: #fff;
   outline: none;
 }
 
-.mb-portioner #portionInput:focus {
-  border-color: #188a00;
-  box-shadow: 0 0 0 3px rgba(24, 138, 0, 0.15);
+.mb-portioner .mb-btn-green {
+ display: inline-block;
+  padding: 10px 16px;
+  background-color: #008000;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.mb-portioner .mb-btn-green {
-  border: none;
-  border-radius: 6px;
-  padding: 8px 14px;
-  background: #188a00;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.02s ease, filter 0.15s ease;
+.mb-btn-green:hover {
+  background-color: #088a08;
+  color: white;
+  text-decoration: none;
 }
+
 
 .mb-portioner .mb-btn-green:hover {
   filter: brightness(1.05);
@@ -606,39 +669,21 @@ Marcel: Zutaten-Rechner
   padding: 0;
 }
 
-.mb-portioner .mb-ingredients-list>li {
-  position: relative;
-  padding: 14px 16px;
-  display: grid;
-  grid-template-columns: 90px 70px 1fr;
-  align-items: center;
-  font-size: 18px;
-  color: #222;
+.mb-ingredients-list {
+  font-size: 16px;
 }
 
-.mb-portioner .mb-ingredients-list>li::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  background: #fff;
+.mb-li-grey {
+  background-color: #f3f3f385;
+  padding: 10px 20px 10px;
+  border-radius: 8px;
 }
 
-.mb-portioner .mb-ingredients-list>li:nth-child(odd)::before {
-  background: #efefef;
-}
 
-.mb-portioner .mb-ingredients-list>li.mb-no-amount {
-  grid-template-columns: 1fr;
-}
 
-.mb-portioner .mb-ingredients-list>li.mb-no-amount .amount,
-.mb-portioner .mb-ingredients-list>li.mb-no-amount .unit {
-  display: none;
-}
+
+
+
 
 @media (max-width: 640px) {
   .mb-portioner {
@@ -653,7 +698,7 @@ Marcel: Zutaten-Rechner
     width: 72px;
   }
 
-  .mb-portioner .mb-ingredients-list>li {
+  .mb-portioner .mb-ingredients-list > li {
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
@@ -856,3 +901,5 @@ Design der index.html
 .compare-image img:hover {
   transform: scale(1.03);
 }
+
+

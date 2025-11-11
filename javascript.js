@@ -53,15 +53,21 @@ items.forEach(li => {
 }
 
 //JS Portion berechnen (MAX)
-
+          function calculatePortion(a, b, container) {
+            // TODO: Diese Funktion muss (inklusive Funktionsparameter) implementiert werden. 
+            // Orientiere dich an der Funktion aus Aufgabe 5.
+            let ab = a * b;
+           let result = Math.abs(ab);
+           document.getElementById(container).innerHTML = result;
+        }
 //End
-
-//Kontaktseite
+  
+//Kontaktseite//
 function sendMail(event){
     event.preventDefault();
     const data = new FormData(event.target);
 
-    fetch("YOUR_URL", {
+    fetch("https://formspree.io/f/movyqvay", {
         method: "POST",
         body: new FormData(event.target),
         headers: {
@@ -73,3 +79,4 @@ function sendMail(event){
         console.log(error);
     });
 }
+//Kontaktseite//
