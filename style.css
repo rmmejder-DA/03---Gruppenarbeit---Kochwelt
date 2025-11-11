@@ -420,6 +420,14 @@ ul {
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
+.a_impressum{
+  color: #006800;
+}
+
+.a_impressum:hover {
+  color: #008000;
+  text-decoration: none;
+}
 .profil_ensar {
   font-size: 28px;
 }
