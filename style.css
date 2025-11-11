@@ -1,15 +1,12 @@
 @font-face {
   font-family: "Raleway";
   src: url("./assets/fonts/raleway.woff2") format("woff2"),
-       url("./assets/fonts/raleway.woff") format("woff"),
-       url("./assets/fonts/raleway.ttf") format("truetype");
+    url("./assets/fonts/raleway.woff") format("woff"),
+    url("./assets/fonts/raleway.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
-
-
 
 * {
   padding: 0;
@@ -21,7 +18,6 @@ body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
 }
-
 
 a {
   color: #403b3b;
@@ -45,6 +41,10 @@ a:hover {
   cursor: pointer;
 }
 
+/*==========================
+CSS Header
+==========================*/
+
 nav {
   display: flex;
   align-items: end;
@@ -65,14 +65,15 @@ header {
   position: relative;
   left: 50%;
   right: 50%;
-  width: 100vw;                  
-  transform: translateX(-50%);   
+  width: 100vw;
+  transform: translateX(-50%);
+  padding-bottom: 12px;
 }
 
 header.padding-le-ri {
-  position: relative;    
-  overflow: visible;     
-  margin-bottom: 12px;  
+  position: relative;
+  overflow: visible;
+  margin-bottom: 12px;
 }
 
 header.padding-le-ri::after {
@@ -80,15 +81,55 @@ header.padding-le-ri::after {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;            
-  width: 100vw;         
-  height: 1px;          
-  background: #cfcfcf;
-  pointer-events: none;  
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  width: 100vw;
+  height: 8px;
+  background: linear-gradient(
+    to bottom,
+    rgba(121, 121, 121, 0.08),
+    rgba(0, 0, 0, 0)
+  );
+  pointer-events: none;
 }
 
+.logo {
+  height: 80px;
+}
 
+/*==========================
+CSS Footer
+==========================*/
+
+footer {
+  background-color: #403b3b;
+  height: 200px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 0 0;
+}
+
+.footer-logo img {
+  height: 80px;
+  filter: invert(1);
+}
+
+.footer-sm img {
+  height: 80px;
+  padding-left: 12px;
+}
 
 form p {
   background-color: #e4e4e4;
@@ -149,12 +190,10 @@ h1 {
   padding-bottom: 32px;
 }
 
-
 label {
   padding-right: 24px;
   display: flex;
 }
-
 
 h2 {
   display: flex;
@@ -208,28 +247,14 @@ h4 {
   left: 50%;
 }
 
-footer {
-  background-color: #403b3b;
-  height: 400px;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  width: 100vw;                  
-  transform: translateX(-50%);
-  justify-content: space-between;   
-}
-
-
-
-.sep-full{
+.sep-full {
   border: 0;
-  height: 1px;               
-  background: #ccc;         
+  height: 1px;
+  background: #ccc;
   width: 100vw;
-  margin-inline: calc(50% - 50vw); 
-  margin-block: 16px;       
+  margin-inline: calc(50% - 50vw);
+  margin-block: 16px;
 }
-
 
 /*==========================
 CSS contact.html
@@ -242,19 +267,19 @@ CSS contact.html
   justify-content: space-between;
   align-items: center;
 }
-.footer_contact_logo img{
+.footer_contact_logo img {
   width: auto;
   height: 36px;
   border-radius: 5px;
 }
-.footer_contact_logo{
+.footer_contact_logo {
   display: flex;
   gap: 24px;
   padding-left: 24px;
 }
 
 .h3_contact {
-  padding: 31px
+  padding: 31px;
 }
 
 .flex_box {
@@ -292,7 +317,7 @@ label {
   border-radius: 0;
   color: white;
 }
-textarea{
+textarea {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 15px;
@@ -301,19 +326,18 @@ textarea{
 }
 
 .form_contact {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.Kochlogo_contact_footer img{
+.Kochlogo_contact_footer img {
   display: flex;
   align-items: center;
-    width: auto;
-    height: 84px;
+  width: auto;
+  height: 84px;
 }
-
 
 /*==========================
 CSS von Max
@@ -342,7 +366,6 @@ CSS von Max
 
 .ingredients {
   display: grid;
-
 }
 
 .portion {
@@ -425,7 +448,7 @@ CSS Design rezeptEnsar.html (Ensar)
 .profil_ensar {
   font-size: 28px;
 }
-.font_profil{
+.font_profil {
   margin-top: 24px;
   font-size: 22px;
 }
@@ -446,7 +469,7 @@ CSS Design rezeptEnsar.html (Ensar)
 }
 
 .h4-p p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .turkish-pasta-img {
@@ -483,7 +506,7 @@ CSS Design rezeptEnsar.html (Ensar)
   height: 42px;
 }
 
-.button-zutaten:hover{
+.button-zutaten:hover {
   cursor: pointer;
   background-color: #006800;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -598,13 +621,14 @@ CSS Design rinderroulade.html (Marcel)
 .recipe-creator {
   display: flex;
   flex-direction: row;
+  padding-bottom: 80px;
 }
 
 .recipe-creator p {
   display: flex;
   align-items: center;
+  justify-content: start;
   padding-left: 40px;
-
   font-size: 24px;
 }
 
@@ -619,10 +643,9 @@ CSS Design rinderroulade.html (Marcel)
 .mb-profile {
   width: 100px;
   border-radius: 180px;
-  margin-bottom: 120px;
 }
 
-.mb-hr{
+.mb-hr {
   color: #ffffffa6;
   margin-top: 70px;
   margin-bottom: 16px;
@@ -664,7 +687,7 @@ Marcel: Zutaten-Rechner
 }
 
 .mb-portioner .mb-btn-green {
- display: inline-block;
+  display: inline-block;
   padding: 10px 16px;
   background-color: #008000;
   color: #fff;
@@ -678,7 +701,6 @@ Marcel: Zutaten-Rechner
   color: white;
   text-decoration: none;
 }
-
 
 .mb-portioner .mb-btn-green:hover {
   filter: brightness(1.05);
@@ -709,10 +731,6 @@ Marcel: Zutaten-Rechner
   border-radius: 8px;
   width: auto;
 }
-
-
-
-
 
 @media (max-width: 640px) {
   .mb-portioner {
@@ -745,7 +763,7 @@ Design der index.html
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   margin-top: 8px;
 }
 
@@ -794,9 +812,20 @@ Design der index.html
 }
 
 .recipe-section {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100svw;
   text-align: center;
   padding: 60px 40px;
-  background: #f5f4f4;
+  background-color: #f5f4f4;
+}
+
+.recipe-section .content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .recipe-section h2 {
@@ -856,7 +885,7 @@ Design der index.html
 
 .compare-section {
   background: #ffffff;
-  padding: 80px 40px;
+  padding: 80px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -930,5 +959,3 @@ Design der index.html
 .compare-image img:hover {
   transform: scale(1.03);
 }
-
-

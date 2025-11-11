@@ -1,5 +1,5 @@
 
-// JS von der rinderroulad.html (Marcel)
+// JS von der rinderroulade.html (Marcel)
 
 const root = document.querySelector('.mb-portioner');
 if (root) {
@@ -51,6 +51,10 @@ items.forEach(li => {
 
   setPortions(getPortions() || 0);
 }
+
+
+
+
 
 //JS Portion berechnen (MAX)
           function calculatePortion(a, b, container) {
