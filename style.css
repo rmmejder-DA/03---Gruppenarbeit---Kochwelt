@@ -543,9 +543,7 @@ CSS Design rinderroulade.html (Marcel)
 
 .marcellist {
   list-style: decimal;
-  list-style-position: outside;
-  padding-left: 40px;
-  margin-bottom: 16px;
+  list-style-position: inside;
 }
 
 .li-row {
@@ -581,13 +579,20 @@ CSS Design rinderroulade.html (Marcel)
   display: flex;
   justify-content: start;
   gap: 24px;
-  margin-top: 20px;
-  margin-bottom: 70px;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .mb-profile {
   width: 100px;
   border-radius: 180px;
+  margin-bottom: 120px;
+}
+
+.mb-hr{
+  color: #ffffffa6;
+  margin-top: 70px;
+  margin-bottom: 16px;
 }
 
 /* ===================
@@ -597,11 +602,6 @@ Marcel: Zutaten-Rechner
 .mb-portioner {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* width: 100%; */
-  margin: 0;
-  padding-left: 8px;
-  padding-right: 20px;
 }
 
 .mb-portioner .mb-portion-bar {
@@ -617,6 +617,9 @@ Marcel: Zutaten-Rechner
   font-size: 18px;
   font-weight: 500;
   color: #444;
+  display: flex;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .mb-portioner #portionInput {
@@ -654,8 +657,6 @@ Marcel: Zutaten-Rechner
 
 .mb-portioner .mb-ingredients-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .mb-ingredients-list {
@@ -666,9 +667,15 @@ Marcel: Zutaten-Rechner
   background-color: #f3f3f385;
   padding: 10px 20px 10px;
   border-radius: 8px;
+  width: auto;
 }
 
-
+.mb-li-white {
+  background-color: #ffffff;
+  padding: 10px 20px 10px;
+  border-radius: 8px;
+  width: auto;
+}
 
 
 
