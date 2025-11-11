@@ -206,7 +206,7 @@ CSS contact.html
   background-color: #403b3b;
   height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .footer_contact_logo img{
