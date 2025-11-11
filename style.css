@@ -11,7 +11,7 @@
 }
 
 body {
-
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "raleway", sans-serif;
 }
@@ -53,7 +53,7 @@ nav {
 }
 
 header {
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); */
   display: flex;
   justify-content: space-between;
 }
@@ -165,10 +165,29 @@ h4 {
   unicode-bidi: isolate;
 }
 
+.seperator {
+  max-width: 100%;
+  overflow-x: hidden;
+  transform: translateX(-50%);
+  width: 100vw;
+  position: relative;
+  height: 2px;
+  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
+  margin: 25px 0;
+  left: 50%;
+}
+
 footer {
   background-color: #403b3b;
   height: 400px;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  transform: translateX(-50%);
+  left: 50%;
 }
+
+
 
 /*==========================
 CSS contact.html
@@ -178,28 +197,31 @@ CSS contact.html
   background-color: #403b3b;
   height: 200px;
 }
-.h3_contact{
+
+.h3_contact {
   padding: 31px
 }
 
-.flex_box{
+.flex_box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact_email{
-  background-color:#dcdcdc;
+.contact_email {
+  background-color: #dcdcdc;
   border-radius: 25px;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
-label{
+
+label {
   display: flex;
   justify-content: flex-start;
   padding-left: 31px;
 }
-.input_contact{
+
+.input_contact {
   width: 500px;
   margin-right: 25px;
   margin-left: 25px;
@@ -208,7 +230,8 @@ label{
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.under{
+
+.under {
   width: 200px;
   background-color: #088a08;
   border-radius: 0;
@@ -216,11 +239,13 @@ label{
   justify-content: center;
   align-items: center;
 }
-textarea{
+
+textarea {
   margin: 25px;
   border-radius: 5px;
   border: none;
 }
+
 .form_contact {
   height: 100vh;
   display: flex;
@@ -346,10 +371,18 @@ CSS von Max end
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
-.h4-p {
-  p {
+.tuerkische-pasta h4{
+  font-size: 22px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.tuerkische-pasta p {
     font-size: 18px;
-  }
 }
 
 .turkish-pasta-img {
@@ -443,12 +476,6 @@ CSS Design rezeptEnsar.html (Ensar)
 .li-muted {
   margin-left: 6px;
   color: #4e4e4e;
-}
-
-.seperator {
-  height: 2px;
-  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
-  margin: 25px 0;
 }
 
 .form-ey {
