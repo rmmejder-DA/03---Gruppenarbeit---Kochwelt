@@ -83,7 +83,7 @@ header.padding-le-ri::after {
   bottom: 0;            
   width: 100vw;         
   height: 1px;          
-  background: #cfcfcf;     
+  background: #cfcfcf;
   pointer-events: none;  
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -196,6 +196,18 @@ h4 {
   unicode-bidi: isolate;
 }
 
+.seperator {
+  max-width: 100%;
+  overflow-x: hidden;
+  transform: translateX(-50%);
+  width: 100vw;
+  position: relative;
+  height: 2px;
+  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
+  margin: 25px 0;
+  left: 50%;
+}
+
 footer {
   background-color: #403b3b;
   height: 400px;
@@ -203,7 +215,8 @@ footer {
   left: 50%;
   right: 50%;
   width: 100vw;                  
-  transform: translateX(-50%);   
+  transform: translateX(-50%);
+  justify-content: space-between;   
 }
 
 
@@ -226,7 +239,7 @@ CSS contact.html
   background-color: #403b3b;
   height: 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .footer_contact_logo img{
@@ -236,30 +249,34 @@ CSS contact.html
 }
 .footer_contact_logo{
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  padding-left: 24px;
 }
-.h3_contact{
+
+.h3_contact {
   padding: 31px
 }
 
-.flex_box{
+.flex_box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact_email{
-  background-color:#dcdcdc;
+.contact_email {
+  background-color: #dcdcdc;
   border-radius: 25px;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
-label{
+
+label {
   display: flex;
   justify-content: flex-start;
   padding-left: 31px;
 }
-.input_contact{
+
+.input_contact {
   width: 500px;
   margin-right: 25px;
   margin-left: 25px;
@@ -268,7 +285,8 @@ label{
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.under{
+
+.under {
   width: 200px;
   background-color: #088a08;
   border-radius: 0;
@@ -281,6 +299,7 @@ textarea{
   border-radius: 5px;
   border: none;
 }
+
 .form_contact {
   height: 100vh;
   display: flex;
@@ -403,10 +422,31 @@ ul {
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
-.h4-p p {
-  
-    font-size: 18px;
+.profil_ensar {
+  font-size: 28px;
+}
+.font_profil{
+  margin-top: 24px;
+  font-size: 22px;
+}
+.flex_box_profil {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 
+.photo_ensar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100px;
+  grid-area: 200px;
+  margin-right: 70px;
+}
+
+.h4-p p {
+    font-size: 18px;
 }
 
 .turkish-pasta-img {
@@ -441,6 +481,12 @@ CSS Design rezeptEnsar.html (Ensar)
   color: white;
   width: 160px;
   height: 42px;
+}
+
+.button-zutaten:hover{
+  cursor: pointer;
+  background-color: #006800;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .li-grey {
@@ -492,22 +538,9 @@ CSS Design rezeptEnsar.html (Ensar)
   margin-top: 100px;
 }
 
-/* .padding-le-ri {
-  padding-left: 200px;
-  padding-right: 200px;
-} */
-
-
-
 .li-muted {
   margin-left: 6px;
   color: #4e4e4e;
-}
-
-.seperator {
-  height: 2px;
-  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
-  margin: 25px 0;
 }
 
 .form-ey {
