@@ -127,8 +127,10 @@ footer {
 }
 
 .footer-sm img {
-  height: 80px;
-  padding-left: 12px;
+    margin: 12px;
+    height: 42px;
+    width: 155px;
+    border-radius: 12px;
 }
 
 form p {
@@ -369,7 +371,8 @@ CSS von Max
 }
 
 .ingredients {
-  display: grid;
+  display: grid; 
+  tr{gap: 42px;}
 }
 
 .portion {
@@ -387,8 +390,15 @@ CSS von Max
 
 .maxlist {
   font-size: 20px;
-  padding: 16px;
+  padding: 12px;
   padding-left: 32px;
+  width: auto;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px; 
 }
 
 tbody {
@@ -423,6 +433,7 @@ ul {
   display: flex;
   align-items: center;
   padding-bottom: 120px;
+  gap: 54px;
 }
 
 .MAX {
@@ -430,7 +441,7 @@ ul {
   justify-content: center;
   background-color: white;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .photo_max {

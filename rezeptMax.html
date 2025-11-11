@@ -34,51 +34,61 @@
       </form>
       <div class="Math_multiply">
         <label>Zutaten für:</label>
-        <input id="input_portion" type="number" min="0" value="3" id="Num1">
-        <button class="portion" onclick="calculatePortion(a,b,container)">Portionen</button>
+        <input id="input_portion" type="number" min="0" value="3">
+        <button class="portion" onclick="calculatePortion(input_portion,number)">Portionen</button>
       </div>
     </div>
-
     <div class="ingredients">
       <table>
-        <tbody>
-            <tr class="maxlist grey_li_bckgr" num1="0.5" data-einheit="g Mehl">
-                <td>0.5 Bund Petersilie</td>
+        <tbody id="portion_result()">
+            <tr class="maxlist grey_li_bckgr">
+                <td id="number">0.5</td>
+                <td>Bund Petersilie</td>
             </tr>
-            <tr class="maxlist" num1="0.5" data-einheit="g Zucker">
-                <td>0.5 Bund Basilikum</td>
+            <tr class="maxlist">
+                <td>0.5</td>
+                <td>Bund Basilikum</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" num1="500" data-einheit="ml Kefir">
-                <td>500 ml Kefir</td>
+            <tr class="maxlist grey_li_bckgr">
+              <td>500</td>
+              <td>ml Kefir</td>
             </tr>
-            <tr class="maxlist" num1="2" data-einheit="mittlere Zwiebel">
-              <td>2 m.-große Zwiebel(n)</td>
+            <tr class="maxlist">
+              <td>2</td>
+              <td>m.-große Zwiebel(n)</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" num1="3" data-einheit="Lorbeerblätter">
-              <td>3 Lorbeerblätter</td>
+            <tr class="maxlist grey_li_bckgr">
+              <td>3</td>
+              <td>Lorbeerblätter</td>
             </tr>
-            <tr class="maxlist" num1="3" data-einheit="Wacholderbeere">
-              <td>3 Wacholderbeere(n)</td>
+            <tr class="maxlist">
+              <td>3</td>
+              <td>Wacholderbeere(n)</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" num1="2" data-einheit="TL Meeressalz">
-              <td>2 TL Meersalz</td>
+            <tr class="maxlist grey_li_bckgr">
+              <td>2</td>
+              <td>TL Meersalz</td>
             </tr>
-            <tr class="maxlist" num1="1" data-einheit="TL Pfeffer">
-              <td>1 TL Pfeffer frisch gemahlen</td>
+            <tr class="maxlist">
+              <td>1</td>
+              <td>TL Pfeffer frisch gemahlen</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" num1="1" data-einheit="TL Chilipulver">
-              <td>1 TL Chilipulver z. B. Cayennepfeffer</td>
+            <tr class="maxlist grey_li_bckgr">
+              <td>1</td>
+              <td>TL Chilipulver z. B. Cayennepfeffer</td>
             </tr>
-            <tr class="maxlist" num1="2" data-einheit="Knoblauchzehe">
-              <td>2 Knoblauchzehe(n) klein geschnitten</td>
+            <tr class="maxlist">
+              <td>2</td>
+              <td>Knoblauchzehe(n) klein geschnitten</td>
             </tr>
-            <tr class="maxlist grey_li_bckgr" num1="750" data-einheit="g Schweinenacken">
-              <td>750 g Schweinenacken nicht zu mager</td>
+            <tr class="maxlist grey_li_bckgr">
+              <td>750</td>
+              <td>g Schweinenacken nicht zu mager</td>
             </tr>
-            <tr class="maxlist" num1="0.5" data-einheit="Bund Thymian">
-              <td>0.5 Bund Thymian</td>
+            <tr class="maxlist">
+              <td>0.5</td>
+              <td>Bund Thymian</td>
             </tr>
-          
         </tbody>
     </table>
     </div>
@@ -108,7 +118,7 @@
           <p class="MAX">MAX</p>
         </form>
       </div>
-    </div>
+    
     </section>
     <footer>
       <div class="footer-content">
