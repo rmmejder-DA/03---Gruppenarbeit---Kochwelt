@@ -266,6 +266,8 @@ CSS contact.html
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .footer_contact_logo img {
   width: auto;
@@ -275,7 +277,7 @@ CSS contact.html
 .footer_contact_logo {
   display: flex;
   gap: 24px;
-  padding-left: 24px;
+
 }
 
 .h3_contact {
@@ -316,6 +318,7 @@ label {
   background-color: #088a08;
   border-radius: 0;
   color: white;
+  cursor: pointer;
 }
 textarea {
   margin-left: 25px;
@@ -323,6 +326,7 @@ textarea {
   margin-top: 15px;
   border-radius: 5px;
   border: none;
+  padding: 10px;
 }
 
 .form_contact {
