@@ -1,5 +1,5 @@
 
-// JS von der rinderroulad.html (Marcel)
+// JS von der rinderroulade.html (Marcel)
 
 const root = document.querySelector('.mb-portioner');
 if (root) {
@@ -52,13 +52,17 @@ items.forEach(li => {
   setPortions(getPortions() || 0);
 }
 
+
+
+
+
 //JS Portion berechnen (MAX)
-          function calculatePortion(a, b, container) {
-            // TODO: Diese Funktion muss (inklusive Funktionsparameter) implementiert werden. 
-            // Orientiere dich an der Funktion aus Aufgabe 5.
+          function calculatePortion(input_portion, number) {
             let ab = a * b;
+            let input_portion = document.getElementById(input_portion)
+            let number = document.getElementById(number);
            let result = Math.abs(ab);
-           document.getElementById(container).innerHTML = result;
+           document.getElementById(porion_result).innerHTML = alert.result;
         }
 //End
   
