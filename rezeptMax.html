@@ -34,15 +34,15 @@
       </form>
       <div class="Math_multiply">
         <label>Zutaten für:</label>
-        <input id="input_portion" type="number" min="0" value="3">
-        <button class="portion" onclick="calculatePortion(input_portion,number)">Portionen</button>
+        <input type="number" min="0" value="3">
+        <button class="portion" onclick="updateTotals()">Portionen</button>
       </div>
     </div>
     <div class="ingredients">
       <table>
-        <tbody id="portion_result()">
+        <tbody>
             <tr class="maxlist grey_li_bckgr">
-                <td id="number">0.5</td>
+                <td>0.5</td>
                 <td>Bund Petersilie</td>
             </tr>
             <tr class="maxlist">
@@ -120,7 +120,7 @@
       </div>
     
     </section>
-    <footer>
+    <footer class="footer_rezept">
       <!-- <div class="footer-content">
         <div class="footer-logo">
         <a href="./index.html">

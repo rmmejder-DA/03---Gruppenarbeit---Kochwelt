@@ -1,13 +1,9 @@
 
 
 //JS Portion berechnen (MAX)
-          function calculatePortion(input_portion, number) {
-            let ab = a * b;
-            let input_portion = document.getElementById(input_portion)
-            let number = document.getElementById(number);
-           let result = Math.abs(ab);
-           document.getElementById(porion_result).innerHTML = alert.result;
-        }
+
+
+
 //End
   
 //Kontaktseite//

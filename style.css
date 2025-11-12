@@ -357,6 +357,18 @@ textarea {
 /*==========================
 CSS von Max
 ==========================*/
+.footer_rezept{
+  
+  margin-top: 30px;
+  background-color: #403b3b;
+  height: 400px;
+  position: relative;
+  left: 49.5%;
+  right: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  justify-content: space-between;
+}
 .underimg_shish_kebab {
   display: flex;
   align-items: center;
