@@ -2,14 +2,6 @@
 
 //JS Portion berechnen (MAX)
 
-function updateTotals(){
-    let userinput = document.getElementById('inputUser');
-    let TabNum= DocumentType('able td);                                     
-            let ab = userinput*TabNum
-           let result = Math.abs(ab);
-           document.getElementById('result').innerHTML = result;
-}
-
 //End
   
 //Kontaktseite//
