@@ -34,7 +34,7 @@
       </form>
       <div class="Math_multiply">
         <label>Zutaten für:</label>
-        <input type="number" min="0" value="3">
+        <input id="inputUser" type="number" min="0" value="3">
         <button class="portion" onclick="updateTotals()">Portionen</button>
       </div>
     </div>
@@ -42,7 +42,7 @@
       <table>
         <tbody>
             <tr class="maxlist grey_li_bckgr">
-                <td>0.5</td>
+                <td id="Number">0.5</td>
                 <td>Bund Petersilie</td>
             </tr>
             <tr class="maxlist">
@@ -50,8 +50,9 @@
                 <td>Bund Basilikum</td>
             </tr>
             <tr class="maxlist grey_li_bckgr">
-              <td>500</td>
+              <td id="result">500</td>
               <td>ml Kefir</td>
+              <td></td>
             </tr>
             <tr class="maxlist">
               <td>2</td>
