@@ -24,6 +24,7 @@ if (root) {
     if (n < 0) n = 0;
     return n;
   }
+
   function setPortions(n) {
     const val = Math.max(0, Math.round(n));
     input.value = String(val);
