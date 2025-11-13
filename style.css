@@ -12,12 +12,25 @@
 }
 
 body {
-  max-width: 1440px;
-  /*Dies behält unseren Content auf maximal 1440px*/
-  margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
+}
+
+
+/* Sorgt aktuell für die Zentrierung */
+.header-content,
+.footer-content,
+.content,
+.recipe-section,              
+.recipe-section-content,
+.compare-section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* ----------------- */
+
+.page-content {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
@@ -51,29 +64,33 @@ nav {
   align-items: end;
   padding-bottom: 10px;
   gap: 24px;
-  font-family: raleway;
   font-weight: 700;
   margin-block-start: 0;
   margin-block-end: 0;
-  padding-inline-start: 0;
   font-size: 20px;
-   padding-right: 10px;
 }
 
 header {
-  max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    max-width: 1440px;
+  }
+   
+  
+  /* position: relative;
   left: 49.5%;
   right: 50%;
   width: 100vw;
-  transform: translateX(-50%);
-  padding-bottom: 12px;
+  transform: translateX(-50%); */
 
-}
 
-header.padding-le-ri {
+/* header.padding-le-ri {
   position: relative;
   overflow: visible;
   margin-bottom: 12px;
@@ -92,7 +109,7 @@ header.padding-le-ri::after {
       rgba(121, 121, 121, 0.08),
       rgba(0, 0, 0, 0));
   pointer-events: none;
-}
+} */
 
 .logo {
   height: 80px;
@@ -107,19 +124,13 @@ footer {
   margin-top: 30px;
   background-color: #403b3b;
   height: 200px;
-  position: relative;
-  left: 49.5%;
-  right: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
-  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-content {
   display: flex;
   flex-direction: row;
   max-width: 1440px;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   padding: 60px 0 0 0;
@@ -241,7 +252,7 @@ h4 {
   unicode-bidi: isolate;
 }
 
-.seperator {
+/* .seperator {
   max-width: 100%;
   overflow-x: hidden;
   transform: translateX(-50%);
@@ -251,16 +262,16 @@ h4 {
   background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
   margin: 25px 0;
   left: 50%;
-}
+} */
 
-.sep-full {
+/* .sep-full {
   border: 0;
   height: 1px;
   background: #ccc;
   width: 100vw;
   margin-inline: calc(50% - 50vw);
   margin-block: 16px;
-}
+} */
 
 /*==========================
 CSS contact.html
@@ -285,7 +296,6 @@ CSS contact.html
 .footer_contact_logo {
   display: flex;
   gap: 24px;
-
 }
 
 .h3_contact {
@@ -356,7 +366,7 @@ textarea {
 /*==========================
 CSS von Max
 ==========================*/
-.footer_rezept{
+/* .footer_rezept {
   margin-top: 30px;
   background-color: #403b3b;
   height: 400px;
@@ -366,7 +376,7 @@ CSS von Max
   width: 100vw;
   transform: translateX(-50%);
   justify-content: space-between;
-}
+} */
 .underimg_shish_kebab {
   display: flex;
   align-items: center;
@@ -403,7 +413,8 @@ CSS von Max
 }
 .mm-portioner {
   display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+}
 
 .maxlist {
   padding: 12px;
@@ -651,12 +662,12 @@ CSS Design rinderroulade.html (Marcel)
   font-size: 16px;
 }
 
-.marcellist>li {
+.marcellist > li {
   display: list-item;
   margin-bottom: 12px;
 }
 
-.marcellist>li>.li-row {
+.marcellist > li > .li-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -790,7 +801,7 @@ Marcel: Zutaten-Rechner
     width: 72px;
   }
 
-  .mb-portioner .mb-ingredients-list>li {
+  .mb-portioner .mb-ingredients-list > li {
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
@@ -856,26 +867,28 @@ Design der index.html
   text-decoration: none;
 }
 
-.recipe-section {
+.grey-fullwidth {
   background-color: #dddddd;
-  position: relative;
-  left: 49.5%;
-  right: 50%;
-  transform: translateX(-50%);
-  background-repeat: repeat-x;
-  width: 100vw;
+  width: 100%;
+
+}
+
+.recipe-section {
+  max-width: 1440px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.recipe-section .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.content {
     max-width: 1440px;
-    margin: 0 auto;
 
+}
+
+.recipe-section-content {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .recipe-section h2 {
@@ -886,8 +899,7 @@ Design der index.html
 .recipe-grid {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .mainrecept {
@@ -935,8 +947,7 @@ Design der index.html
 ============================= */
 
 .compare-section {
-  background: #ffffff;
-  padding: 80px 0 40px 0;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -944,15 +955,13 @@ Design der index.html
 }
 
 .compare-inner {
-  max-width: 1920px;
-  margin: 0 auto;
   padding: 0 40px;
 }
 
 .compare-section h2 {
   display: block;
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 0 40px;
 }
 
 .compare-content {
@@ -960,9 +969,6 @@ Design der index.html
   justify-content: center;
   align-items: flex-start;
   gap: 60px;
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
   text-align: left;
 }
 

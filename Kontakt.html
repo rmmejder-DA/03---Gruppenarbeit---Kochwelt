@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="padding-le-ri">
+    <header>
+    <div class="header-content">
       <a href="./index.html">
         <img class="logo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
       </a>
@@ -19,7 +20,8 @@
         <a href="./Kontakt.html">Kontakt</a>
         <a href="./impressum.html">Impressum</a>
       </nav>
-    </header>
+    </div>
+  </header>
     <div class="form_contact">
       <form
         action="https://formspree.io/f/movyqvay"
@@ -28,11 +30,23 @@
       >
         <h3 class="h3_contact">Kontaktiere uns</h3>
 
-            <label for="fname">Dein Name</label>
-            <input class="input_contact" type="text" id="fname" name="Name" required>
+        <label for="fname">Dein Name</label>
+        <input
+          class="input_contact"
+          type="text"
+          id="fname"
+          name="Name"
+          required
+        />
 
-            <label for="lname">Deine E-Mail</label>
-            <input class="input_contact" type="text" id="lname" name="E-Mail" required>
+        <label for="lname">Deine E-Mail</label>
+        <input
+          class="input_contact"
+          type="text"
+          id="lname"
+          name="E-Mail"
+          required
+        />
 
         <label for="subject">Deine Nachricht</label>
         <textarea
