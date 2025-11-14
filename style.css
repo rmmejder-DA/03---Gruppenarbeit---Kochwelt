@@ -377,6 +377,126 @@ CSS von Max
   transform: translateX(-50%);
   justify-content: space-between;
 } */
+ /*==========================
+mobile Rezept von Max
+==========================*/
+/* Menu list */
+    ul.menu li a:hover {
+      color: #008000;
+      text-decoration: underline 4px;
+      text-underline-offset: 12px;
+    }
+    ul.menu {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+    ul.menu li a {
+        color: #403b3b;
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+
+    /* cook button */
+    .cook {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding-right: 32px;
+        gap: 4px;
+    }
+
+    .cook span {
+        width: 30px;
+        height: 3px;
+        background: #008000;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 900px) {
+      h1{
+        font-size: 28px;
+        padding-left: 32px;
+      }
+      h2{
+        font-size: 28px;
+        padding-left: 32px;
+      }
+      .padding_gap{
+        padding-left: 32px;
+      }
+      h3{
+        font-size: 28px;
+        padding-left: 32px;
+      }
+      .underimg_shish_kebab{
+        padding-left: 32px;
+        gap: 42px;
+      }
+        ul.menu li a:hover {
+           color: #008000;
+           text-decoration: underline 2px;
+           text-underline-offset: 6px;
+    }
+        ul.menu {
+            display: none; /* Hide menu by default */
+            flex-direction: column;
+            background-color: ;
+            position: absolute;
+            top: 55px;
+            right: 40px;
+            border-radius: 10px;
+            text-align:right;
+        }
+
+        ul.menu.show {
+            display: flex; /* Show when toggled */
+        }
+
+        .cook {
+            display: flex; /* Show cook on small screens */
+        }
+        .header-content{
+          display: flex;
+          align-items: center;
+        }
+        .cooking ul li{padding-left: 32px;padding-right: 32px;}
+        ul#ingredients{
+          padding-left: 32px;
+        }
+        .logo{
+          height: 65px;
+          padding-left:32px;
+        }
+        .footer-logo img {
+          height: 65px;
+          filter: invert(1);
+          padding-left: 0;
+        }
+        .photo_plus_name {
+          padding-left: 32px;
+          padding-block-end: 0%;
+}
+        footer{
+          margin: 0;
+          display: flex;
+          height: 150px;
+}
+        .footer-content{
+          padding-block-start: 0%;
+
+        }
+        .footer-sm img {
+          margin: 0;
+          width: 84px;
+          height: auto;
+        }
+    }
+ /*==========================
+mobile Rezept End von Max
+==========================*/
+
 .underimg_shish_kebab {
   display: flex;
   align-items: center;
@@ -461,7 +581,6 @@ CSS von Max
 .photo_plus_name {
   display: flex;
   align-items: center;
-  padding-bottom: 120px;
   gap: 54px;
 }
 

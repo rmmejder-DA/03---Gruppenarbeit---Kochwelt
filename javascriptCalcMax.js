@@ -53,7 +53,9 @@ if (root) {
   setPortions(getPortions() || 0);
 }
 //End
-  
+    document.getElementById('cook').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('show');
+    });
 //Kontaktseite//
 function sendMail(event){
     event.preventDefault();
