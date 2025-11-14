@@ -25,6 +25,8 @@ body {
 .compare-section {
   max-width: 1440px;
   margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 /* ----------------- */
 
