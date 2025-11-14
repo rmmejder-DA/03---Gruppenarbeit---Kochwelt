@@ -444,7 +444,6 @@ mobile Rezept von Max
         ul.menu {
             display: none; /* Hide menu by default */
             flex-direction: column;
-            background-color: ;
             position: absolute;
             top: 55px;
             right: 40px;
