@@ -53,9 +53,15 @@ if (root) {
   setPortions(getPortions() || 0);
 }
 //End
-    document.getElementById('cook').addEventListener('click', function() {
-    document.getElementById('menu').classList.toggle('show');
-    });
+
+//ich musste deine Klasse hier rausnehmen und in die menu.js packen. Musste die Funktion erweitern
+
+    //  document.getElementById('cook').addEventListener('click', function() {
+    //  document.getElementById('menu').classList.toggle('show');
+    //  });
+
+
+     
 //Kontaktseite//
 function sendMail(event){
     event.preventDefault();

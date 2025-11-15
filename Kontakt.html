@@ -1,90 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt</title>
-    <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
-    <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt</title>
+  <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
+  <link rel="icon" type="image/png" href="./assets/img/logo_small.png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
     <div class="header-content">
       <a href="./index.html">
         <img class="logo" src="./assets/img/logo.png" alt="Kochwelt Logo" />
       </a>
       <nav>
-        <a href="./index.html">Start</a>
-        <a href="./tuerkische-pasta.html">Rezept des Tages</a>
-        <a href="./Kontakt.html">Kontakt</a>
-        <a href="./impressum.html">Impressum</a>
+        <div class="cook" id="cook">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="./index.html">Start</a></li>
+          <li><a href="./tuerkische-pasta.html">Rezept des Tages</a></li>
+          <li><a href="./Kontakt.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+        </ul>
       </nav>
     </div>
   </header>
+  <main class="page-content">
     <div class="form_contact">
-      <form
-        action="https://formspree.io/f/movyqvay"
-        class="contact_email"
-        method="post"
-      >
+      <form action="https://formspree.io/f/movyqvay" class="contact_email" method="post">
         <h3 class="h3_contact">Kontaktiere uns</h3>
 
         <label for="fname">Dein Name</label>
-        <input
-          class="input_contact"
-          type="text"
-          id="fname"
-          name="Name"
-          required
-        />
+        <input class="input_contact" type="text" id="fname" name="Name" required />
 
         <label for="lname">Deine E-Mail</label>
-        <input
-          class="input_contact"
-          type="text"
-          id="lname"
-          name="E-Mail"
-          required
-        />
+        <input class="input_contact" type="text" id="lname" name="E-Mail" required />
 
         <label for="subject">Deine Nachricht</label>
-        <textarea
-          id="subject"
-          name="subject"
-          style="height: 200px"
-          required
-        ></textarea>
+        <textarea id="subject" name="subject" style="height: 200px" required></textarea>
         <div class="flex_box">
           <input class="input_contact under" type="submit" value="Absenden" />
         </div>
       </form>
     </div>
-    <footer>
-      <div class="footer-content">
-        <div class="footer-logo">
-          <a href="./index.html">
-            <img src="./assets/img/logo.png" alt="Kochwelt" />
-          </a>
-        </div>
-        <div class="footer-sm">
-          <a href="https://de-de.facebook.com/" target="_blank">
-            <img
-              src="./assets/img/icons/logo_facebook.png"
-              alt="logo_facebook"
-            />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img
-              src="./assets/img/icons/logo_instagram.png"
-              alt="logo_instagram"
-            />
-          </a>
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="./assets/img/icons/logo_twitter.png" alt="logo_twitter" />
-          </a>
-        </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="Kochwelt" />
+        </a>
       </div>
-    </footer>
-  </body>
+      <div class="footer-sm">
+        <a href="https://de-de.facebook.com/" target="_blank">
+          <img src="./assets/img/icons/logo_facebook.png" alt="logo_facebook" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="./assets/img/icons/logo_instagram.png" alt="logo_instagram" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="./assets/img/icons/logo_twitter.png" alt="logo_twitter" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="./menu.js"></script>
+
 </html>

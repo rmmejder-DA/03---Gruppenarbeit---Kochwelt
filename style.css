@@ -6,12 +6,26 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Raleway", sans-serif;
 }
 
@@ -20,15 +34,20 @@ body {
 .header-content,
 .footer-content,
 .content,
-.recipe-section,              
+.recipe-section,
 .recipe-section-content,
 .compare-section {
   max-width: 1440px;
   margin: 0 auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-inline: 10px;
 }
+
+
 /* ----------------- */
+
+main {
+  flex: 1;
+}
 
 .page-content {
   max-width: 1440px;
@@ -76,16 +95,15 @@ header {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
-  .header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    max-width: 1440px;
-  }
-   
-  
-  /* position: relative;
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/* position: relative;
   left: 49.5%;
   right: 50%;
   width: 100vw;
@@ -132,7 +150,6 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: row;
-  max-width: 1440px;
   justify-content: space-between;
   align-items: center;
   padding: 60px 0 0 0;
@@ -144,8 +161,12 @@ footer {
   padding-left: 20px;
 }
 
+.footer-sm {
+  display: flex;
+  gap: 10px;
+}
+
 .footer-sm img {
-  margin: 12px;
   height: 42px;
   width: 155px;
   border-radius: 3px;
@@ -176,6 +197,7 @@ input {
   transition: 0.5s;
   outline: none;
 }
+
 input:focus {
   border: 2px rgb(46, 46, 46) solid;
 }
@@ -379,124 +401,46 @@ CSS von Max
   transform: translateX(-50%);
   justify-content: space-between;
 } */
- /*==========================
+
+/*==========================
 mobile Rezept von Max
 ==========================*/
+
 /* Menu list */
-    ul.menu li a:hover {
-      color: #008000;
-      text-decoration: underline 4px;
-      text-underline-offset: 12px;
-    }
-    ul.menu {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-    }
-
-    ul.menu li a {
-        color: #403b3b;
-        text-decoration: none;
-        padding: 0.5rem;
-    }
-
-    /* cook button */
-    .cook {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-        padding-right: 32px;
-        gap: 4px;
-    }
-
-    .cook span {
-        width: 30px;
-        height: 3px;
-        background: #008000;
-    }
-
-    /* Mobile styles */
-    @media (max-width: 900px) {
-      h1{
-        font-size: 28px;
-        padding-left: 32px;
-      }
-      h2{
-        font-size: 28px;
-        padding-left: 32px;
-      }
-      .padding_gap{
-        padding-left: 32px;
-      }
-      h3{
-        font-size: 28px;
-        padding-left: 32px;
-      }
-      .underimg_shish_kebab{
-        padding-left: 32px;
-        gap: 42px;
-      }
-        ul.menu li a:hover {
-           color: #008000;
-           text-decoration: underline 2px;
-           text-underline-offset: 6px;
-    }
-        ul.menu {
-            display: none; /* Hide menu by default */
-            flex-direction: column;
-            position: absolute;
-            top: 55px;
-            right: 40px;
-            border-radius: 10px;
-            text-align:right;
-        }
-
-        ul.menu.show {
-            display: flex; /* Show when toggled */
-        }
-
-        .cook {
-            display: flex; /* Show cook on small screens */
-        }
-        .header-content{
-          display: flex;
-          align-items: center;
-        }
-        .cooking ul li{padding-left: 32px;padding-right: 32px;}
-        ul#ingredients{
-          padding-left: 32px;
-        }
-        .logo{
-          height: 65px;
-          padding-left:32px;
-        }
-        .footer-logo img {
-          height: 65px;
-          filter: invert(1);
-          padding-left: 0;
-        }
-        .photo_plus_name {
-          padding-left: 32px;
-          padding-block-end: 0%;
+ul.menu li a:hover {
+  color: #008000;
+  text-decoration: underline 4px;
+  text-underline-offset: 12px;
 }
-        footer{
-          margin: 0;
-          display: flex;
-          height: 150px;
-}
-        .footer-content{
-          padding-block-start: 0%;
 
-        }
-        .footer-sm img {
-          margin: 0;
-          width: 84px;
-          height: auto;
-        }
-    }
- /*==========================
-mobile Rezept End von Max
-==========================*/
+ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+ul.menu li a {
+  color: #403b3b;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* cook button */
+.cook {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-right: 32px;
+  gap: 4px;
+}
+
+.cook span {
+  width: 30px;
+  height: 3px;
+  background: #008000;
+}
+
+
 
 .underimg_shish_kebab {
   display: flex;
@@ -532,6 +476,7 @@ mobile Rezept End von Max
   width: 160px;
   cursor: pointer;
 }
+
 .mm-portioner {
   display: flex;
   flex-direction: column;
@@ -782,12 +727,12 @@ CSS Design rinderroulade.html (Marcel)
   font-size: 16px;
 }
 
-.marcellist > li {
+.marcellist>li {
   display: list-item;
   margin-bottom: 12px;
 }
 
-.marcellist > li > .li-row {
+.marcellist>li>.li-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -921,7 +866,7 @@ Marcel: Zutaten-Rechner
     width: 72px;
   }
 
-  .mb-portioner .mb-ingredients-list > li {
+  .mb-portioner .mb-ingredients-list>li {
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
@@ -941,6 +886,7 @@ Design der index.html
   overflow: hidden;
   padding: 20px 0 20px 0;
   margin-top: 8px;
+  padding-inline: 10px;
 }
 
 .recipe-teaser img {
@@ -1000,7 +946,7 @@ Design der index.html
 }
 
 .content {
-    max-width: 1440px;
+  max-width: 1440px;
 
 }
 
@@ -1067,7 +1013,7 @@ Design der index.html
 ============================= */
 
 .compare-section {
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1096,8 +1042,8 @@ Design der index.html
   flex: 1;
   font-size: 18px;
   color: #333;
-  line-height: 1.6;
-  max-width: 45%;
+  /* line-height: 1.6; */
+  /* max-width: 45%; */
 }
 
 .compare-btn {
@@ -1135,4 +1081,447 @@ Design der index.html
 
 .compare-image img:hover {
   transform: scale(1.03);
+}
+
+/*==========================
+mobile Rezept von Max
+==========================*/
+@media (max-width: 900px) {
+  h1 {
+    font-size: 28px;
+    padding-inline: 10px;
+  }
+
+  h2 {
+    font-size: 28px;
+    padding-inline: 10px;
+
+    /* padding-left: 32px; */
+  }
+
+  .padding_gap {
+    padding-inline: 10px;
+  }
+
+  h3 {
+    font-size: 28px;
+    padding-inline: 10px;
+  }
+
+  .underimg_shish_kebab {
+    /* padding-left: 32px; */
+    gap: 42px;
+    padding-inline: 10px;
+
+  }
+
+  ul.menu li a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 6px;
+  }
+
+  ul.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+
+  ul.menu.show {
+    display: flex;
+  }
+
+  .page-content {
+    transition: margin-top 0.3s ease;
+    padding-inline: 10px;
+    padding-bottom: 16px;
+  }
+
+  .page-content.pushed {
+    margin-top: 140px;
+  }
+
+  .cook {
+    display: flex;
+  }
+
+  ul#ingredients {
+    padding-inline: 10px;
+  }
+
+  .logo {
+    height: 65px;
+    padding-inline: 10px;
+  }
+
+  .footer-logo img {
+    height: 65px;
+  }
+
+  .photo_plus_name {
+    padding-left: 32px;
+    padding-block-end: 0%;
+  }
+
+  footer {
+    max-width: 100%;
+    margin: 0;
+    /* margin: 0; */
+    /* display: flex; */
+    height: 150px;
+    padding-inline: 10px;
+  }
+
+  header {
+    max-width: 100%;
+    margin: 0;
+    padding-inline: 10px;
+  }
+
+  .footer-sm img {
+    /* margin: 0; */
+    width: 96px;
+    height: auto;
+  }
+
+  .schaschlik {
+    padding-inline: 10px;
+  }
+
+  .cooking ul li {
+    padding-inline: 10px;
+  }
+
+  .form_contact {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .contact_email {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 20px;
+    box-sizing: border-box;
+  }
+
+  .h3_contact {
+    padding: 0 0 16px 0;
+    text-align: center;
+  }
+
+  label {
+    padding-left: 0;
+    margin-top: 8px;
+  }
+
+  .input_contact,
+  textarea {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 160px;
+    margin-bottom: 12px;
+  }
+
+  .flex_box {
+    justify-content: center;
+  }
+
+  .under {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+}
+
+/*==========================
+mobile Rezept End von Max
+==========================*/
+
+@media (max-width: 569px) {
+  h1 {
+    font-size: 28px;
+    padding-inline: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 28px;
+    padding-inline: 10px;
+  }
+
+  .padding_gap {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 28px;
+    padding-inline: 10px;
+  }
+
+  .underimg_shish_kebab {
+    flex-direction: column;
+    gap: 8px;
+    padding-inline: 10px;
+    padding-bottom: 16px;
+
+  }
+
+  .portionier {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .portion {
+    border-radius: 10px;
+  }
+
+  input {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-radius: 10px;
+  }
+
+  button {
+    border-radius: 10px;
+  }
+
+  ul.menu li a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 6px;
+  }
+
+  ul.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+
+  ul.menu.show {
+    display: flex;
+  }
+
+  .page-content {
+    transition: margin-top 0.3s ease;
+    padding-inline: 2px;
+
+  }
+
+  .page-content.pushed {
+    margin-top: 140px;
+  }
+
+  .cook {
+    display: flex;
+  }
+
+  .grey_li_bckgr {
+    font-size: 12px;
+  }
+
+  .maxlist {
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 65px;
+    padding-inline: 10px;
+  }
+
+  .footer-logo img {
+    height: 32px;
+    padding-left: 0;
+  }
+
+  .photo_plus_name {
+    gap: 16px;
+
+  }
+
+  header {
+    max-width: 100%;
+    margin: 0;
+    padding-inline: 10px;
+  }
+
+  footer {
+    height: 120px;
+    max-width: 100%;
+    margin: 0;
+    padding-inline: 10px;
+  }
+
+  .footer-content {
+    max-width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .footer-sm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-right: 0;
+  }
+
+  .footer-sm img {
+    width: 60px;
+  }
+
+  .schaschlik {
+    padding-inline: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .cooking ul li {
+    padding-inline: 10px;
+  }
+
+  form p {
+    font-size: 13px;
+  }
+
+  .recipe-teaser {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .recipe-teaser img {
+    width: 100%;
+  }
+
+  .recipe-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .recipe-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .mainrecept img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mainrecept {
+    max-width: 100%;
+  }
+
+
+
+  .compare-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-bottom: 16px;
+    padding-top: 0px;
+  }
+
+  .form_contact {
+    height: auto;
+    padding: 40px 0;
+    margin-top: 32px;
+  }
+
+  .contact_email {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 20px;
+    box-sizing: border-box;
+  }
+
+  .h3_contact {
+    padding: 0 0 16px 0;
+    text-align: center;
+  }
+
+  label {
+    padding-left: 0;
+    margin-top: 8px;
+  }
+
+  .input_contact,
+  textarea {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 160px;
+    margin-bottom: 12px;
+  }
+
+  .flex_box {
+    justify-content: center;
+  }
+
+  .under {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .mb-form {
+    flex-direction: column;
+    gap: 12px;
+
+  }
+
+  .rouladenpng {
+    margin-bottom: 24px;
+  }
+
+  .mb-hr {
+    margin-top: 16px;
+  }
+
+  .mb-portion-bar {
+    flex-direction: column;
+  }
+
+  main {
+    padding-inline: 0px;
+  }
+
+  .cook {
+    padding-right: 8px;
+  }
+
+  .form-ey {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  
+
 }
