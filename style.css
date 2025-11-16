@@ -992,10 +992,11 @@ Design der index.html
   height: 220px;
   object-fit: cover;
   border-radius: 20px;
+  margin-top: 10px; /*beim hoover effekt - IMG direkt im Fenster(ohne ist am oberen Rand - sieht nicht so gut aus)
 }
 
 .mainrecept h3 {
-  margin: 16px 0 8px;
+  /* margin: 16px 0 8px; */
   font-size: 22px;
   color: #141414;
   font-weight: 600;
@@ -1440,7 +1441,7 @@ mobile Rezept End von Max
   }
 
   .mainrecept img {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
