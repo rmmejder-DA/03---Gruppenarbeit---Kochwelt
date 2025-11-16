@@ -1095,7 +1095,7 @@ mobile Rezept von Max
   h2 {
     font-size: 28px;
     padding-inline: 10px;
-
+    padding-bottom: 16px;
     /* padding-left: 32px; */
   }
 
@@ -1160,7 +1160,9 @@ mobile Rezept von Max
     height: 65px;
     padding-inline: 10px;
   }
-
+  .MAX{
+    font-size: 24px;
+  }
   .footer-logo img {
     height: 65px;
   }
@@ -1259,7 +1261,7 @@ mobile Rezept End von Max
 @media (max-width: 590px) {
   h1 {
     font-size: 28px;
-    padding-inline: 10px;
+    padding-inline: 4px;
     text-align: center;
   }
 
