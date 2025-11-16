@@ -992,7 +992,7 @@ Design der index.html
   height: 220px;
   object-fit: cover;
   border-radius: 20px;
-  margin-top: 10px; /*beim hoover effekt - IMG direkt im Fenster(ohne ist am oberen Rand - sieht nicht so gut aus)
+  margin-top: 10px; /*beim hoover effekt - IMG direkt am Fenster(ohne ist am oberen Rand - sieht nicht so gut aus)*/
 }
 
 .mainrecept h3 {
@@ -1087,7 +1087,7 @@ Design der index.html
 /*==========================
 mobile Rezept von Max
 ==========================*/
-@media (max-width: 900px) {
+@media (max-width: 830px) {
   h1 {
     font-size: 28px;
     padding-inline: 10px;
@@ -1101,7 +1101,6 @@ mobile Rezept von Max
   }
 
   .padding_gap {
-    justify-content: center;
     padding-inline: 10px;
   }
 
@@ -1114,7 +1113,6 @@ mobile Rezept von Max
     /* padding-left: 32px; */
     gap: 42px;
     padding-inline: 10px;
-
   }
 
   ul.menu li a:hover {
@@ -1194,7 +1192,7 @@ mobile Rezept von Max
     height: auto;
   }
 
-  /* .schaschlik {//Verschwindet Radium vom Bild
+  /* .schaschlik {//Verschwindet Radius vom Bild
     padding-inline: 10px;
   } */
 
@@ -1359,7 +1357,7 @@ mobile Rezept End von Max
   }
 
   .footer-logo img {
-    height: 32px;
+    height: 42px;
     padding-left: 0;
   }
 
