@@ -1259,7 +1259,7 @@ mobile Rezept von Max
 mobile Rezept End von Max
 ==========================*/
 
-@media (max-width: 590px) {
+@media (max-width: 830px) {
   h1 {
     font-size: 28px;
     padding-inline: 4px;
