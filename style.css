@@ -1100,6 +1100,7 @@ mobile Rezept von Max
   }
 
   .padding_gap {
+    justify-content: center;
     padding-inline: 10px;
   }
 
