@@ -149,10 +149,10 @@ footer {
 
 .footer-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 60px 0 0 0;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  padding:10px;
 }
 
 .footer-logo img {
@@ -166,7 +166,8 @@ footer {
   gap: 10px;
 }
 
-.footer-sm img {
+.footer-sm img{
+  margin-right: 20px;
   height: 42px;
   width: 155px;
   border-radius: 3px;
@@ -334,7 +335,7 @@ CSS contact.html
 
 .contact_email {
   background-color: #dcdcdc;
-  border-radius: 25px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -349,7 +350,7 @@ label {
   width: 500px;
   margin-right: 25px;
   margin-left: 25px;
-  border-radius: 15px;
+  border-radius: 8px;
   border: none;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -358,7 +359,6 @@ label {
 .under {
   width: 200px;
   background-color: #088a08;
-  border-radius: 0;
   color: white;
   cursor: pointer;
 }
@@ -1200,13 +1200,15 @@ mobile Rezept von Max
   }
 
   .form_contact {
-    height: auto;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    /* height: auto; */
+    /* padding: 20px 0; */
   }
 
   .contact_email {
     max-width: 560px;
-    width: 100%;
+    width: 300px;
     margin: 0 auto;
     padding: 16px 20px;
     box-sizing: border-box;
@@ -1266,6 +1268,7 @@ mobile Rezept End von Max
     padding-inline: 10px;
   }
   .padding_gap {
+    font-size: 28px;
     gap: 8px;
     flex-direction: column;
   }
