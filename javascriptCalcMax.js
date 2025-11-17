@@ -36,7 +36,7 @@ if (root) {
       const amountEl = li.querySelector(".amount");
       if (!amountEl) return;
       const value = base * portions;
-      amountEl.textContent = value.toLocaleString("de-DE");
+      amountEl.textContent = value.toFixed(1)|| 0;
     });
   }
 
