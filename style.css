@@ -320,9 +320,8 @@ textarea {
 }
 
 .form_contact {
-  height: 80vh;
+  height: 100vh; 
   display: flex;
-  /* justify-content: center;(ohne Funktion) */ 
   align-items: center;
   gap: 20px;
 }
@@ -336,10 +335,6 @@ textarea {
 
 /*==========================
 CSS von Max
-==========================*/
-
-/*==========================
-mobile Rezept von Max
 ==========================*/
 
 /* Menu list */
@@ -787,26 +782,6 @@ Marcel: Zutaten-Rechner
   width: auto;
 }
 
-@media (max-width: 640px) {
-  .mb-portioner {
-    padding-left: 20px;
-  }
-
-  .mb-portioner .mb-portion-label {
-    font-size: 16px;
-  }
-
-  .mb-portioner #portionInput {
-    width: 72px;
-  }
-
-  .mb-portioner .mb-ingredients-list > li {
-    grid-template-columns: 80px 60px 1fr;
-    font-size: 16px;
-    padding: 12px 14px;
-  }
-}
-
 /* ====================
 Design der index.html 
 =====================*/
@@ -1016,8 +991,29 @@ Design der index.html
 }
 
 /*==========================
-mobile Rezept von Max
+Mobil CSS index.html
 ==========================*/
+
+@media (max-width: 640px) {
+  .mb-portioner {
+    padding-left: 20px;
+  }
+
+  .mb-portioner .mb-portion-label {
+    font-size: 16px;
+  }
+
+  .mb-portioner #portionInput {
+    width: 72px;
+  }
+
+  .mb-portioner .mb-ingredients-list > li {
+    grid-template-columns: 80px 60px 1fr;
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+}
+
 @media (max-width: 830px) {
   main {
     padding-inline: 0px;
