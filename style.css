@@ -1127,7 +1127,6 @@ mobile Rezept von Max
     top: 80px;
     right: 20px;
     padding-top: 0px;
-
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     z-index: 10;
@@ -1344,11 +1343,11 @@ mobile Rezept End von Max
   }
 
   .grey_li_bckgr {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .maxlist {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .logo {
@@ -1412,7 +1411,7 @@ mobile Rezept End von Max
     padding-top: 0;
   }
   form p {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .recipe-teaser {
@@ -1481,7 +1480,7 @@ mobile Rezept End von Max
   }
 
   label {
-    padding-left: 0;
+    padding-right: 0;
     margin-top: 8px;
   }
 
