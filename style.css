@@ -29,7 +29,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-
 /* Sorgt aktuell für die Zentrierung */
 .header-content,
 .footer-content,
@@ -41,7 +40,6 @@ body {
   margin: 0 auto;
   padding-inline: 10px;
 }
-
 
 /* ----------------- */
 
@@ -101,36 +99,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
-
-
-/* position: relative;
-  left: 49.5%;
-  right: 50%;
-  width: 100vw;
-  transform: translateX(-50%); */
-
-
-/* header.padding-le-ri {
-  position: relative;
-  overflow: visible;
-  margin-bottom: 12px;
-  
-}
-
-header.padding-le-ri::after {
-  content: "";
-  position: absolute;
-  left: 49.5%;
-  transform: translateX(-50%);
-  bottom: 0;
-  width: 100vw;
-  height: 8px;
-  background: linear-gradient(to bottom,
-      rgba(121, 121, 121, 0.08),
-      rgba(0, 0, 0, 0));
-  pointer-events: none;
-} */
-
 .logo {
   height: 80px;
   padding-left: 20px;
@@ -166,7 +134,7 @@ footer {
   gap: 10px;
 }
 
-.footer-sm img{
+.footer-sm img {
   margin-right: 20px;
   height: 42px;
   width: 155px;
@@ -277,27 +245,6 @@ h4 {
   unicode-bidi: isolate;
 }
 
-/* .seperator {
-  max-width: 100%;
-  overflow-x: hidden;
-  transform: translateX(-50%);
-  width: 100vw;
-  position: relative;
-  height: 2px;
-  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
-  margin: 25px 0;
-  left: 50%;
-} */
-
-/* .sep-full {
-  border: 0;
-  height: 1px;
-  background: #ccc;
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
-  margin-block: 16px;
-} */
-
 /*==========================
 CSS contact.html
 ==========================*/
@@ -375,7 +322,7 @@ textarea {
 .form_contact {
   height: 80vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center;(ohne Funktion) */ 
   align-items: center;
   gap: 20px;
 }
@@ -390,17 +337,6 @@ textarea {
 /*==========================
 CSS von Max
 ==========================*/
-/* .footer_rezept {
-  margin-top: 30px;
-  background-color: #403b3b;
-  height: 400px;
-  position: relative;
-  left: 49.5%;
-  right: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
-  justify-content: space-between;
-} */
 
 /*==========================
 mobile Rezept von Max
@@ -439,8 +375,6 @@ ul.menu li a {
   height: 3px;
   background: #008000;
 }
-
-
 
 .underimg_shish_kebab {
   display: flex;
@@ -727,12 +661,12 @@ CSS Design rinderroulade.html (Marcel)
   font-size: 16px;
 }
 
-.marcellist>li {
+.marcellist > li {
   display: list-item;
   margin-bottom: 12px;
 }
 
-.marcellist>li>.li-row {
+.marcellist > li > .li-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -866,7 +800,7 @@ Marcel: Zutaten-Rechner
     width: 72px;
   }
 
-  .mb-portioner .mb-ingredients-list>li {
+  .mb-portioner .mb-ingredients-list > li {
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
@@ -936,7 +870,6 @@ Design der index.html
 .grey-fullwidth {
   background-color: #dddddd;
   width: 100%;
-
 }
 
 .recipe-section {
@@ -947,7 +880,6 @@ Design der index.html
 
 .content {
   max-width: 1440px;
-
 }
 
 .recipe-section-content {
@@ -1014,7 +946,6 @@ Design der index.html
 ============================= */
 
 .compare-section {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1088,33 +1019,82 @@ Design der index.html
 mobile Rezept von Max
 ==========================*/
 @media (max-width: 830px) {
+  main {
+    padding-inline: 0px;
+  }
   h1 {
     font-size: 28px;
-    padding-inline: 10px;
+    padding-inline: 4px;
+    text-align: center;
   }
-
   h2 {
     font-size: 28px;
     padding-inline: 10px;
     padding-bottom: 16px;
-    /* padding-left: 32px; */
   }
-
-  .padding_gap {
-    padding-inline: 10px;
-  }
-
   h3 {
     font-size: 28px;
     padding-inline: 10px;
   }
-
-  .underimg_shish_kebab {
-    /* padding-left: 32px; */
-    gap: 42px;
-    padding-inline: 10px;
+  .h3_contact {
+    padding: 0 0 16px 0;
+    text-align: center;
+  }
+    label {
+    padding-right: 0;
+    margin-top: 8px;
   }
 
+  .input_contact,
+  textarea {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 160px;
+    margin-bottom: 12px;
+  }
+
+  .portionier {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .portion {
+    border-radius: 10px;
+  }
+  .padding_gap {
+    font-size: 28px;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .schaschlik {
+    width: 100%;
+    height: 200px;
+  }
+
+ .underimg_shish_kebab {
+    flex-direction: column;
+    align-items: normal;
+    gap: 8px;
+    padding-inline: 10px;
+    padding-bottom: 16px;
+  }
+  input {
+    text-align: center;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-radius: 10px;
+  }
+  button {
+    border-radius: 10px;
+  }
+  
+  form p {
+    font-size: 16px;
+  }
   ul.menu li a:hover {
     text-decoration: underline 2px;
     text-underline-offset: 6px;
@@ -1148,33 +1128,45 @@ mobile Rezept von Max
 
   .cook {
     display: flex;
+    padding-right: 8px;
+  }
+  
+  .grey_li_bckgr {
+    font-size: 16px;
   }
 
+  .maxlist {
+    font-size: 16px;
+  }
   ul#ingredients {
     padding-inline: 10px;
   }
 
   .logo {
-    height: 65px;
+    height: 64px;
     padding-inline: 10px;
   }
-  .MAX{
+  .MAX {
     font-size: 24px;
   }
+  .photo_max {
+    width: 80px;
+    height: 80px;
+  }
   .footer-logo img {
-    height: 65px;
+    height: 42px;
+    padding-left: 0;
   }
 
   .photo_plus_name {
     padding-left: 32px;
     padding-block-end: 0%;
+    gap: 16px;
   }
 
   footer {
     max-width: 100%;
     margin: 0;
-    /* margin: 0; */
-    /* display: flex; */
     height: 150px;
     padding-inline: 10px;
   }
@@ -1184,208 +1176,6 @@ mobile Rezept von Max
     margin: 0;
     padding-inline: 10px;
   }
-
-  .footer-sm img {
-    /* margin: 0; */
-    width: 96px;
-    height: auto;
-  }
-
-  /* .schaschlik {//Verschwindet Radius vom Bild
-    padding-inline: 10px;
-  } */
-
-  .cooking ul li {
-    padding-inline: 10px;
-  }
-
-  .form_contact {
-    display: flex;
-    align-items: center;
-    /* height: auto; */
-    /* padding: 20px 0; */
-  }
-
-  .contact_email {
-    max-width: 560px;
-    width: 300px;
-    margin: 0 auto;
-    padding: 16px 20px;
-    box-sizing: border-box;
-  }
-
-  .h3_contact {
-    padding: 0 0 16px 0;
-    text-align: center;
-  }
-
-  label {
-    padding-left: 0;
-    margin-top: 8px;
-  }
-
-  .input_contact,
-  textarea {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
-  }
-
-  textarea {
-    height: 160px;
-    margin-bottom: 12px;
-  }
-
-  .flex_box {
-    justify-content: center;
-  }
-
-  .under {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  nav {
-    align-items: center;
-  }
-
-}
-
-/*==========================
-mobile Rezept End von Max
-==========================*/
-
-@media (max-width: 830px) {
-  h1 {
-    font-size: 28px;
-    padding-inline: 4px;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 28px;
-    padding-inline: 10px;
-  }
-  .padding_gap {
-    font-size: 28px;
-    gap: 8px;
-    flex-direction: column;
-  }
-
-  h3 {
-    font-size: 28px;
-    padding-inline: 10px;
-  }
-
-  .underimg_shish_kebab {
-    flex-direction: column;
-    align-items: normal;
-    gap: 8px;
-    padding-inline: 10px;
-    padding-bottom: 16px;
-
-  }
-
-  .portionier {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .portion {
-    border-radius: 10px;
-  }
-
-  input {
-    text-align: center;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-radius: 10px;
-  }
-
-  button {
-    border-radius: 10px;
-  }
-
-  ul.menu li a:hover {
-    text-decoration: underline 2px;
-    text-underline-offset: 6px;
-  }
-
-  ul.menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    padding: 16px 24px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index: 10;
-  }
-
-  ul.menu.show {
-    display: flex;
-  }
-
-  .page-content {
-    transition: margin-top 0.3s ease;
-    padding-inline: 2px;
-
-  }
-
-  .page-content.pushed {
-    margin-top: 140px;
-  }
-
-  .cook {
-    display: flex;
-  }
-
-  .grey_li_bckgr {
-    font-size: 16px;
-  }
-
-  .maxlist {
-    font-size: 16px;
-  }
-
-  .logo {
-    height: 65px;
-    padding-inline: 10px;
-  }
-
-  .footer-logo img {
-    height: 42px;
-    padding-left: 0;
-  }
-
-  .photo_plus_name {
-    gap: 16px;
-
-  }
-
-  header {
-    max-width: 100%;
-    margin: 0;
-    padding-inline: 10px;
-  }
-
-  footer {
-    height: 120px;
-    max-width: 100%;
-    margin: 0;
-    padding-inline: 10px;
-  }
-
-  .footer-content {
-    max-width: 100%;
-    margin: 0;
-    justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
   .footer-sm {
     flex-direction: column;
     justify-content: center;
@@ -1395,25 +1185,18 @@ mobile Rezept End von Max
   }
 
   .footer-sm img {
-    width: 60px;
+    width: 64px;
+    height: auto;
   }
-
-  .schaschlik {
-    /* padding-inline: 10px; */
-    width: 100%;
-    height: 200px;
-  }
-
   .cooking ul li {
     padding-inline: 10px;
   }
-  .cooking ul {
-    padding-top: 0;
-  }
-  form p {
-    font-size: 16px;
-  }
 
+  .form_contact {
+    height: auto;
+    padding: 40px 0;
+    margin-top: 32px;
+  }
   .recipe-teaser {
     flex-direction: column;
     align-items: center;
@@ -1446,26 +1229,6 @@ mobile Rezept End von Max
     max-width: 100%;
   }
 
-  .photo_max{
-    width: 80px;
-    height: 80px;
-  }
-
-  .compare-content {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    padding-bottom: 16px;
-    padding-top: 0px;
-  }
-
-  .form_contact {
-    height: auto;
-    padding: 40px 0;
-    margin-top: 32px;
-  }
-
   .contact_email {
     max-width: 320px;
     width: 100%;
@@ -1474,18 +1237,13 @@ mobile Rezept End von Max
     box-sizing: border-box;
   }
 
-  .h3_contact {
-    padding: 0 0 16px 0;
-    text-align: center;
-  }
-
   label {
-    padding-right: 0;
+    padding-left: 0;
     margin-top: 8px;
   }
 
   .input_contact,
-  textarea {
+   textarea {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -1506,10 +1264,37 @@ mobile Rezept End von Max
     border-radius: 10px;
   }
 
-  .mb-form {
+  nav {
+    align-items: center;
+  }
+  .footer-content {
+    max-width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .cooking ul li {
+    padding-inline: 10px;
+  }
+  .cooking ul {
+    padding-top: 0;
+  }
+  .form-ey {
     flex-direction: column;
     gap: 12px;
-
+  }
+  .compare-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-bottom: 16px;
+    padding-top: 0px;
+  }
+    .mb-form {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .rouladenpng {
@@ -1523,18 +1308,7 @@ mobile Rezept End von Max
   .mb-portion-bar {
     flex-direction: column;
   }
-
-  main {
-    padding-inline: 0px;
-  }
-
-  .cook {
-    padding-right: 8px;
-  }
-
-  .form-ey {
-    flex-direction: column;
-    gap: 12px;
-  }
-
 }
+/*==========================
+Mobil CSS
+==========================*/

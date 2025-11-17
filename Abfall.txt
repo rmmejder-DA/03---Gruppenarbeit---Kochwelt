@@ -1,0 +1,65 @@
+
+
+/* position: relative;
+  left: 49.5%;
+  right: 50%;
+  width: 100vw;
+  transform: translateX(-50%); */
+
+/* header.padding-le-ri {
+  position: relative;
+  overflow: visible;
+  margin-bottom: 12px;
+  
+}
+
+header.padding-le-ri::after {
+  content: "";
+  position: absolute;
+  left: 49.5%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100vw;
+  height: 8px;
+  background: linear-gradient(to bottom,
+      rgba(121, 121, 121, 0.08),
+      rgba(0, 0, 0, 0));
+  pointer-events: none;
+} */
+
+
+/* .seperator {
+  max-width: 100%;
+  overflow-x: hidden;
+  transform: translateX(-50%);
+  width: 100vw;
+  position: relative;
+  height: 2px;
+  background: linear-gradient(to bottom, #ddd, rgb(0 0 0 / 0%));
+  margin: 25px 0;
+  left: 50%;
+} */
+
+/* .sep-full {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  margin-block: 16px;
+} */
+/* .footer_rezept {
+  margin-top: 30px;
+  background-color: #403b3b;
+  height: 400px;
+  position: relative;
+  left: 49.5%;
+  right: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  justify-content: space-between;
+} */
+
+  /* .schaschlik {//Verschwindet Radius vom Bild
+    padding-inline: 10px;
+  } */
