@@ -63,7 +63,6 @@ a:hover {
   text-underline-offset: 12px;
 }
 
-
 /*==========================
 CSS Header
 ==========================*/
@@ -93,16 +92,7 @@ header {
   height: 80px;
   padding-left: 20px;
 }
-.KochLogo {
-  width: auto;
-  height: 84px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
 
-.KochLogo:hover {
-  cursor: pointer;
-}
 /*==========================
 CSS Footer
 ==========================*/
@@ -992,14 +982,6 @@ Design der index.html
 /*==========================
 Mobil CSS index.html
 ==========================*/
-@media (max-width:500px){
-  .footer-sm{
-    flex-direction: column;
-  }
-  .logo{
-    height: 72px;
-  }
-}
 @media (max-width: 640px) {
   .mb-portioner {
     padding-left: 20px;
@@ -1017,6 +999,15 @@ Mobil CSS index.html
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
+  }
+  h1{
+    padding-top: 42px;
+  }
+    .footer-sm{
+    flex-direction: column;
+  }
+  .footer-content{
+    padding: 10px;
   }
 }
 @media (max-width: 830px) {
@@ -1144,7 +1135,7 @@ Mobil CSS index.html
   }
 
   .logo {
-    height: 64px;
+    height: 54px;
     padding-inline: 10px;
   }
   .MAX {
@@ -1155,7 +1146,7 @@ Mobil CSS index.html
     height: 80px;
   }
   .footer-logo img {
-    height: 42px;
+    height: 48px;
     padding-left: 0;
   }
 
