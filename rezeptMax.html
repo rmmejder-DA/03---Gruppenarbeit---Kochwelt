@@ -44,62 +44,62 @@
             05.11.2025
           </p>
         </form>
-        <section class="mm-portioner">
+        <section>
           <div>
             <div class="portionier">
               <label for="portionInput">Zutaten für</label>
-              <input id="portionInput" type="number" min="1" value="3" inputmode="numeric" />
-              <button id="applyPortions" class="portion">Portionen</button>
+              <input id="num2" type="number" min="1" value="3"/>
+              <button onclick="multiply()" class="portion">Portionen</button>
             </div>
             <div>
-              <ul id="ingredients">
-                <li data-base="0.16666666667" data-unit="Bund" class="grey_li_bckgr">
-                  <span class="amount">0</span>
-                  <span class="unit">Bund</span> Petersilie
+              <ul>
+                <li class="grey_li_bckgr">
+                  <span id="num1">0.5</span>
+                  <span>Bund Petersilie</span>
                 </li>
-                <li data-base="0.16666666667" data-unit="Bund" class="maxlist">
-                  <span class="amount">0</span>
-                  <span class="unit">Bund</span> Basilikum
+                <li class="maxlist">
+                  <span>0.5</span>
+                  <span>Bund Basilikum</span>
                 </li>
-                <li data-base="0.16666666667" data-unit="ml" class="grey_li_bckgr">
-                  <span class="amount">0</span>
-                  <span class="unit">L</span> Kefir
+                <li class="grey_li_bckgr">
+                  <span>0.5</span>
+                  <span>L Kefir</span>
                 </li>
-                <li data-base="0.66666666667" data-unit="m.-große" class="maxlist">
-                  <span class="amount">0</span>
-                  <span class="unit">m.-große</span> Zwiebel(n)
+                <li class="maxlist">
+                  <span>2</span>
+                  <span>m.-große Zwiebel(n)</span>
                 </li>
-                <li data-base="1" data-unit="Stk" class="grey_li_bckgr">
-                  <span class="amount">0</span>
-                  <span class="unit">Stk</span> Lorbeerblätter
+                <li class="grey_li_bckgr">
+                  <span>3</span>
+                  <span>Stk Lorbeerblätter</span>
                 </li>
-                <li data-base="1" data-unit="Stk" class="maxlist">
-                  <span class="amount">0</span>
-                  <span class="unit">Stk</span> Wacholderbeeren
+                <li class="maxlist">
+                  <span>3</span>
+                  <span>Stk Wacholderbeeren</span>
                 </li>
-                <li data-base="0.66666666667" data-unit="TL" class="grey_li_bckgr">
-                  <span class="amount">0</span>
-                  <span class="unit">TL</span> Meersalz
+                <li class="grey_li_bckgr">
+                  <span>1</span>
+                  <span>TL Meersalz</span>
                 </li>
-                <li data-base="0.3333" data-unit="TL" class="maxlist">
-                  <span class="amount">0</span>
-                  <span class="unit">TL</span> Pfeffer frisch gemahlen
+                <li class="maxlist">
+                  <span>1</span>
+                  <span>TL Pfeffer frisch gemahlen</span>
                 </li>
-                <li data-base="0.3333" data-unit="TL" class="grey_li_bckgr">
-                  <span class="amount">0</span>
-                  <span class="unit">TL</span> Chilipulver z. B. Cayennepfeffer
+                <li class="grey_li_bckgr">
+                  <span>1</span>
+                  <span>TL Chilipulver z. B. Cayennepfeffer</span>
                 </li>
-                <li data-base="0.66666666667" data-unit="Stk" class="maxlist">
-                  <span class="amount">0</span>
-                  <span class="unit">Stk</span> Knoblauchzehe(n) klein geschnitten
+                <li class="maxlist">
+                  <span>2</span>
+                  <span>Stk Knoblauchzehe(n) klein geschnitten</span>
                 </li>
-                <li data-base="0.25" data-unit="Kg" class="grey_li_bckgr">
-                  <span class="amount">0</span>
-                  <span class="unit">Kg</span> Schweinenacken nicht zu mager
+                <li class="grey_li_bckgr">
+                  <span>0.75</span>
+                  <span>Kg Schweinenacken nicht zu mager</span>
                 </li>
-                <li data-base="0.16666666667" data-unit="Bund" class="maxlist">
-                  <span class="amount">0</span>
-                  <span class="unit">Bund</span> Thymian
+                <li class="maxlist">
+                  <span>0.5</span>
+                  <span>Bund Thymian</span>
                 </li>
               </ul>
             </div>
