@@ -100,17 +100,15 @@ CSS Footer
 footer {
   margin-top: 30px;
   background-color: #403b3b;
-  /* height: 200px; */
   width: 100%;
 }
 
 .footer-content {
   display: flex;
   align-items: center;
-  /* flex-direction: row; */
+  height: 120px;
   justify-content: space-between;
-  padding: 24px;
-}
+  }
 
 .footer-logo img {
   height: 80px;
@@ -1168,7 +1166,6 @@ Mobil CSS index.html
     padding-inline: 10px;
   }
   .footer-sm {
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -1176,7 +1173,7 @@ Mobil CSS index.html
   }
 
   .footer-sm img {
-    width: 64px;
+    width: 84px;
     height: auto;
   }
   .cooking ul li {
