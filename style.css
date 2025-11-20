@@ -1122,10 +1122,12 @@ Mobil CSS index.html
   }
   
   .grey_li_bckgr {
+    text-align: left;
     font-size: 16px;
   }
 
   .maxlist {
+    text-align: left;
     font-size: 16px;
   }
   ul#ingredients {
