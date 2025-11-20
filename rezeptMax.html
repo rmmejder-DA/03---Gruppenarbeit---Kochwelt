@@ -48,57 +48,57 @@
           <div>
             <div class="portionier">
               <label for="portionInput">Zutaten für</label>
-              <input id="num2" type="number" min="1" value="3"/>
-              <button onclick="multiply()" class="portion">Portionen</button>
+              <input id="num1" type="number" min="3" value="3"/>
+              <button onclick="multiplyValues()" class="portion">Portionen</button>
             </div>
             <div>
               <ul>
                 <li class="grey_li_bckgr">
-                  <span id="num1">0.5</span>
+                  <span data-base="0.1667" id="num2">0.5</span>
                   <span>Bund Petersilie</span>
                 </li>
                 <li class="maxlist">
-                  <span>0.5</span>
+                  <span data-base="0.1667" id="num3">0.5</span>
                   <span>Bund Basilikum</span>
                 </li>
                 <li class="grey_li_bckgr">
-                  <span>0.5</span>
+                  <span data-base="0.1667" id="num4">0.5</span>
                   <span>L Kefir</span>
                 </li>
                 <li class="maxlist">
-                  <span>2</span>
+                  <span data-base="0.33" id="num5">2</span>
                   <span>m.-große Zwiebel(n)</span>
                 </li>
                 <li class="grey_li_bckgr">
-                  <span>3</span>
+                  <span data-base="1"id="num6">3</span>
                   <span>Stk Lorbeerblätter</span>
                 </li>
                 <li class="maxlist">
-                  <span>3</span>
+                  <span data-base="1" id="num7">3</span>
                   <span>Stk Wacholderbeeren</span>
                 </li>
                 <li class="grey_li_bckgr">
-                  <span>1</span>
+                  <span data-base="0.33" id="num8">1</span>
                   <span>TL Meersalz</span>
                 </li>
                 <li class="maxlist">
-                  <span>1</span>
+                  <span data-base="0.33" id="num9">1</span>
                   <span>TL Pfeffer frisch gemahlen</span>
                 </li>
                 <li class="grey_li_bckgr">
-                  <span>1</span>
+                  <span data-base="0.33" id="num10">1</span>
                   <span>TL Chilipulver z. B. Cayennepfeffer</span>
                 </li>
                 <li class="maxlist">
-                  <span>2</span>
+                  <span data-base="0.667" id="num11">2</span>
                   <span>Stk Knoblauchzehe(n) klein geschnitten</span>
                 </li>
                 <li class="grey_li_bckgr">
-                  <span>0.75</span>
+                  <span data-base="0.25" id="num12">0.75</span>
                   <span>Kg Schweinenacken nicht zu mager</span>
                 </li>
                 <li class="maxlist">
-                  <span>0.5</span>
+                  <span data-base="0.1667" id="num13">0.5</span>
                   <span>Bund Thymian</span>
                 </li>
               </ul>
@@ -161,7 +161,7 @@
   </main>
   </footer>
 </body>
-<script src="./javascriptCalcMax.js"></script>
+<script src="./RussischeSchaschlikspießeCalc.js"></script>
 <script src="./menu.js"></script>
 
 </html>
