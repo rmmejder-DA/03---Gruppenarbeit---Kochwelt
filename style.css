@@ -236,27 +236,6 @@ h4 {
 CSS contact.html
 ==========================*/
 
-.footer_contact {
-  background-color: #403b3b;
-  height: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.footer_contact_logo img {
-  width: auto;
-  height: 36px;
-  border-radius: 5px;
-}
-
-.footer_contact_logo {
-  display: flex;
-  gap: 24px;
-}
-
 .h3_contact {
   padding: 31px;
 }
@@ -393,11 +372,6 @@ ul.menu li a {
   cursor: pointer;
 }
 
-.mm-portioner {
-  display: flex;
-  flex-direction: column;
-}
-
 .maxlist {
   padding: 24px;
   padding-left: 32px;
@@ -433,7 +407,14 @@ ul.menu li a {
   list-style-type: none;
   padding-top: 32px;
 }
-
+b {
+  background-color: #e4e4e4;
+  border-radius: 50px;
+  color:#008000;
+  padding: 5px 10px 5px 10px;
+  justify-content: center;
+  align-items: center;
+}
 .padding_gap {
   display: flex;
   padding-bottom: 32px;
@@ -1001,12 +982,17 @@ Mobil CSS index.html
   h1{
     padding-top: 42px;
   }
-    .footer-sm{
+  .footer-sm{
     flex-direction: column;
   }
   .footer-content{
     padding: 10px;
   }
+  form.underimg_shish_kebab{
+  display: grid;
+  justify-content: center;
+}
+
 }
 @media (max-width: 830px) {
   main {
@@ -1072,6 +1058,7 @@ Mobil CSS index.html
     padding-inline: 10px;
     padding-bottom: 16px;
   }
+
   input {
     text-align: center;
     border-top-left-radius: 0px;
@@ -1104,6 +1091,7 @@ Mobil CSS index.html
 
   ul.menu.show {
     display: flex;
+    padding: 10px;
   }
 
   .page-content {
