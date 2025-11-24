@@ -172,6 +172,13 @@ form p {
   padding-right: 20px;
 }
 
+label {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 24px;
+  padding-left: 31px;
+}
+
 input {
   padding-left: 10px;
   margin-right: 0px;
@@ -215,11 +222,6 @@ h1 {
   justify-content: baseline;
   padding-top: 72px;
   padding-bottom: 32px;
-}
-
-label {
-  padding-right: 24px;
-  display: flex;
 }
 
 h2 {
@@ -281,12 +283,6 @@ CSS contact.html
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-}
-
-label {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 31px;
 }
 
 .input_contact {
@@ -1001,7 +997,12 @@ Mobil CSS index.html
     text-decoration: underline 2px;
     text-underline-offset: 6px;
   }
-
+  
+  header {
+    max-width: 100%;
+    margin: 0;
+    padding-inline: 10px;
+  }
   ul.menu {
     display: none;
     flex-direction: column;
@@ -1064,7 +1065,7 @@ Mobil CSS index.html
 
   .contact_email {
     max-width: 320px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 16px 20px;
     box-sizing: border-box;
@@ -1176,11 +1177,6 @@ Mobil CSS index.html
     padding-inline: 10px;
   }
 
-  header {
-    max-width: 100%;
-    margin: 0;
-    padding-inline: 10px;
-  }
   .footer-sm {
     justify-content: center;
     align-items: center;
@@ -1192,8 +1188,16 @@ Mobil CSS index.html
     width: 84px;
     height: auto;
   }
+  .footer-content {
+    max-width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
 
+/*index.html mobil*/
   .recipe-teaser {
     flex-direction: column;
     align-items: center;
@@ -1234,13 +1238,6 @@ Mobil CSS index.html
 
   nav {
     align-items: center;
-  }
-  .footer-content {
-    max-width: 100%;
-    margin: 0;
-    justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 
   .form-ey {
