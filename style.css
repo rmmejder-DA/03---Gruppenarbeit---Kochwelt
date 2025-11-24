@@ -51,7 +51,9 @@ main {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+/*==========================
+CSS Header
+==========================*/
 a {
   color: #403b3b;
   text-decoration: none;
@@ -62,11 +64,6 @@ a:hover {
   text-decoration: underline 4px;
   text-underline-offset: 12px;
 }
-
-/*==========================
-CSS Header
-==========================*/
-
 nav {
   display: flex;
   align-items: end;
@@ -91,6 +88,39 @@ header {
 .logo {
   height: 80px;
   padding-left: 20px;
+}
+/* Menu list */
+ul.menu li a:hover {
+  color: #008000;
+  text-decoration: underline 4px;
+  text-underline-offset: 12px;
+}
+
+ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+ul.menu li a {
+  color: #403b3b;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* cook button */
+.cook {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-right: 32px;
+  gap: 4px;
+}
+
+.cook span {
+  width: 30px;
+  height: 3px;
+  background: #008000;
 }
 
 /*==========================
@@ -127,7 +157,7 @@ footer {
   width: 155px;
   border-radius: 3px;
 }
-
+/*main-content*/
 form p {
   background-color: #e4e4e4;
   width: auto;
@@ -289,6 +319,7 @@ textarea {
   height: 100vh; 
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -302,40 +333,6 @@ textarea {
 /*==========================
 CSS von Max
 ==========================*/
-
-/* Menu list */
-ul.menu li a:hover {
-  color: #008000;
-  text-decoration: underline 4px;
-  text-underline-offset: 12px;
-}
-
-ul.menu {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-ul.menu li a {
-  color: #403b3b;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-/* cook button */
-.cook {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding-right: 32px;
-  gap: 4px;
-}
-
-.cook span {
-  width: 30px;
-  height: 3px;
-  background: #008000;
-}
 
 .underimg_shish_kebab {
   display: flex;
@@ -406,6 +403,7 @@ ul.menu li a {
   padding-inline-start: 0;
   list-style-type: none;
   padding-top: 32px;
+  font-size: 18px;
 }
 b {
   background-color: #e4e4e4;
@@ -988,16 +986,43 @@ Mobil CSS index.html
   .footer-content{
     padding: 10px;
   }
+/*MAX Rezept*/
   form.underimg_shish_kebab{
   display: grid;
   justify-content: center;
-}
-
+  }
+/*MAX Rezept*/
 }
 @media (max-width: 830px) {
   main {
     padding-inline: 0px;
   }
+    ul.menu li a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 6px;
+  }
+
+  ul.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+
+  ul.menu.show {
+    display: flex;
+    padding: 10px;
+  }
+  .cook {
+    display: flex;
+    padding-right: 8px;
+  }
+
   h1 {
     font-size: 28px;
     padding-inline: 4px;
@@ -1016,24 +1041,40 @@ Mobil CSS index.html
     padding: 0 0 16px 0;
     text-align: center;
   }
-    label {
+  label {
     padding-right: 0;
     margin-top: 8px;
   }
-
+/*CONTACT MOBIL*/
   .input_contact,
-  textarea {
+   textarea {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     box-sizing: border-box;
   }
-
   textarea {
     height: 160px;
     margin-bottom: 12px;
   }
 
+  .flex_box {
+    justify-content: center;
+  }
+
+  .contact_email {
+    max-width: 320px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px 20px;
+    box-sizing: border-box;
+  }
+  .under {
+    width: 100%;
+    border-radius: 10px;
+  }
+/*CONTACT MOBIL*/
+/*Rezept MAX*/
   .portionier {
     flex-direction: column;
     gap: 8px;
@@ -1059,6 +1100,42 @@ Mobil CSS index.html
     padding-bottom: 16px;
   }
 
+  .cooking ul li {
+    padding-inline: 10px;
+  }
+  .cooking ul {
+    padding-top: 0;
+  }
+  .grey_li_bckgr {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .maxlist {
+    text-align: left;
+    font-size: 16px;
+  }
+  ul#ingredients {
+    padding-inline: 10px;
+  }
+  
+  .photo_plus_name {
+    padding-left: 32px;
+    padding-block-end: 0%;
+    gap: 16px;
+  }
+    .MAX {
+    font-size: 24px;
+  }
+  .photo_max {
+    width: 80px;
+    height: 80px;
+  }
+   .cooking ul li {
+    padding-inline: 10px;
+  }
+
+/*Rezept MAX end*/
   input {
     text-align: center;
     border-top-left-radius: 0px;
@@ -1072,27 +1149,6 @@ Mobil CSS index.html
   form p {
     font-size: 16px;
   }
-  ul.menu li a:hover {
-    text-decoration: underline 2px;
-    text-underline-offset: 6px;
-  }
-
-  ul.menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    padding-top: 0px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index: 10;
-  }
-
-  ul.menu.show {
-    display: flex;
-    padding: 10px;
-  }
 
   .page-content {
     transition: margin-top 0.3s ease;
@@ -1104,44 +1160,14 @@ Mobil CSS index.html
     margin-top: 160px;
   }
 
-  .cook {
-    display: flex;
-    padding-right: 8px;
-  }
-  
-  .grey_li_bckgr {
-    text-align: left;
-    font-size: 16px;
-  }
-
-  .maxlist {
-    text-align: left;
-    font-size: 16px;
-  }
-  ul#ingredients {
-    padding-inline: 10px;
-  }
-
   .logo {
     height: 54px;
     padding-inline: 10px;
   }
-  .MAX {
-    font-size: 24px;
-  }
-  .photo_max {
-    width: 80px;
-    height: 80px;
-  }
+
   .footer-logo img {
     height: 48px;
     padding-left: 0;
-  }
-
-  .photo_plus_name {
-    padding-left: 32px;
-    padding-block-end: 0%;
-    gap: 16px;
   }
 
   footer {
@@ -1166,15 +1192,8 @@ Mobil CSS index.html
     width: 84px;
     height: auto;
   }
-  .cooking ul li {
-    padding-inline: 10px;
-  }
 
-  .form_contact {
-    height: auto;
-    padding: 40px 0;
-    margin-top: 32px;
-  }
+
   .recipe-teaser {
     flex-direction: column;
     align-items: center;
@@ -1207,39 +1226,10 @@ Mobil CSS index.html
     max-width: 100%;
   }
 
-  .contact_email {
-    max-width: 320px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 16px 20px;
-    box-sizing: border-box;
-  }
 
   label {
     padding-left: 0;
     margin-top: 8px;
-  }
-
-  .input_contact,
-   textarea {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
-  }
-
-  textarea {
-    height: 160px;
-    margin-bottom: 12px;
-  }
-
-  .flex_box {
-    justify-content: center;
-  }
-
-  .under {
-    width: 100%;
-    border-radius: 10px;
   }
 
   nav {
@@ -1252,12 +1242,7 @@ Mobil CSS index.html
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  .cooking ul li {
-    padding-inline: 10px;
-  }
-  .cooking ul {
-    padding-top: 0;
-  }
+
   .form-ey {
     flex-direction: column;
     gap: 12px;
