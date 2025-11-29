@@ -33,19 +33,20 @@
   </header>
   <main class="page-content">
     <div class="form_contact">
-      <form action="https://formspree.io/f/movyqvay" class="contact_email" method="post">
+      <form class="contact_email" action="https://formspree.io/f/xqavvjjb" method="POST">
         <h3 class="h3_contact">Kontaktiere uns</h3>
 
-        <label for="fname">Dein Name</label>
-        <input class="input_contact" type="text" id="fname" name="Name" required />
+        <label for="name">Dein Name</label>
+        <input class="input_contact" type="text" name="name" required />
 
-        <label for="lname">Deine E-Mail</label>
-        <input class="input_contact" type="text" id="lname" name="E-Mail" required />
+        <label for="email">Deine E-Mail</label>
+        <input class="input_contact" type="email" name="email" required />
 
         <label for="subject">Deine Nachricht</label>
-        <textarea id="subject" name="subject" style="height: 200px" required></textarea>
+        <textarea name="subject" style="height: 200px;" required></textarea>
+
         <div class="flex_box">
-          <input class="input_contact under" type="submit" value="Absenden" />
+        <button class="input_contact under">ABSENDEN</button>
         </div>
       </form>
     </div>
