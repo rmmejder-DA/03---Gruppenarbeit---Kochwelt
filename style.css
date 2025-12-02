@@ -445,6 +445,17 @@ b {
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
+@media(max-width:830px){
+  .input-zutaten{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+
+.amount {
+  margin-right: 10px;
+}
 .a_impressum {
   color: #006800;
 }
