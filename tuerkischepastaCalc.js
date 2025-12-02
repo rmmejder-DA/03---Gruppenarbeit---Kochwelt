@@ -9,7 +9,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("portionInput")
     const button = document.getElementById("portionButton")
-    const listItems = document.querySelectorAll("zutatenListe li [data-base] ")
+    const listItems = document.querySelectorAll("#zutatenListe li[data-base]")
 
     function calc() {
         let portionen = parseFloat(input.value.replace(",", "."))
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
     if (button) {
-        button.addEventListener("click", calc());
+        button.addEventListener("click", calc);
     }
     if (input) {
         input.addEventListener("keydown", function (e) {
