@@ -50,36 +50,35 @@
           </p>
         </form>
         <div class="input-zutaten">
-          <label for="Portion">Zutaten für:</label>
-          <input class="input" type="number" min="0" max="10" value="4" id="Num1" />
-          <button class="button-zutaten" type="submit" value="submit">
+          <label  for="portionInput">Zutaten für:</label>
+          <input class="input" type="number" min="0" max="10" value="4" id="portionInput" />
+          <button class="button-zutaten" type="submit" value="submit" id="portionButton">
             Portionen
           </button>
         </div>
       </div>
       <div class="liste-div">
-        <ul id="zutaten" class="liste-ul">
-          <li class="li-grey">500 g Nudeln</li>
-          <li class="li-white">500 g griechischer Joghurt</li>
-          <li class="li-grey">
-            500 g Rinderhackfleisch
+        <ul id="zutatenListe" class="liste-ul">
+          <li class="li-grey" data-base="125"><span class="amount">500</span> g Nudeln</li>
+          <li class="li-white" data-base="125"><span class="amount">500</span> g griechischer Joghurt</li>
+          <li class="li-grey" data-base="125"><span class="amount">500</span> g Rinderhackfleisch
             <p class="li-muted">oder Lamm</p>
           </li>
-          <li class="li-white">2 Zehe(n) Knoblauch</li>
-          <li class="li-grey">
-            ½ Bund Petersilie
+          <li class="li-white" data-base="0.5"><span class="amount">2</span> Zehe(n) Knoblauch</li>
+          <li class="li-grey" data-base="0.25">
+            1 Bund Petersilie
             <p class="li-muted">frisch</p>
           </li>
-          <li class="li-white">1 Stück Zwiebel</li>
-          <li class="li-grey">2 EL Olivenöl</li>
-          <li class="li-white">1 EL Tomatenmark</li>
-          <li class="li-grey">2 EL Ajvar</li>
-          <li class="li-white">400 g gehackte Tomaten</li>
-          <li class="li-grey">
+          <li class="li-white" data-base="0.25">1 Stück Zwiebel</li>
+          <li class="li-grey" data-base="0.5">2 EL Olivenöl</li>
+          <li class="li-white" data-base="0.25">1 EL Tomatenmark</li>
+          <li class="li-grey" data-base="0.5">2 EL Ajvar</li>
+          <li class="li-white" data-base="100">400 g gehackte Tomaten</li>
+          <li class="li-grey" data-base="0.25">
             1 Stück Zucchini
             <p class="li-muted">klein</p>
           </li>
-          <li class="li-white">
+          <li class="li-white" data-base="1.25">
             5 Stück Tomaten
             <p class="li-muted">z.B. frische Strauchtomaten</p>
           </li>
@@ -190,6 +189,7 @@
       </div>
     </div>
   </footer>
+<script src="./tuerkischepastaCalc.js"></script>
 </body>
-<script src="./menu.js"></script>
+
 </html>
