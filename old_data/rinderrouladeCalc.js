@@ -1,52 +1,45 @@
-// JS von der rinderroulade.html (Marcel)
+    const input = document.getElementById("portionInput");
+    const button = document.getElementById("applyPortions"); 
+    const listItems = document.querySelectorAll("#ingredients li[data-base]"); 
 
-const root = document.querySelector(".mb-portioner");
-if (root) {
-  const input = root.querySelector("#portionInput");
-  const applyBtn = root.querySelector("#applyPortions");
-  const items = root.querySelectorAll("#ingredients li");
+    function calc() {
+        let portionen = parseFloat(input.value.replace(",", "."));
 
-  items.forEach((li) => {
-    const amountEl = li.querySelector(".amount");
-    const unitEl = li.querySelector(".unit");
+        if (isNaN(portionen) || portionen < 1) {
+            portionen = 1;
+            input.value = 1;
+        } else if (portionen > 10) {
+            portionen = 10;
+            input.value = 10;
+       }
 
-    const amountEmpty = !amountEl || !amountEl.textContent.trim();
-    const unitEmpty = !unitEl || !unitEl.textContent.trim();
+        listItems.forEach((item) => {
+            if (item.classList.contains("mb-no-amount")) return;
 
-    if (amountEmpty && unitEmpty) {
-      li.classList.add("mb-no-amount");
+            const basiswert = parseFloat(item.getAttribute("data-base"));
+            const amountspan = item.querySelector(".amount");
+
+            if (amountspan) {
+                let newValue = basiswert * portionen;
+                
+                newValue = Math.round(newValue * 100) / 100;
+                
+                amountspan.textContent = newValue.toLocaleString("de-DE");
+            }
+        });
     }
-  });
 
-  function getPortions() {
-    let n = Math.round(Number(input.value) || 0);
-    if (n < 0) n = 0;
-    return n;
-  }
-  function setPortions(n) {
-    const val = Math.max(0, Math.round(n));
-    input.value = String(val);
-    update(val);
-  }
-  function update(portions) {
-    items.forEach((li) => {
-      const base = Number(li.dataset.base) || 0;
-      const amountEl = li.querySelector(".amount");
-      if (!amountEl) return;
-      const value = base * portions;
-      amountEl.textContent = value.toLocaleString("de-DE");
-    });
-  }
-
-  applyBtn?.addEventListener("click", () => setPortions(getPortions()));
-  input?.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      setPortions(getPortions());
+    if (button) {
+        button.addEventListener("click", calc);
     }
-  });
-  input.addEventListener("input", () => setPortions(getPortions()));
-  input.addEventListener("change", () => setPortions(getPortions()));
 
-  setPortions(getPortions() || 0);
-}
+    if (input) {
+        input.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                calc();
+            }
+        });
+        
+        calc(); 
+    }
