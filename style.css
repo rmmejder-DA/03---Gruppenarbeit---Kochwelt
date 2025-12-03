@@ -1254,6 +1254,12 @@ Mobil CSS index.html
   .form-ey {
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 24px;
+
+  }
+
+  .input-zutaten {
+    height: auto;
   }
   .compare-content {
     flex-direction: column-reverse;
