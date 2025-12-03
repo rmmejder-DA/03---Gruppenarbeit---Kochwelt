@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isNaN(portionen) || portionen < 1) {
             portionen = 1;
             input.value = 1;
+        }else if (portionen > 10) {
+            portionen = 10; 
+            input.value = 10;
         }
         listItems.forEach((item) => {
             const basiswert = parseFloat(item.getAttribute("data-base"));
