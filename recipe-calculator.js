@@ -1,11 +1,3 @@
-//      Türkische Pasta Rechner
-// ================================================
-//		Datei: tuerkischepastaCalc.js
-//		Projekt: Kochwelt
-//		Erstellt am: 02-12-2025 um 16:21 Uhr
-//		Autor: Ensar
-// ================================================
-
 document.addEventListener("DOMContentLoaded", function () {
     const input = document.getElementById("portionInput")
     const button = document.getElementById("portionButton")
@@ -41,4 +33,3 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 });
-
