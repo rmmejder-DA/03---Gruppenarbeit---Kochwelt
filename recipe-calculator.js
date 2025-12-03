@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function calc() {
         let portionen = parseFloat(input.value.replace(",", "."))
 
-        if (isNaN(portionen) || portionen < 0) {
-            portionen = 0;
-            input.value = 0;
+        if (isNaN(portionen) || portionen < 1) {
+            portionen = 1;
+            input.value = 1;
         }
         listItems.forEach((item) => {
             const basiswert = parseFloat(item.getAttribute("data-base"));
