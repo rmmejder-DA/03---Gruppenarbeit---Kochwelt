@@ -47,6 +47,7 @@ main {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 /*==========================
 CSS Header
 ==========================*/
@@ -60,6 +61,7 @@ a:hover {
   text-decoration: underline 4px;
   text-underline-offset: 12px;
 }
+
 nav {
   display: flex;
   align-items: end;
@@ -81,10 +83,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .logo {
   height: 80px;
   padding-left: 20px;
 }
+
 /* Menu list */
 ul.menu li a:hover {
   color: #008000;
@@ -153,6 +157,7 @@ footer {
   width: 155px;
   border-radius: 3px;
 }
+
 /*main-content*/
 form p {
   background-color: #e4e4e4;
@@ -172,7 +177,7 @@ label {
   display: flex;
   justify-content: flex-start;
   padding-right: 24px;
-  padding-left: 31px;
+  padding-left: 24px;
 }
 
 input {
@@ -397,6 +402,7 @@ CSS von Max
   padding-top: 32px;
   font-size: 18px;
 }
+
 b {
   background-color: #e4e4e4;
   border-radius: 50px;
@@ -405,6 +411,7 @@ b {
   justify-content: center;
   align-items: center;
 }
+
 .padding_gap {
   display: flex;
   padding-bottom: 32px;
@@ -452,6 +459,7 @@ CSS Design rezeptEnsar.html (Ensar)
 .amount {
   margin-right: 10px;
 }
+
 .a_impressum {
   color: #006800;
 }
@@ -562,13 +570,13 @@ CSS Design rezeptEnsar.html (Ensar)
   font-size: 24px;
 }
 
-.impressum {
+/* .impressum {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-}
+} */
 
 .no_margin {
   margin: 0;
@@ -613,6 +621,8 @@ CSS Design rinderroulade.html (Marcel)
   width: 100%;
   object-fit: cover;
   display: block;
+  height: 200px;
+  border-radius: 10px;
 }
 
 .marcellist {
@@ -624,12 +634,12 @@ CSS Design rinderroulade.html (Marcel)
   font-size: 16px;
 }
 
-.marcellist > li {
+.marcellist>li {
   display: list-item;
   margin-bottom: 12px;
 }
 
-.marcellist > li > .li-row {
+.marcellist>li>.li-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -872,7 +882,8 @@ Design der index.html
   height: 220px;
   object-fit: cover;
   border-radius: 20px;
-  margin-top: 10px; /*beim hoover effekt - IMG direkt am Fenster(ohne ist am oberen Rand - sieht nicht so gut aus)*/
+  margin-top: 10px;
+  /*beim hoover effekt - IMG direkt am Fenster(ohne ist am oberen Rand - sieht nicht so gut aus)*/
 }
 
 .mainrecept h3 {
@@ -959,9 +970,9 @@ Design der index.html
   transition: transform 0.3s ease;
 }
 
-.compare-image img:hover {
+/* .compare-image img:hover {
   transform: scale(1.03);
-}
+} */
 
 /*==========================
 Mobil CSS index.html
@@ -979,32 +990,42 @@ Mobil CSS index.html
     width: 72px;
   }
 
-  .mb-portioner .mb-ingredients-list > li {
+  .mb-portioner .mb-ingredients-list>li {
     grid-template-columns: 80px 60px 1fr;
     font-size: 16px;
     padding: 12px 14px;
   }
+
   h1 {
     padding-top: 42px;
   }
+
   .footer-sm {
     flex-direction: column;
   }
+
   .footer-content {
     padding: 10px;
   }
+
   /*MAX Rezept*/
   form.underimg_shish_kebab {
     display: grid;
     justify-content: center;
   }
-  #num1{padding-left: 0;}
+
+  #num1 {
+    padding-left: 0;
+  }
+
   /*MAX Rezept*/
 }
+
 @media (max-width: 830px) {
   main {
     padding-inline: 0px;
   }
+
   ul.menu li a:hover {
     text-decoration: underline 2px;
     text-underline-offset: 6px;
@@ -1015,6 +1036,7 @@ Mobil CSS index.html
     margin: 0;
     padding-inline: 10px;
   }
+
   ul.menu {
     display: none;
     flex-direction: column;
@@ -1032,6 +1054,7 @@ Mobil CSS index.html
     padding: 10px;
     background-color: #ffffff;
   }
+
   .cook {
     display: flex;
     padding-right: 8px;
@@ -1042,23 +1065,28 @@ Mobil CSS index.html
     padding-inline: 4px;
     text-align: center;
   }
+
   h2 {
     font-size: 28px;
     padding-inline: 10px;
     padding-bottom: 16px;
   }
+
   h3 {
     font-size: 28px;
     padding-inline: 10px;
   }
+
   .h3_contact {
     padding: 0 0 16px 0;
     text-align: center;
   }
+
   label {
     padding-right: 0;
     margin-top: 8px;
   }
+
   /*CONTACT MOBIL*/
   .input_contact,
   textarea {
@@ -1067,6 +1095,7 @@ Mobil CSS index.html
     margin-right: 0;
     box-sizing: border-box;
   }
+
   textarea {
     height: 160px;
     margin-bottom: 12px;
@@ -1083,25 +1112,33 @@ Mobil CSS index.html
     padding: 16px 20px;
     box-sizing: border-box;
   }
+
   .under {
     width: 100%;
     border-radius: 10px;
   }
+
   /*CONTACT MOBIL*/
   /*Rezept MAX*/
-  #num1{padding-left: 0;}
+  #num1 {
+    padding-left: 0;
+  }
+
   .portionier {
     flex-direction: column;
     gap: 8px;
   }
+
   .portion {
     border-radius: 10px;
   }
+
   .padding_gap {
     font-size: 28px;
     gap: 8px;
     flex-direction: column;
   }
+
   .schaschlik {
     width: 100%;
     height: 200px;
@@ -1118,9 +1155,11 @@ Mobil CSS index.html
   .cooking ul li {
     padding-inline: 10px;
   }
+
   .cooking ul {
     padding-top: 0;
   }
+
   .grey_li_bckgr {
     text-align: left;
     font-size: 16px;
@@ -1130,6 +1169,7 @@ Mobil CSS index.html
     text-align: left;
     font-size: 16px;
   }
+
   ul#ingredients {
     padding-inline: 10px;
   }
@@ -1139,13 +1179,16 @@ Mobil CSS index.html
     padding-block-end: 0%;
     gap: 16px;
   }
+
   .MAX {
     font-size: 24px;
   }
+
   .photo_max {
     width: 80px;
     height: 80px;
   }
+
   .cooking ul li {
     padding-inline: 10px;
   }
@@ -1157,6 +1200,7 @@ Mobil CSS index.html
     border-bottom-left-radius: 0px;
     border-radius: 10px;
   }
+
   button {
     border-radius: 10px;
   }
@@ -1202,6 +1246,7 @@ Mobil CSS index.html
     width: 84px;
     height: auto;
   }
+
   .footer-content {
     max-width: 100%;
     margin: 0;
@@ -1243,10 +1288,10 @@ Mobil CSS index.html
     max-width: 100%;
   }
 
-  label {
+  /* label {
     padding-left: 0;
     margin-top: 8px;
-  }
+  } */
 
   nav {
     align-items: center;
@@ -1258,6 +1303,7 @@ Mobil CSS index.html
     justify-content: center;
     margin-bottom: 26px;
   }
+
   .compare-content {
     flex-direction: column-reverse;
     align-items: center;
@@ -1266,6 +1312,7 @@ Mobil CSS index.html
     padding-bottom: 16px;
     padding-top: 0px;
   }
+
   .mb-form {
     flex-direction: column;
     gap: 12px;
@@ -1283,6 +1330,7 @@ Mobil CSS index.html
     flex-direction: column;
   }
 }
+
 /*==========================
 Mobil CSS
 ==========================*/
