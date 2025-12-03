@@ -508,7 +508,6 @@ CSS Design rezeptEnsar.html (Ensar)
 }
 
 .input-zutaten {
-  height: 40px;
   border-radius: 10px 0 0 10px;
   text-align: center;
   padding-block: 0;
@@ -1254,12 +1253,8 @@ Mobil CSS index.html
   .form-ey {
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 24px;
-
-  }
-
-  .input-zutaten {
-    height: auto;
+    justify-content: center;
+    margin-bottom: 26px;
   }
   .compare-content {
     flex-direction: column-reverse;
