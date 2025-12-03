@@ -7,7 +7,7 @@ const pageContent = document.querySelector('.page-content');
 cook.addEventListener('click', function () {
   menu.classList.toggle('show');
 
-  if (pageContent) {
-    pageContent.classList.toggle('pushed');
-  }
+  // if (pageContent) {
+  //   pageContent.classList.toggle('pushed');
+  // }
 });

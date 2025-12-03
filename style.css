@@ -6,11 +6,7 @@
   font-display: swap;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 * {
   padding: 0;
@@ -27,13 +23,13 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Sorgt aktuell für die Zentrierung */
 .header-content,
 .footer-content,
 .content,
-.recipe-section,
 .recipe-section-content,
 .compare-section {
   max-width: 1440px;
@@ -138,7 +134,7 @@ footer {
   align-items: center;
   height: 120px;
   justify-content: space-between;
-  }
+}
 
 .footer-logo img {
   height: 80px;
@@ -312,7 +308,7 @@ textarea {
 }
 
 .form_contact {
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,7 +400,7 @@ CSS von Max
 b {
   background-color: #e4e4e4;
   border-radius: 50px;
-  color:#008000;
+  color: #008000;
   padding: 5px 10px 5px 10px;
   justify-content: center;
   align-items: center;
@@ -445,8 +441,8 @@ b {
 /*===================================
 CSS Design rezeptEnsar.html (Ensar)
 ====================================*/
-@media(max-width:830px){
-  .input-zutaten{
+@media (max-width: 830px) {
+  .input-zutaten {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
@@ -806,6 +802,8 @@ Design der index.html
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  max-width: 135px;
+  text-align: center;
 }
 
 .open-recept:hover {
@@ -820,9 +818,12 @@ Design der index.html
 }
 
 .recipe-section {
-  max-width: 1440px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  width: 99svw;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #f5f4f4;
 }
 
 .content {
@@ -983,31 +984,31 @@ Mobil CSS index.html
     font-size: 16px;
     padding: 12px 14px;
   }
-  h1{
+  h1 {
     padding-top: 42px;
   }
-  .footer-sm{
+  .footer-sm {
     flex-direction: column;
   }
-  .footer-content{
+  .footer-content {
     padding: 10px;
   }
-/*MAX Rezept*/
-  form.underimg_shish_kebab{
-  display: grid;
-  justify-content: center;
+  /*MAX Rezept*/
+  form.underimg_shish_kebab {
+    display: grid;
+    justify-content: center;
   }
-/*MAX Rezept*/
+  /*MAX Rezept*/
 }
 @media (max-width: 830px) {
   main {
     padding-inline: 0px;
   }
-    ul.menu li a:hover {
+  ul.menu li a:hover {
     text-decoration: underline 2px;
     text-underline-offset: 6px;
   }
-  
+
   header {
     max-width: 100%;
     margin: 0;
@@ -1028,6 +1029,7 @@ Mobil CSS index.html
   ul.menu.show {
     display: flex;
     padding: 10px;
+    background-color: #ffffff;
   }
   .cook {
     display: flex;
@@ -1056,9 +1058,9 @@ Mobil CSS index.html
     padding-right: 0;
     margin-top: 8px;
   }
-/*CONTACT MOBIL*/
+  /*CONTACT MOBIL*/
   .input_contact,
-   textarea {
+  textarea {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -1084,8 +1086,8 @@ Mobil CSS index.html
     width: 100%;
     border-radius: 10px;
   }
-/*CONTACT MOBIL*/
-/*Rezept MAX*/
+  /*CONTACT MOBIL*/
+  /*Rezept MAX*/
   .portionier {
     flex-direction: column;
     gap: 8px;
@@ -1103,7 +1105,7 @@ Mobil CSS index.html
     height: 200px;
   }
 
- .underimg_shish_kebab {
+  .underimg_shish_kebab {
     flex-direction: column;
     align-items: normal;
     gap: 8px;
@@ -1129,24 +1131,24 @@ Mobil CSS index.html
   ul#ingredients {
     padding-inline: 10px;
   }
-  
+
   .photo_plus_name {
     padding-left: 32px;
     padding-block-end: 0%;
     gap: 16px;
   }
-    .MAX {
+  .MAX {
     font-size: 24px;
   }
   .photo_max {
     width: 80px;
     height: 80px;
   }
-   .cooking ul li {
+  .cooking ul li {
     padding-inline: 10px;
   }
 
-/*Rezept MAX end*/
+  /*Rezept MAX end*/
   input {
     text-align: center;
     border-top-left-radius: 0px;
@@ -1156,7 +1158,7 @@ Mobil CSS index.html
   button {
     border-radius: 10px;
   }
-  
+
   form p {
     font-size: 16px;
   }
@@ -1206,8 +1208,7 @@ Mobil CSS index.html
     padding-bottom: 16px;
   }
 
-
-/*index.html mobil*/
+  /*index.html mobil*/
   .recipe-teaser {
     flex-direction: column;
     align-items: center;
@@ -1240,7 +1241,6 @@ Mobil CSS index.html
     max-width: 100%;
   }
 
-
   label {
     padding-left: 0;
     margin-top: 8px;
@@ -1264,7 +1264,7 @@ Mobil CSS index.html
     padding-bottom: 16px;
     padding-top: 0px;
   }
-    .mb-form {
+  .mb-form {
     flex-direction: column;
     gap: 12px;
   }

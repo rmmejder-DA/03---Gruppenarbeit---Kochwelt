@@ -1,25 +1,41 @@
-function checkNumber(element) {
-    let value;
-    value = parseInt(element.value);
-    if (isNaN(value)) value = 0;
-    element.value = value;
-}
-function multiplyValues() {
-    const val1 = document.getElementById("num1").value || '0';
-    const num1 = parseFloat(val1) || 0;
-    const ids = ["num2", "num3", "num4", "num5", "num6", "num7", "num8", "num9", "num10", "num11", "num12", "num13"];
-    ids.forEach(id => {
-        const elem = document.getElementById(id);
-        if (!elem) return;
 
-        if (!elem.dataset.base) {
-            const raw = (typeof elem.textContent === "string") ? elem.textContent : "";
-            elem.dataset.base = raw.trim();
+    const input = document.getElementById("num1");
+    const button = document.querySelector(".portion"); 
+    const ingredients = document.querySelectorAll("span[data-base]");
+
+    function calc() {
+        let portionen = parseFloat(input.value);
+
+        if (isNaN(portionen) || portionen < 3) {
+            portionen = 3;
+            input.value = 3;
+        } else if (portionen > 10) {
+            portionen = 10; 
+            input.value = 10;
         }
 
-        const base = parseFloat(elem.dataset.base) || 0;
-        const product = num1 * base;
-        const display = Number.isFinite(product) ? (+product.toFixed(1)).toString() : "0";
-        elem.textContent = display;
-    });
-}
+        ingredients.forEach((span) => {
+            const basiswert = parseFloat(span.getAttribute("data-base"));
+            
+            let newValue = basiswert * portionen;
+
+            newValue = Math.round(newValue * 100) / 100;
+
+            span.textContent = newValue.toLocaleString("de-DE");
+        });
+    }
+
+    if (button) {
+        button.addEventListener("click", calc);
+    }
+
+    if (input) {
+        input.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                calc();
+            }
+        });
+
+        calc();
+    }
