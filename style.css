@@ -308,7 +308,7 @@ textarea {
 }
 
 .form_contact {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,7 +353,7 @@ CSS von Max
   border-left: 1px;
   margin-left: 0;
   border-radius: 0;
-  height: 40px;
+  height: 42px;
   border-width: 0;
   background-color: #008000;
   color: white;
@@ -362,7 +362,7 @@ CSS von Max
 }
 
 .maxlist {
-  padding: 24px;
+  padding: 16px;
   padding-left: 32px;
   gap: 20px;
   background-color: #ffffff;
@@ -377,7 +377,7 @@ CSS von Max
 
 .grey_li_bckgr {
   gap: 20px;
-  padding: 24px;
+  padding: 16px;
   padding-left: 32px;
   background-color: #e4e4e4;
   width: auto;
@@ -998,6 +998,7 @@ Mobil CSS index.html
     display: grid;
     justify-content: center;
   }
+  input#num1{padding-left: 0;}
   /*MAX Rezept*/
 }
 @media (max-width: 830px) {
